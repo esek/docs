@@ -1,0 +1,108 @@
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%package import & config
+
+\usepackage{subfiles}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{graphbox}
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{lastpage}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage[normalem]{ulem}
+
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+\graphicspath{{./res/}{../res/}{../../res/}{../../../res/}} %deeper than adele
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	includeheadfoot,
+	top=25mm,
+	left=30mm,
+	right=30mm,
+	bottom=20mm,
+	headheight=42pt
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[R]{
+	\doctitle\\
+	\date\\
+    \vspace*{1mm}
+}
+\fancyhead[L]{
+	\includegraphics[height=1cm, align=c]{krusidull}
+    \hspace{1mm} {\large E-sektionen inom TLTH}\\
+}
+\fancyfoot[R]{
+	Sida {\thepage} av {\pageref*{LastPage}}
+}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    pdftitle={\doctitle},
+    pdfauthor={\docauthor}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%document configuration
+\newcommand{\resetarraystretch}{\def\arraystretch{1.1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%snippets, environments, commands
+
+%signatur
+
+\newenvironment{signatures}[1]{
+	\begingroup
+	\setcounter{enumi}{#1} %temporary variable
+	\setcounter{enumii}{0} %count variable
+	\ifthenelse{\value{enumi} > 10}{
+		\par{\Large\color{red}Antalet signaturer är fler än 10 och måste delas upp på fler sidor.\par}
+	}{
+		\par\vspace*{\fill}\par
+	}
+}
+{
+	\ifthenelse{\NOT \equal{\value{enumii}}{\value{enumi}}}{
+		\par{\color{red}\Large Antalet signaturer stämde inte överens med givet antal.}\par
+	}{
+		\par
+	}
+	\newpage
+	\endgroup
+}
+
+\newcommand{\signature}[2]{
+	\vspace*{1.5cm}
+	\ifthenelse{\isodd{\value{enumii}}}{
+		\hspace{\stretch{1}}
+	}{
+		\par
+	}
+	\parbox{5.8cm}{\rule{5.0cm}{0.4pt} \\ #1 \\ \it #2}
+	\ifthenelse{\isodd{\value{enumii}}}{
+		\par
+	}{}
+	\stepcounter{enumii}
+}
+
+%attsatser
+
+\newenvironment{attsatser}{
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+\newcommand{\att}{\item[\textbf{\textit{att}}]}

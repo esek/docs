@@ -1,0 +1,107 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Fredrik Peterson}
+\def\sekr{Erik Månsson}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Vårterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{VT/16} %ex S02/16, E01/15, VT/13
+\def\date{2016-04-20} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\time{17:15}
+\def\place{E:B}
+
+\usepackage{../e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\firstpage
+
+\tableofcontents
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paragrafer}
+    \p{1}{TaFMÖ}{}
+    \p{2}{Val av mötesordförande}{}
+    \p{3}{Val av mötessekreterare}{}
+    \p{4}{Tid och sätt}{}
+    \p{5}{Val av två justeringspersoner}{}
+    \p{6}{Adjungeringar}{}
+    \p{7}{Föredragningslistan}{}
+    \p{8}{Föregående sektionsmötesprotokoll}{}
+    \p{9}{Meddelanden}{}
+    \p{10}{Beslutsuppföljning}{}
+    \p{11}{Utskottsrapporter}{}
+    \p{12}{Ekonomisk rapport}{}
+    \p{13}{Val}{}
+        \begin{paragrafer}
+            \subp{A}{Val av valberedningens ordförande}{}
+            \subp{B}{Val av funktionärer}{}
+            \subp{C}{Val av inspektor}{}
+        \end{paragrafer}
+    \p{14}{Verksamhetsberättelser för 2015}{}
+    \p{15}{Bokslut för 2015}{}
+    \p{16}{Revisorernas berättelse för 2015}{}
+    \p{17}{Frågan om ansvarsfrihet för 2015}{}
+        \begin{paragrafer}
+            \subp{A}{Funktionärer}{}
+            \subp{B}{Utskott}{}
+            \subp{C}{Styrelse}{}
+            \subp{D}{Revisorer}{}
+            \subp{E}{Valberedning}{}
+        \end{paragrafer}
+    \p{18}{Styrelsens förslag till resultatdisposition}{}
+    \p{19}{Uttag ur sektionens fonder sedan förra terminsmötet}{}
+    \p{20}{Stadgeändringar i andra läsningen}{}
+    \p{21}{Behandling av motioner}{}
+    \p{22}{Behandling av propositioner}{}
+    \p{23}{Övrigt}{}
+    \p{24}{TaFMA}{}
+\end{paragrafer}
+
+\begin{signatures}{1}
+\ist
+\signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\section{Beslutsuppföljning}
+\begin{busek}
+    \beslutsek{VT/15}{Ett beslut}{Några personer}{...}
+\end{busek}
+
+\begin{utskottsrapporter}
+    \subfile{../utskottsrapporter/_exempel}
+\end{utskottsrapporter}
+
+\begin{valforslags}
+    \subfile{../valforslag/_exempel-funk}
+\end{valforslags}
+
+\begin{berattelser}
+    \subfile{../berattelser/_exempel}
+\end{berattelser}
+
+\begin{stadgeandringar}
+    \subfile{../stadgeandringar/_exempel}
+\end{stadgeandringar}
+
+\begin{motioner}
+    \subfile{../motioner/_exempel}
+    \subfile{../motionssvar/_exempel}
+\end{motioner}
+
+\begin{propositioner}
+    \subfile{../propositioner/_exempel}
+\end{propositioner}
+
+\end{document}

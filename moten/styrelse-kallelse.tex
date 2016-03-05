@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{S02/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-01-28} %YYYY-MM-DD
+\def\docauthor{E-sektionen}
+
+\def\time{12:10}
+\def\place{E:1426}
+
+\usepackage{./e-mote}
+\usepackage{../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paragrafer}
+    \p{1}{OFSÖ}{Beslut}
+    \p{2}{Övrigt}{Diskussion}
+    \p{3}{Rapporter}{}
+    \begin{paragrafer}
+        \subp{A}{Kåren informerar}{Information}
+        \subp{B}{Hur mår alla?}{Information}
+    \end{paragrafer}
+\end{paragrafer}
+
+\section*{Beslutsuppföljning}
+\begin{beslutsuppf}
+    \beslut{S29/15}{Inköp av spis}{Inköp av ny spis till Edekvata för max 23000kr}{Anders Nilsson}{S05/16}
+    \beslut{S29/15}{Inköp av iZettle}{Inköp av iZettle till Edekvata och LED-café}{Anders Nilsson}{S05/16}
+\end{beslutsuppf}
+
+\end{document}

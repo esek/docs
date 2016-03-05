@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{S02/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-01-28} %YYYY-MM-DD
+\def\docauthor{Fredrik Peterson}
+
+\def\time{12:10}
+\def\place{E:B}
+
+\usepackage{./e-mote}
+\usepackage{../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Utförlig föredragningslista}
+\begin{paragrafer}
+\p{11}{Tesla}{}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{12}{Lantz}{Beslut}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{18}{Hackelina}{}
+\begin{paragrafer}
+\subp{A}{Oddput}{Diskussion}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\subp{B}{Hacke}{Beslut}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\end{paragrafer}
+
+\end{paragrafer}
+
+\begin{signatures}{1}
+\emph{I styrelsens tjänst}
+\signature{Fredrik Peterson}{Ordförande}
+\end{signatures}
+
+\end{document}
