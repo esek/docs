@@ -35,14 +35,16 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhf{}
-\fancyhead[R]{
-	\doctitle\\
-	\date\\
-    \vspace*{1mm}
-}
 \fancyhead[L]{
-	\includegraphics[height=1cm, align=c]{krusidull}
-    \hspace{1mm} {\large E-sektionen inom TLTH}\\
+	\includegraphics[height=2.5\baselineskip, align=c]{krusidull}
+	\hspace{1mm}
+	\parbox{10cm}{
+		{\large E-sektionen inom TLTH}
+		\headl
+	}\\
+}
+\fancyhead[R]{
+	\parbox[t][2.5\baselineskip][c]{10cm}{\raggedleft \headr}\\
 }
 \fancyfoot[R]{
 	Sida {\thepage} av {\pageref*{LastPage}}
