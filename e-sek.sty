@@ -60,6 +60,21 @@
 %document configuration
 \newcommand{\resetarraystretch}{\def\arraystretch{1.1}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%lists
+
+\newenvironment{itemizedash}{
+    \begin{itemize}[label={--}, topsep=0cm, noitemsep]
+}{
+    \end{itemize}
+}
+
+\newenvironment{dashlist}{
+    \begin{itemize}[label={--}, topsep=0cm, itemsep=-1mm]
+}{
+    \end{itemize}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %snippets, environments, commands
 

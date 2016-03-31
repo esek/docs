@@ -84,6 +84,18 @@
     \end{supersection}
 }
 
+\newenvironment{verksplaner}{
+    \begin{supersection}{Verksamhetsplan}{}
+}{
+    \end{supersection}
+}
+
+\newenvironment{verksplanuppfar}{
+    \begin{supersection}{Uppföljning av verksamhetsplan}{}
+}{
+    \end{supersection}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\motion}[1]{
@@ -126,6 +138,18 @@
     \subsection*{#1}
 }
 
+\newcommand{\verksplan}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \fancyfoot[L]{Verksamhetsplan #1}
+    \subsection*{Verksamhetsplan #1}
+}
+
+\newcommand{\verksplanuppf}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \fancyfoot[L]{Uppföljning av verksamhetsplan #1}
+    \subsection*{Uppföljning av verksamhetsplan #1}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newenvironment{valforslagslista}{
@@ -152,12 +176,4 @@
 
 \newcommand{\person}[2]{ %namn, id
     \item #1 (#2)
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newenvironment{itemizedash}{
-    \begin{itemize}[label={--}, topsep=0cm, noitemsep]
-}{
-    \end{itemize}
 }
