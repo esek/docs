@@ -98,9 +98,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\limitedffl}[1]{\fancyfoot[L]{\parbox{12cm}{#1}}}
+
 \newcommand{\motion}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Motion: #1}
+    \limitedffl{Motion: #1}
     \subsection*{Motion: #1}
 }
 
@@ -110,43 +112,43 @@
 
 \newcommand{\proposition}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Proposition: #1}
+    \limitedffl{Proposition: #1}
     \subsection*{Proposition: #1}
 }
 
 \newcommand{\utskottsrapport}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Utskottsrapport: #1}
+    \limitedffl{Utskottsrapport: #1}
     \subsection*{#1}
 }
 
 \newcommand{\berattelse}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Verksamhetsberättelse: #1}
+    \limitedffl{Verksamhetsberättelse: #1}
     \subsection*{#1}
 }
 
 \newcommand{\stadgeandring}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Stadgeändring: #1}
+    \limitedffl{Stadgeändring: #1}
     \subsection*{#1}
 }
 
 \newcommand{\valforslag}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{#1}
+    \limitedffl{#1}
     \subsection*{#1}
 }
 
 \newcommand{\verksplan}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Verksamhetsplan #1}
+    \limitedffl{Verksamhetsplan #1}
     \subsection*{Verksamhetsplan #1}
 }
 
 \newcommand{\verksplanuppf}[1]{
     \addcontentsline{toc}{subsection}{#1}
-    \fancyfoot[L]{Uppföljning av verksamhetsplan #1}
+    \limitedffl{Uppföljning av verksamhetsplan #1}
     \subsection*{Uppföljning av verksamhetsplan #1}
 }
 
