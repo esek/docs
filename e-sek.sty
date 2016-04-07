@@ -16,6 +16,8 @@
 \usepackage{soul}
 \usepackage[normalem]{ulem}
 
+\usepackage[compact]{titlesec}
+
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
 \graphicspath{{./_res/}{../_res/}{../../_res/}{../../../_res/}} %deeper than adele
@@ -129,3 +131,23 @@
 }
 
 \newcommand{\att}{\item[\textbf{\textit{att}}]}
+
+%heading
+
+\newcommand{\heading}[1]{
+	\vspace*{-.5cm}{\LARGE\textbf{#1}}
+}
+
+%firstpage
+
+\newcommand{\firstpage}[2]{
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+            \includegraphics[width=7cm]{sigill}\\
+            \vspace*{1.5cm}
+            \heading{#1}\par
+            {\Large #2}
+        \end{center}
+    \end{titlepage}
+}
