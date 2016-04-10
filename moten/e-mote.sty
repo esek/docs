@@ -40,8 +40,21 @@
 	\end{itemize}
 }
 
-\newcommand{\p}[3]{\item[\textbf{\S#1}] #2 \hspace*{\fill} \textbf{#3}\par}
-\newcommand{\subp}[3]{\item[\textbf{#1)}] #2 \hspace*{\fill} \textbf{#3}\par}
+\newcommand{\p}[3]{
+	\ifstrempty{#3}{%
+	\item[\textbf{\S#1}] #2\par
+	}{%
+		\item[\textbf{\S#1}] #2 \hspace*{\fill} \textbf{#3}\par
+	}
+}
+
+\newcommand{\subp}[3]{%
+	\ifstrempty{#3}{%
+	\item[\textbf{#1)}] #2\par
+	}{%
+		\item[\textbf{#1)}] #2 \hspace*{\fill} \textbf{#3}\par
+	}
+}
 
 %närvarolista
 
