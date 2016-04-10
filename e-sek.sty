@@ -67,7 +67,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %lists %TODO: make all lists with \newlist
 
-%automatically numbered paragraph list
+%enumerated paragraph list:
+%\textbf{\S1}, \textbf{\S2}, \textbf{\S3}...
+%	A), B), C)...
 
 \newlist{paralist}{enumerate}{2}
 \setlist[paralist,1]{label=\textbf{\S\arabic*}}
@@ -80,6 +82,12 @@
 		\item #1 \hspace*{\fill} \textbf{#2}\par
 	}
 }
+
+%enumerated list:
+%1), 2), 3)...
+
+\newlist{numplist}{enumerate}{1}
+\setlist[numplist,1]{label=\arabic*), topsep=0cm, itemsep=-1mm}
 
 \newenvironment{itemizedash}{
     \begin{itemize}[label={--}, topsep=0cm, noitemsep]
