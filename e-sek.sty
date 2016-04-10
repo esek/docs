@@ -67,7 +67,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %lists %TODO: make all lists with \newlist
 
-%enumerated paragraph list:
 %\textbf{\S1}, \textbf{\S2}, \textbf{\S3}...
 %	A), B), C)...
 
@@ -83,11 +82,27 @@
 	}
 }
 
-%enumerated list:
 %1), 2), 3)...
 
 \newlist{numplist}{enumerate}{1}
 \setlist[numplist,1]{label=\arabic*), topsep=0cm, itemsep=-1mm}
+
+%a), b), c)...
+
+\newlist{alphlist}{enumerate}{1}
+\setlist[alphlist,1]{label=\alph*), topsep=0cm, itemsep=-1mm}
+
+%\bf \it att
+
+\newlist{attlist}{enumerate}{1}
+\setlist[attlist,1]{label=\textbf{\textit{att}}, topsep=0cm, itemsep=-1mm}
+
+%\bf \it att
+
+\newlist{emptylist}{enumerate}{1}
+\setlist[emptylist,1]{label=, topsep=0cm, itemsep=-1mm}
+
+%
 
 \newenvironment{itemizedash}{
     \begin{itemize}[label={--}, topsep=0cm, noitemsep]

@@ -6,4 +6,4 @@ build/
 *.fdb_latexmk
 *.fls
 
-!_res/*.pdf
+!_res/*
