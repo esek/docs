@@ -65,7 +65,21 @@
 \newcommand{\resetarraystretch}{\def\arraystretch{1.1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%lists
+%lists %TODO: make all lists with \newlist
+
+%automatically numbered paragraph list
+
+\newlist{paralist}{enumerate}{2}
+\setlist[paralist,1]{label=\textbf{\S\arabic*}}
+\setlist[paralist,2]{label=\textbf{\Alph*)}}
+
+\newcommand{\pli}[2]{
+	\ifstrempty{#2}{%
+		\item #1\par
+	}{%
+		\item #1 \hspace*{\fill} \textbf{#2}\par
+	}
+}
 
 \newenvironment{itemizedash}{
     \begin{itemize}[label={--}, topsep=0cm, noitemsep]
