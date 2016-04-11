@@ -21,6 +21,9 @@
 \usepackage[compact]{titlesec}
 \usepackage{siunitx}
 
+\usepackage{tocloft}
+\setlength\cftbeforesecskip{0.5em}
+
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
 \graphicspath{{./_res/}{../_res/}{../../_res/}{../../../_res/}} %deeper than adele
@@ -54,6 +57,10 @@
 \fancyfoot[R]{
 	Sida {\thepage} av {\pageref*{LastPage}}
 }
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
 
 \usepackage[hidelinks]{hyperref}
 \hypersetup{

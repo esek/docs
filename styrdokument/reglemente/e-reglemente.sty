@@ -2,4 +2,7 @@
 
 \def\doctitle{Reglemente}
 
-\renewcommand\thesubsection{\arabic{section}:\Alph{subsection}}
+\titleformat{\section}{\bf \Large}{Kapitel {\thetitle} -- }{0mm}{}
+\renewcommand{\thesubsection}{\arabic{section}:\Alph{subsection}}
+
+\setcounter{tocdepth}{2}
