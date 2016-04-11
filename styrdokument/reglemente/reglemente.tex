@@ -2,13 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
 
+\def\doctitle{Reglemente}
 \def\antagen{1997-11-10}
 \def\uppdaterad{2016-00-00}
 
-\usepackage{./e-reglemente}
 \usepackage{../e-styrdok}
 \usepackage{../../e-sek}
 
+\setcounter{tocdepth}{2}
+\titleformat{\section}{\bf \Large}{Kapitel {\thetitle} -- }{0mm}{}
+\renewcommand{\thesubsection}{\arabic{section}:\Alph{subsection}}
 \setlength\cftbeforesecskip{0em}
 
 \begin{document}
