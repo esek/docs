@@ -7,5 +7,6 @@ build/
 *.fls
 
 !_res/*
-!moten/2016-vt-handlingar/_res/bokslut/*
 !styrdokument/stadga/_res/*
+!moten/2016-vt-handlingar/_res/*
+!moten/2016-vt-handlingar/_res/bokslut/*

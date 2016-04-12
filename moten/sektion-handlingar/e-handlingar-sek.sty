@@ -7,9 +7,9 @@
 
 \newenvironment{busek}{
 	\def\arraystretch{1.5}
-	\tabularx{\textwidth}{| p{1.5cm} | X | X | X |}
+	\tabularx{\textwidth}{| p{1.5cm} | X | X | X | p{2cm} |}
 		\hline
-		\textbf{Taget} & \textbf{Beslut} & \textbf{Tilldelat} & \textbf{Notering}\\
+		\textbf{Taget} & \textbf{Beslut} &\textbf{Tilldelat} & \textbf{Förtydligande} & \textbf{Redovisas}\\
 		\hline
 }{
 	\endtabularx
@@ -17,7 +17,7 @@
 	\resetarraystretch
 }
 
-\newcommand{\beslutsek}[4]{#1 & #2 & #3 & #4 \\\hline} %taget, beslut, tilldelat, notering
+\newcommand{\beslutsek}[5]{#1 & #2 & #3 & #4 & #5 \\\hline} %taget, beslut, tilldelat, notering
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
