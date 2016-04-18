@@ -7,10 +7,10 @@
 \def\ji{} %justerare
 
 %detta nedan är rätt ifyllt för S10/16
-\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
-\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
-\def\mnum{S10/16} %ex S02/16, E1/15, VT/13
-\def\date{2016-04-21} %YYYY-MM-DD
+\def\doctype{Protokoll}
+\def\mname{styrelsemöte}
+\def\mnum{S10/16}
+\def\date{2016-04-21}
 \def\docauthor{Erik Månsson}
 
 \usepackage{../e-mote}
@@ -20,7 +20,6 @@
 \showsignfoot
 
 \heading{{\doctype} för {\mname} {\mnum}}
-
 
 %\naun{}{} %närvarane under
 %\nati{} %närvarande till och med
@@ -72,15 +71,15 @@ Ordförande {\mo} förklarade mötet öppnat 12:10.
 \valavms %fylls i automatiskt när man fyllt i ms ovan
 
 \p{4}{Tid och sätt}{\bes}
-\tosg
+\tosg %skriver Tid och sätt godkändes.
 
 \p{5}{Adjungeringar}{\bes}
-\ingaadj
+\ingaadj %skriver Inga adjungeringar
 
 %Förnamn Efternamn adjungerades
 
 \p{6}{Val av justeringsperson}{\bes}
-\valavj
+\valavj %skriver automatiskt ut val av jsuteringsperson, som fylls i längst upp
 
 \p{7}{Föredragningslistan}{\bes}
 %Föredragningslistan godkändes.
@@ -108,20 +107,21 @@ Ordförande {\mo} förklarade mötet öppnat 12:10.
 
 \end{paragrafer}
 
+\p{11}{Inköp av partytält}{\bes}
 
-%här läggs de vanliga punkterna till
-\p{11}{Studiecirklar}{}
+\p{12}{Inköp av streckkodsläsare}{\bes}
 
+\p{13}{Remissvar TLTHs verksamhetsplan}{\dis}
 
-\p{12}{Nästa styrelsemöte}{\bes}
+\p{14}{Nästa styrelsemöte}{\bes}
 \Mba nästa styrelsemöte ska äga rum YYYY-MM-DD HH:MM i E:XXXX.
 
-\p{13}{Beslutsuppföljning}{\bes}
+\p{15}{Beslutsuppföljning}{\bes}
 \Ibfu %inga beslut följdes upp
 
-\p{14}{Övrigt}{\dis}
+\p{16}{Övrigt}{\dis}
 
-\p{15}{OFSA}{\bes}
+\p{17}{OFSA}{\bes}
 {\mo} förklarade mötet avslutat 13:00.
 
 \end{paragrafer}
