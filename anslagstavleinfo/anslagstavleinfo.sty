@@ -1,0 +1,60 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{subfiles}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{graphbox}
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{lastpage}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{soulutf8}
+\usepackage[normalem]{ulem}
+\usepackage{pdfpages}
+\usepackage[compact]{titlesec}
+
+\usepackage[20pt]{extsizes}
+
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+\graphicspath{{./_res/}{../_res/}{../../_res/}{../../../_res/}} %deeper than adele
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+    landscape,
+	includeheadfoot,
+	top=30mm,
+	left=30mm,
+	right=30mm,
+	bottom=30mm,
+	headheight=42pt
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[L]{
+	\includegraphics[height=4.5\baselineskip, align=c]{krusidull}
+	\hspace{1mm}
+	\parbox{10cm}{
+		{\normalsize E-sektionen inom TLTH}
+	}\\
+}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\infofran}[1]{
+    \begin{center}
+        \vspace*{25mm}
+        Information från\par
+        \vspace*{4mm}
+        \textbf{\textsc{\Huge{#1}}}
+    \end{center}
+    \newpage
+}
