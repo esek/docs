@@ -1,0 +1,139 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Erik Månsson}
+\def\ji{Stephanie Mirsky}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S15/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-08-18} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{}
+\nv{Øverphøs}{Molly Rusk}{BME14}{}
+\nv{SRE-ordförande}{Johan Persson}{E13}{}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{\nafr{10A}}
+\nv{Krögare}{Malin Lindström}{BME14}{\nafr{10A}}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Talman}{Johan Westerlund}{E11}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 13:00.
+
+\p{2}{Val av mötesordförande}{\bes}
+\valavmo
+
+\p{3}{Val av mötessekreterare}{\bes}
+\valavms
+
+\p{4}{Tid och sätt}{\bes}
+\tosg
+
+\p{5}{Adjungeringar}{\bes}
+\ingaadj
+
+\p{6}{Val av justeringsperson}{\bes}
+\valavj
+
+\p{7}{Föredragningslistan}{\bes}
+Föredragningslistan godkändes.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S14/16}
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\entl{Linus Bergman (elt15lbe)}{Fritidsledare}
+\entl{Emma Anzén}{Valberedningsledamot}
+\entl{Henrik Fryklund}{Sexig}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Check in}{\info}
+Mötet pratade om hur alla mår, vad de gjort över sommaren och hur det går med nollningsförberedelserna. Överlag går det superbra!
+
+Dalia behöver hjälp med att rigga upp UtEDischot.
+
+\subp{B}{Kåren informerar}{\info}
+\emph{Kåren informerade inte.}
+
+\subp{C}{Ekonomi}{\info}
+\emph{Punkten togs inte upp.}
+
+\end{paragrafer}
+
+\p{11}{Inköp av maskotdräkt}{\dis}
+Fredrik informerade om att det inte blir någon maskotdräkt till denna nollningen eftersom det inte gick ihop med vår leverantör.
+
+Styrelsen var överrens om att ändå köpa in en maskotdräkt vid senare tillfälle.
+
+\p{12}{Inköp av köksredskap}{\bes}
+Martin ville köpa in
+\begin{dashlist}
+    \item 5 bläck
+    \item 2 elvispar
+    \item inte en vitlökspress
+\end{dashlist}
+till en kostnad av max 2300kr och yrkade på att detta ska belasta dispositionsfonden.
+
+\textbf{\Mba bifalla yrkandet.}
+
+\p{13}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2016-09-01 12:10 i E:1426.
+
+\p{14}{Beslutsuppföljning}{\bes}
+\Ibfu
+
+\p{15}{Övrigt}{\dis}
+Johan ville bestämma datum för hösttermins- och valmöte.
+
+Mötet bestämde preliminärt att lägga HT 2016-11-22 och VM 2016-11-29.
+
+Johan erbjöd sig att sälja en portabel högtalare vilket styrelsen var positiv till. Erik tar tag i det.
+
+Johan har pratat med Cederwall om att fixa skyltarna med utexaminerade i entrén.
+
+Molly söker jobbare till eftersläppet på fredag. Det löste sig direkt.
+
+\p{16}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 13:32.
+
+\end{paragrafer}
+
+\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
