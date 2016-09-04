@@ -1,0 +1,192 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Erik Månsson}
+\def\ji{Malin Lindström}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S16/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-09-01} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{}
+\nv{SRE-ordförande}{Johan Persson}{E13}{}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{}
+\nv{Krögare}{Malin Lindström}{BME14}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+\nv{Skattmästare}{Sophia Grimmeiss Grahm}{}{}
+\end{narvarolista}
+
+\subsection*{Adjungerande}
+\begin{narvarolista}
+\nv{Vice SRE-ordförande}{Pontus Landgren}{E14}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:16.
+
+\p{2}{Val av mötesordförande}{\bes}
+\valavmo
+
+\p{3}{Val av mötessekreterare}{\bes}
+\valavms
+
+\p{4}{Tid och sätt}{\bes}
+\tosg
+
+\p{5}{Adjungeringar}{\bes}
+Pontus Landgren adjungerades.
+
+\p{6}{Val av justeringsperson}{\bes}
+\valavj
+
+\p{7}{Föredragningslistan}{\bes}
+Föredragningslistan godkändes.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S15/16}
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\entl{Frida Bengtsson}{Vice ENU-ordförande}
+\fval{Martin Sollenberg}{Vice ENU-ordförande}
+\fval{Jonathan Sönnerup}{Kodhackare}
+\fval{Mansoor Ashrati (E13)}{Diod}
+\fval{Jonatan Atles (E13)}{Diod}
+\fval{Daniel Bakic (E15)}{Diod}
+\fval{Eltayeb Bayomi (E15)}{Diod}
+\fval{Viktor Drakfelt (E15)}{Diod}
+\fval{Ema Eminagic BM(E15)}{Diod}
+\fval{Johan Sievert Lindeskog (E15)}{Diod}
+\fval{Adem Šaran (E13)}{Diod}
+
+\fval{Sofia Rokkones}{BME2}
+\fval{Pontus}{E3}
+\fval{Sofia Karlen}{SRE ledamot}
+\fval{Frida Börnfors}{BME3}
+\fval{Robin Berglund}{SRE ledamot}
+
+%lista från malin, johan
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Check in}{\info}
+Anders är trött, annars är det bra med honom.
+
+Johan mår asbra, utskottet (SRE) går det asbra för.
+
+Stephanie meddelade att LED-café går bra. Det går bra med Phaddrar som kommer och hjälper till.
+
+Johannes var inte på draggningen, så han är pigg idag. Han jobbar på att få in sponsring till nya mikrovågsugnar. Altran ville inte vara med på spelgillet i år.
+
+Malin mår bra men är trött. Hon höll pub igår med KM som blev väldigt lyckad och välbesökt!
+
+Fredrik undrade var man kunde köpa tygmärken på INGvasion, vilket mötet snabbt redde ut.
+
+Erik mår bra, han har haft fullt upp med att hjälpa till lite här och där. Håller på med inbjudan till NollE-gasquen.
+
+Fredrik mår okej. Han hade sitt första ``framträdande'' med OK igår på draggningen som de dömde. Han har haft möte med OK och diskuterat ``viktiga'' och ``hemliga'' grejor.
+
+\subp{B}{Kåren informerar}{\info}
+Jacob presenterade sig själv.
+
+Mötet diskuterade vad som ska diskuteras på punkten.
+
+Jacob hade inte så mycket att ta upp denna veckan, eftersom Kåren håller på att komma igång igen efter sommaren nu.
+
+\subp{C}{Ekonomi}{\info}
+Anders har kommit ikapp på ekonomin. Han rapporterade att den mår bra och att banken går väldigt mycket upp och ner nu, och att det därför är svårt att säga precis hur mycket pengar vi har i nuläget. UtEDischot gick bra, intäkterna blev större än förra året. Tillsyn var nöjda med FekING-sittningen!
+
+\end{paragrafer}
+
+\p{11}{Mat till sektionsaktiva}{\dis}
+
+Erik tog upp att han tycker att det har varit alldeles för dåligt med mat till sektionsaktiva som jobbat under nollningen och att detta måste förbättras. Han tryckte på att detta gäller både när vi bjuder på mat själva och när SVL betalar den. Han tyckte att vi måste budgetera för detta i framtiden, och att det är okej att göra ett ``övertramp i budgeten'' för att kunna belöna funktionärer med mat i år, om så behövs.
+
+Mötet höll med och diskuterade hur man kan göra i praktiken för att genomföra detta.
+
+Anders pratade om att det finns budget och riktlinjer för detta och att vi ska ändra i budget till nästa år.
+
+Johannes föreslog att från och med nu att det är okej att gå över budget för att belöna aktiva med mat.
+
+Anders höll med och sa att man kan lägga kostnaden på funktionärsvård istället för på utskotten.
+
+Malin sa att i KM är det noga med att köpa mat och godis till alla som jobbar, och att kostnaden läggs på arrangemanget.
+
+Erik summerade deta hela som att sektionen får bli duktigare på att använda funktionärsvården och att om det blir ett budgetövertramp så får det vara okej.
+
+Stephanie undrade om vi kan ge ut matbiljetter till LED.
+
+Mötet var väldigt positivt till detta.
+
+Mötet diskuterade vad som får tas på funktionsärsvården angående mat och kom fram till att det är rimligt att få bjuda på lättare måltider och mat från LED, men t.ex. inte pizza.
+
+\p{12}{Datum för höstevenemang}{\dis}
+
+Fredrik vill sätta datum för modulo 10 och funktionärstackfesten.
+
+Mötet bestämde preliminärt att lägga funktionärstackfesten 2016-11-12 och modulo 10 2016-11-19.
+
+\p{13}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2016-09-08 12:10 i E:1426.
+
+\p{14}{Beslutsuppföljning}{\bes}
+Fredrik yrkade på att skjuta upp \emph{Inköp av maskotdräkt} till styrelsemöte 24.
+
+\textbf{\Mba bifalla yrkandet.}
+
+Anders informerade om att nattfacket är inköpt och står under mikrovågsugnshyllan i BD och kostade 2637.13kr, samt att budgeten låg på 3000kr.
+
+\textbf{\Mba stryka \emph{Inköp av nattfack} från beslutsuppföljningen.}
+
+\p{15}{Övrigt}{\dis}
+Stephanie har fått reda från Ulla att saker fattas i LED. Dessutom har någon skitat ner i köket vilket upptäcktes en morgon av Ulla. Stephanie pointerade att det är väldigt viktigt att köket hålls rent, inte minst på grund av kommande inspektioner. Vidare tycker hon att det ser dåligt ut i CM och att vi måste bättra oss på detta.
+
+Anders sa att det försvinner städgrejor från Sikrit. Han uppmanade alla att säga till sina utskott att de måste vara noga med att ställa tillbaka allt efter att ha städat. Han kommer säga till Phøset att informera alla uppdragsphaddrar.
+
+Johannes undrade vilken tid utskottssafarin är på söndag, men ingen kunde riktigt svara på detta.
+
+Fredrik sa att det får aldrig vara några grejor i klockrummet. Allting måste förvaras i Ekea. Han sa också att alla måste vara noggranna med att branddörrarna står i det läge som står på dörren.
+
+Fredrik sa att Martin har köpt in bleck, elvispar och inte en vitlökspress till en summa av 2109kr vilket var under budget.
+
+\p{16}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 13:03.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
