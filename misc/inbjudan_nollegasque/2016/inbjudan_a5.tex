@@ -11,7 +11,7 @@
 \usepackage{geometry}
 \geometry{
     a5paper,
-    top=6mm,
+    top=1mm,
     left=25mm,
     right=25mm,
     bottom=10mm
@@ -20,7 +20,19 @@
 \fancyhead[L]{}
 \fancyfoot[R]{}
 
-\begin{document}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand{\inviteto}[1]{
+
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
     \begin{center}
         \includegraphics[width=6cm]{sigill}
         \par
@@ -30,8 +42,11 @@
 
         {\it
             E-sektionen vid Lunds Tekniska Högskola\\
-            har den stora äran att bjuda in dig
-            \par \vspace*{8mm} \line(1,0){220} \par \vspace*{-1mm}
+            har den stora äran att bjuda in dig\\
+            \vspace*{5mm}
+            {\Large #1}\\
+            \vspace*{-2mm}
+            \line(1,0){220} \par \vspace*{-1mm}
             med respektive till årets Nollegasque.
         }
     \end{center}
@@ -43,4 +58,15 @@
 
     Anmälan sker senast den 17:e september. Respektive anmodas till en kostnad av 350kr per kuvert, eller 300kr om ingen alkohol önskas.
     }
+
+    \newpage
+}
+
+\begin{document}
+\inviteto{Ulla Andersson}
+\inviteto{Monica Almqvist}
+\inviteto{Viktor Öwall}
+\inviteto{Per-Henrik Rasmussen}
+\inviteto{Mats Cedervall}
+\inviteto{Johan Westerlund}
 \end{document}
