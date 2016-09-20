@@ -1,0 +1,145 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Erik Månsson}
+\def\ji{Anders Nilsson}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S18/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-09-15} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{}
+\nv{Øverphøs}{Molly Rusk}{BME14}{}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{}
+\nv{Krögare}{Malin Lindström}{BME14}{\nati{15}}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:14.
+
+\p{2}{Val av mötesordförande}{\bes}
+\valavmo
+
+\p{3}{Val av mötessekreterare}{\bes}
+\valavms
+
+\p{4}{Tid och sätt}{\bes}
+\tosg
+
+\p{5}{Adjungeringar}{\bes}
+\ingaadj
+
+\p{6}{Val av justeringsperson}{\bes}
+\valavj
+
+\p{7}{Föredragningslistan}{\bes}
+Föredragningslistan godkändes.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S16/16}
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Check in}{\info}
+Stephanie sa att LED-café går bra. De har fått in lite nollor som jobbar. Hon frågade om någon var i LED över helgen.
+
+Martin har haft mycket att göra, men det har lugnat ner sig nu efter qasqueinbjudningarna har givits ut.
+
+Dalia har hållt volleybollkväll som blev lyckad. Hon ska hålla Phadderolympiaden nästa vecka.
+
+Molly sa att de går bra för NollU. Alla stora grejor med nollningen är nu klara.
+
+Malin sa att det går bra för KM. De ska hålla sista nollningsgillet på fredag.
+
+Anders har bokfört i mängder.
+
+Erik mår bra och börjar bli lite mindre nollesjuk.
+
+Fredrik har fixat lite småsaker och har dömt regattan som gick ``bra''.
+
+\subp{B}{Kåren informerar}{\info}
+Jacob sa att de har haft ett kort kårstyrelsemöte. Kåren har fortfarande problem efter serverkrashen. Det är FM nästa vecka.
+
+\subp{C}{Ekonomi}{\info}
+Anders sa att halvårsbokslutet börjar närma sig. Om någon har saker från i våras måste de lämnas in senast i veckan efter qasque för att kunna betalas ut.
+
+\end{paragrafer}
+
+\p{11}{Inköp av dammsugare}{\bes}
+Fredrik sa att det är jättedyrt att köpa delar till våran gamla dammsugare, ungefär 750kr. Istället föreslår han att köpa in en ny dammsugare (Kärcher T 7/1 Classic) för 1200kr, eller eventuellt en bättre modell.
+
+Mötet diskuterade och kom fram till att i alla fall köpa en ny dammsugare.
+
+\emph{Punkten senarelades.}
+
+\p{12}{Riktlinje för körersättning}{\bes}
+Fredrik presenterade sitt förslag på en ny riktlinje som ersätter en gammal policy.
+
+\textbf{\Mba att antaga den föreslagna riktlinjen \textit{Körersättningsriktlinje}.}
+
+\p{13}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2016-09-22 12:10 i E:1426.
+
+\p{14}{Beslutsuppföljning}{\bes}
+\Ibfu
+
+\p{15}{Övrigt}{\dis}
+Dalia berättade vad som händer på phadderolympiaden. Hon tycker att det hade varit trevligt om styrelsen var där och antingen var med och tävlade eller hejade på.
+
+Stephanie sa att vi kommer få nya sponsorkoppar som vi ska använda i två veckor framåt.
+
+Fredrik sa att vi behöver planera vårt spex till nolleqasquen. Styrelsen kom överrens om att göra detta på måndag.
+
+Fredrik sa att vi bör planera in städdagar/städkvällar.
+
+Dalia sa att den 8:e oktober är det paintball med alla andra sektioner förutom M och I.
+
+Fredrik sa att man brukar dela ut bidragsmedaljer på qasquen, och uppmanade alla att fundera på vem som kan få en.
+
+\p{16}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 12:45.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
