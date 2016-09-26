@@ -1,0 +1,142 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Erik Månsson}
+\def\ji{Johannes Koch}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S19/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-09-22} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{\nafr{10A}}
+\nv{SRE-ordförande}{Johan Persson}{E13}{}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{}
+\nv{Krögare}{Malin Lindström}{BME14}{}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:12.
+
+\p{2}{Val av mötesordförande}{\bes}
+\valavmo
+
+\p{3}{Val av mötessekreterare}{\bes}
+\valavms
+
+\p{4}{Tid och sätt}{\bes}
+\tosg
+
+\p{5}{Adjungeringar}{\bes}
+\ingaadj
+
+\p{6}{Val av justeringsperson}{\bes}
+\valavj
+
+\p{7}{Föredragningslistan}{\bes}
+Föredragningslistan godkändes.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S18/16}
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\fval{Fredrik Peterson}{Valnämndsrepresentant}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Check in}{\info}
+Erik mår bra, han är taggad på den kommande helgen.
+
+Steph mår bra. LED går bra, det är fullt med dioder!
+
+Johan sa att han säger exakt samma som Erik.
+
+Johannes går det bra för. Han och Johan har fixat de nya mikrovågsugnarna som fantastiskt nog är röststyrda.
+
+NöjU går det bra för, de körde Phadderolympiaden igår vilket det var många som gick på.
+
+Malin sa att det går bra för KM, de har fått sitt nya stekbord.
+
+Martin har mycket att göra inför qasquen på lördag.
+
+Anders mår bra!
+
+Fredrk mår bra, han är för ovanlighetens skull inte sjuk!
+
+\subp{B}{Kåren informerar}{\info}
+Linus sa att Kåren har smygöppnat nomineringen till heltidsposter.
+
+Kåren har haft FM och bl.a. beslutat att köpa in mattor till ARKAD som ska hålla i flera år istället för att använda engångsmattor. De har också reviderat budgeten för Kåren samt gjort lite förändringar i hur fria föreningar inom Kåren fungerar.
+
+Kåren har stadfäst E-sektionens nya stadgar.
+
+\subp{C}{Ekonomi}{\info}
+Anders berättade om ekonomin, den mår bra och han börjar komma ikapp på bokföringen. Halvårsbokslutet är på gång.
+
+\end{paragrafer}
+
+\p{11}{Inköp av dammsugare}{\bes}
+Fredrik har gjort sitt jobb i veckan och kollat upp dehär med dammsugare. Han presenterade några olika förslag.
+
+Mötet kom fram till att köpa in en Kärcher T 7/1 Classic.
+
+\textbf{\Mba köpa in en dammsugare till en kostnad av maximalt 1500kr vilken belastar dispositionsfonden, samt att lägga beslutet på beslutsuppföljningen till styrelsemöte 21 med Fredrik Peterson som ansvarig.}
+
+\p{12}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2016-09-29 12:10 i E:1426.
+
+\p{13}{Beslutsuppföljning}{\bes}
+Uppföljningen av \emph{Inköp av stekbord} senarelades två veckor.
+
+Inga andra beslut följdes upp.
+
+\p{14}{Övrigt}{\dis}
+Dalia frågade om paintballen kan betalas genom Sektionen, vilket Anders sa var lätt att ordna.
+
+Fredrk påminde om att rösta på vilken städdag vi ska välja.
+
+\p{15}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 12:30.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
