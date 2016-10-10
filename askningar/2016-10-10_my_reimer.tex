@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2016-10-10} %YYYY-MM-DD
+\def\doctitle{Äskning av pengar för backad examensbankett}
+
+\def\docauthor{My Reimer}
+\def\docauthorrole{F.d. Lastgammal} %om post/roll inte finns, kommentera bort raden
+\def\greeting{I en gammal E:ares tjänst} %önskas ingen hälsning vid signatur, kommentera bort raden
+
+\usepackage{./e-askning}
+\usepackage{../e-sek}
+
+\begin{document}
+    \heading{\doctitle}
+
+    \subsection{Bakgrund}
+    2016-05-21 anordnade jag en examensbankett för de E- och BME-studenter som kände sig klara (eller nära nog) med sina studier. Det var en lyckad och uppskattad sittning jag hoppas går i arv till nästkommande år. Tyvärr blev det en miss i kommunikationen och de som stod för cateringen av kalaset, Gastronomiföreningen Allium, gick över budget. Detta gör att jag nu personligen behöver betala överslaget från biljettförsäljningen. Då jag tycker detta event främjade både gamla aktiva och mindre aktiva studenter, hoppas jag E-sektionen som organisation kan stå bakom ett sådant event, både nu som i framtiden.
+
+    \subsection{Förslag}
+    Då E-sektionen som organisation har en marginellt bättre budget än en fattigt student som mig, är min önskan att ni, genom min äskning, står för den skillnaden som uppstod vid budgetöversteget, taget av Allium utan min vetskap. Detta gärna inom en snar framtid.
+
+    Därför yrkar jag på
+    \begin{attsatser}
+        \att E-sektionen står för budgetöverskottet på 1545kr vilket belastar dispositionsfonden.
+        \att utbetalningen sker direkt till Gastronomiföreningen Allium.
+    \end{attsatser}
+
+    \begin{signatures}{1}
+        \ifdef{\greeting}{\emph{\greeting}}{}
+        \signature{\docauthor}{\ifdef{\docauthorrole}{\docauthorrole}{}}
+    \end{signatures}
+\end{document}
