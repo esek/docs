@@ -4,3 +4,10 @@
 \date\\
 \docauthor
 }
+
+\newcommand\askningsign{
+    \begin{signatures}{1}
+        \ifdef{\greeting}{\emph{\greeting}}{}
+        \signature{\docauthor}{\ifdef{\docauthorrole}{\docauthorrole}{}}
+    \end{signatures}
+}
