@@ -22,6 +22,17 @@
 \usepackage{pdfpages}
 \usepackage[compact]{titlesec}
 
+%fix for bug in titlesec
+\@ifpackagelater{titlesec}{2016/03/21}{}{
+	\@ifpackagelater{titlesec}{2016/03/15}{%
+		\usepackage{etoolbox}%
+		\makeatletter
+		\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}%
+		\patchcmd{\ttlh@hang}{\noindent}{}{}{}%
+		\makeatother
+	}{}%
+}
+
 \usepackage{siunitx}
 \sisetup{detect-weight=true, detect-family=true}
 
