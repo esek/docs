@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Fredrik Peterson}
+\def\sekr{Erik Månsson}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HT/16} %ex S02/16, E01/15, VT/13
+\def\date{2016-11-22} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:B}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Beslutsuppföljning}{}
+
+    \pli{Utskottsrapporter}{}
+    \pli{Uppföljning av verksamhetsplan}{}
+    \pli{Ekonomisk rapport}{}
+    \pli{Resultatrapport från första halven av verksamhetsåret}{}
+
+    \pli{Uttag ur sektionens fonder sedan förra terminsmötet}{}
+
+    \pli{Behandling av motioner}{}
+        \begin{paralist}
+            \pli{Styrelseresa till Bahamas}{}
+        \end{paralist}
+    \pli{Behandling av propositioner}{}
+        \begin{paralist}
+            \pli{Borttagandet av Jämlikhetspolicyn}{}
+            \pli{Revidering av stadgar och reglemente angående SRE}{}
+            \pli{Inköp av ny huvudswitch}{}
+        \end{paralist}
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+\end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\begin{supersection}{Beslutsuppföljningar}{}
+    \subsection{Överblick}
+    \begin{busek}
+        \beslutsek{VT/16}{Inköp av backuplösning till Sektionens servrar}{Daniel Johansson\newline Andreas Sirenius}{}{HT/16}
+        \beslutsek{HT/15}{Upprustning av E-husets yttre fasadskylt}{Fredrik Peterson}{}{HT/16}
+    \end{busek}
+    \newpage
+
+    \subfile{../besuppf/backupserver}
+    \subfile{../besuppf/fasadskylt}
+\end{supersection}
+
+\subfile{../_other/uttag}
+\newpage
+
+\begin{utskottsrapporter}
+    \subfile{../utskottsrapporter/cm}
+    \subfile{../utskottsrapporter/fvu}
+    \subfile{../utskottsrapporter/infu}
+    \subfile{../utskottsrapporter/km}
+    \subfile{../utskottsrapporter/noju}
+    \subfile{../utskottsrapporter/nollu}
+    \subfile{../utskottsrapporter/sre}
+    \subfile{../utskottsrapporter/styrelsen}
+\end{utskottsrapporter}
+
+\begin{motioner}
+    \subfile{../motioner/bahamas}
+    \subfile{../motionssvar/bahamas}
+\end{motioner}
+
+\begin{propositioner}
+    \subfile{../propositioner/ta_bort_jaml_policy}
+    \subfile{../propositioner/kompletterande_sre}
+    \subfile{../propositioner/switch}
+\end{propositioner}
+
+\end{document}
