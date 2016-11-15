@@ -44,23 +44,38 @@
     \pli{Föregående sektionsmötesprotokoll}{}
     \pli{Meddelanden}{}
     \pli{Beslutsuppföljning}{}
-
     \pli{Utskottsrapporter}{}
     \pli{Uppföljning av verksamhetsplan}{}
     \pli{Ekonomisk rapport}{}
-    \pli{Resultatrapport från första halven av verksamhetsåret}{}
+    \pli{Uttag ur Sektionens fonder sedan förra terminsmötet}{}
 
-    \pli{Uttag ur sektionens fonder sedan förra terminsmötet}{}
+    \pli{Resultatrapport från första halvan av verksamhetsåret}{}
 
     \pli{Behandling av motioner}{}
         \begin{paralist}
             \pli{Styrelseresa till Bahamas}{}
+            \pli{Införandet av obligatorisk försäljning av salami för sektionens medlemmar}{}
+            \pli{Låt Nolleqasquen ha sitt rätta namn}{}
+            \pli{Låt Mongomästaren ha sitt rätta namn}{}
+            \pli{Diskhomästare}{}
+            \pli{Fanbärare behöver längre påle}{}
         \end{paralist}
     \pli{Behandling av propositioner}{}
         \begin{paralist}
+            \pli{Budgetförslag för 2017}{}
+            \pli{Verksamhetsplansförslag för 2017}{}
             \pli{Borttagandet av Jämlikhetspolicyn}{}
-            \pli{Revidering av stadgar och reglemente angående SRE}{}
+            \pli{Införandet av arbetskläder för utlåning till funktionärer}{}
+            \pli{Uppdatering av alkoholpolicyn}{}
+            \pli{Uppdatering av medaljpolicyn}{}
+            \pli{Uppdatering av övervakningspolicyn}{}
+            \pli{Kompletterande revidering av reglemente gällande SRE}{}
+            \pli{Uppdatering av utskottsbeskrivningar}{}
+            \pli{Ändring av antalet funktionärer i FVU}{}
+            \pli{Ändring av postbeskrivningar och antal funktionärer i CM}{}
+            \pli{Tydliggörande av antalet funktionärer för en post}{}
             \pli{Inköp av ny huvudswitch}{}
+            \pli{Inköp av nya datorer}{}
         \end{paralist}
     \pli{Övrigt}{}
     \pli{TaFMA}{}
@@ -72,23 +87,37 @@
     \signature{\sekr}{Kontaktor}
 \end{signatures}
 
-\begin{supersection}{Beslutsuppföljningar}{}
-    \subsection{Överblick}
-    \begin{busek}
-        \beslutsek{VT/16}{Inköp av backuplösning till Sektionens servrar}{Daniel Johansson\newline Andreas Sirenius}{}{HT/16}
-        \beslutsek{HT/15}{Upprustning av E-husets yttre fasadskylt}{Fredrik Peterson}{}{HT/16}
-    \end{busek}
-    \newpage
-
-    \subfile{../besuppf/backupserver}
-    \subfile{../besuppf/fasadskylt}
-\end{supersection}
+\subfile{../_other/ekonomisk_rapport}
+\newpage
+\addcontentsline{toc}{subsection}{Balansrapport}
+\includepdf[pages=-]{../_res/balansrapport.pdf}
 
 \subfile{../_other/uttag}
 \newpage
 
+\begin{supersection}{Beslutsuppföljningar}{}
+    \subsection{Överblick}
+    \begin{busek}
+        \beslutsek{HT/15}{Upprustning av E-husets yttre fasadskylt}{Fredrik Peterson}{}{HT/16}
+        \beslutsek{VT/16}{Inköp av backuplösning till Sektionens servrar}{Daniel Johansson\newline Andreas Sirenius}{}{HT/16}
+        \beslutsek{VT/16}{Inköp av ny spisfläkt till Edekvataköket}{Styrelsen 2016}{}{HT/16}
+        \beslutsek{VT/16}{Renovering och ombyggnad av HK och BD}{Styrelsen 2016}{}{HT/16}
+        \beslutsek{VT/16}{Uppfräschning av gamla arkivet}{Styrelsen 2016}{}{HT/16}
+        \beslutsek{VT/16}{Uppfräschning av Diplomat}{Styrelsen 2016}{}{HT/16}
+    \end{busek}
+    \newpage
+
+    \subfile{../besuppf/fasadskylt}
+    \subfile{../besuppf/backupserver}
+    \subfile{../besuppf/hkbd}
+    \subfile{../besuppf/diplomat}
+    \subfile{../besuppf/arkivet}
+\end{supersection}
+
 \begin{utskottsrapporter}
     \subfile{../utskottsrapporter/cm}
+    \subfile{../utskottsrapporter/e6}
+    \subfile{../utskottsrapporter/enu}
     \subfile{../utskottsrapporter/fvu}
     \subfile{../utskottsrapporter/infu}
     \subfile{../utskottsrapporter/km}
@@ -96,17 +125,73 @@
     \subfile{../utskottsrapporter/nollu}
     \subfile{../utskottsrapporter/sre}
     \subfile{../utskottsrapporter/styrelsen}
+    \subfile{../utskottsrapporter/vb}
 \end{utskottsrapporter}
+
+\begin{supersection}{Verksamhetsplaner}{}
+    \subfile{../verksplaner/2016}
+\end{supersection}
+
+\begin{supersection}{Uppföljningar av verksamhetsplaner}{}
+    \subfile{../verksplanuppfar/2016-vt}
+    \subfile{../verksplanuppfar/2016-ht}
+\end{supersection}
 
 \begin{motioner}
     \subfile{../motioner/bahamas}
     \subfile{../motionssvar/bahamas}
+    \subfile{../motioner/salami}
+    \subfile{../motionssvar/salami}
+    \subfile{../motioner/qasque}
+    \subfile{../motionssvar/qasque}
+    \subfile{../motioner/mongo}
+    \subfile{../motionssvar/mongo}
+    \subfile{../motioner/diskho}
+    \subfile{../motionssvar/diskho}
+    \subfile{../motioner/fanan}
+    \subfile{../motionssvar/fanan}
 \end{motioner}
 
 \begin{propositioner}
+    \subfile{../propositioner/_budget}
+    \subfile{../propositioner/_verkplan}
     \subfile{../propositioner/ta_bort_jaml_policy}
+    \subfile{../propositioner/klader}
+    \subfile{../propositioner/alkohol}
+    \subfile{../propositioner/medalj}
+    \subfile{../propositioner/overvakning}
     \subfile{../propositioner/kompletterande_sre}
+    \subfile{../propositioner/beskr}
+    \subfile{../propositioner/antal_fvu}
+    \subfile{../propositioner/antal_cm}
+    \subfile{../propositioner/antal}
     \subfile{../propositioner/switch}
+    \subfile{../propositioner/datorer}
 \end{propositioner}
+
+\begin{supersection}{Halvårsbokslut 2016}{}
+    \includepdf[pages=-]{../_res/bokslut/arkivet.pdf}
+    \includepdf[pages=-]{../_res/bokslut/armu01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/cm01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/cm02.pdf}
+    \includepdf[pages=-]{../_res/bokslut/diplomat.pdf}
+    \includepdf[pages=-]{../_res/bokslut/fvu01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/fvu02.pdf}
+    \includepdf[pages=-]{../_res/bokslut/hk.pdf}
+    \includepdf[pages=-]{../_res/bokslut/infu01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/km01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/noju01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/noju02.pdf}
+    \includepdf[pages=-]{../_res/bokslut/noju03.pdf}
+    \includepdf[pages=-]{../_res/bokslut/phos01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sek01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sek02.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sek04.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sek05.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sektionen.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sex01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sre01.pdf}
+    \includepdf[pages=-]{../_res/bokslut/sty01.pdf}
+\end{supersection}
 
 \end{document}
