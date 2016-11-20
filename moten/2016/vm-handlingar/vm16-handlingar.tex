@@ -1,0 +1,368 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Fredrik Peterson}
+\def\sekr{Erik Månsson}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Valmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{VM/16} %ex S02/16, E01/15, VT/13
+\def\date{2016-11-29} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:A}
+
+\usepackage{../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Fullmäktigeröstning (\href{http://fmval.tlth.se}{\texttt{fmval.tlth.se}})}{}
+
+    \pli{Val}{}
+    \begin{paralist}
+        \pli{Val av revisorer}{}
+        \pli{Val av styrelsen}{}
+        \pli{Val av funktionärer}{}
+        \pli{Val av valberedning}{}
+        \pli{Val av representanter till TLTH:s utskott}{}
+    \end{paralist}
+
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+\end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\section{Nomineringar med valberedningens förslag}
+\emph{Om valberedningen har ett förslag är det markerat i fet stil och står högst upp.}
+
+\subsection{Revisorer}
+
+\begin{vallista}
+    \begin{post}{Revisorer}{2}
+        \vbfpers{Jesper Ek}{fys09jek}
+        \vakant
+    \end{post}
+    \begin{post}{Revisorsuppleant}{2}
+        \vakant
+        \vakant
+    \end{post}
+\end{vallista}
+
+\subsection{Styrelsen}
+
+\begin{vallista}
+    \begin{post}{Ordförande}{u}
+        \vbfpers{Erik Månsson}{elt14ema}
+    \end{post}
+    \begin{post}{Förvaltningschef}{u}
+        \vbfpers{Sophia Grimmeiss Grahm}{kem14sgr}
+    \end{post}
+    \begin{post}{Näringslivsutskottets Ordförande}{u}
+        \vbfpers{Josefine Sandström}{elt14jsa}
+    \end{post}
+    \begin{post}{Entertainer}{u}
+        \vbfpers{Albin Nyström Eklund}{bas15aek}
+        \pers{Daniel Bakic}{elt15dba}
+    \end{post}
+    \begin{post}{Kontaktor}{u}
+        \vbfpers{Johan Karlberg}{elt14jka}
+    \end{post}
+    \begin{post}{Krögare}{u}
+        \vbfpers{Markus Rahne}{mte12mra}
+        \pers{Anton Fristedt}{nat13afr}
+    \end{post}
+    \begin{post}{SRE-ordförande}{u}
+        \vbfpers{Pontus Landgren}{elt14pla}
+    \end{post}
+    \begin{post}{Sexmästare}{u}
+        \vbfpers{Linnea Sjödahl}{mte15lsj}
+        \pers{Anton Fristedt}{nat13afr}
+    \end{post}
+    \begin{post}{Cafémästare}{u}
+        \vbfpers{Daniel Bakic}{elt15dba}
+    \end{post}
+    \begin{post}{Øverphøs}{u}
+        \vbfpers{Niklas Gustafson}{elt15ngu}
+        \pers{Henrik Stålbom}{he0275st-s}
+    \end{post}
+\end{vallista}
+
+\newpage
+
+\subsection{Funktionärer}
+\subsubsection{Nolleutskottet}
+\begin{vallista}
+    \begin{post}{Co-phøsare}{2-5}
+        %\pers{Johan Westerlund}{elt11jwe}
+        \pers{Sofia Rokkones}{mte15sro}
+        \pers{Madeleine Arkenius}{mte15mar}
+        \pers{Axel Sondh}{eko14as2}
+        \pers{Louise Wedberg}{mte15lwe}
+        \pers{Björn Johnsson}{sta15bjo}
+        \pers{Henrik Stålbom}{he0275st-s}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Cafémästeriet}
+\begin{vallista}
+    \begin{post}{Inköps- och lagerchef}{2-3}
+        \vbfpers{Elin Johansson}{el2220jo-s}
+        \vbfpers{Jessica Kågeman}{je1284ka-s}
+    \end{post}
+    \begin{post}{Vice Cafémästare}{1-2}
+        \vbfpers{Jonathan Jakobsson}{elt15jja}
+        \vbfpers{Odinn Dånsjö}{od4418da-s}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Sexmästeriet}
+\begin{vallista}
+    \begin{post}{Hovmästare}{1-2}
+        \pers{Sanna Nordberg}{bmp15sno}
+        \pers{Lykke Månsson}{ly0131ma-s}
+    \end{post}
+    \begin{post}{Köksmästare}{1-2}
+        \pers{Sanna Nordberg}{bmp15sno}
+        \pers{Anton Fristedt}{nat13afr}
+        \pers{Kevin Tan}{ke2344ta-s}
+        \pers{Henrik Stålbom}{he0275st-s}
+        \pers{Rasmus Sobel}{ra2561so-s}
+    \end{post}
+    \begin{post}{Preferensmästare}{1}
+        \pers{Jessica Kågeman}{je1284ka-s}
+        \pers{Henrik Stålbom}{he0275st-s}
+    \end{post}
+    \begin{post}{Sångförman}{1-2}
+        \pers{Fredrik Axelsson}{mte15fax}
+        \pers{Andreas Bengtsson}{mte15abe}
+    \end{post}
+    \begin{post}{Vice Sexmästare}{1-2}
+        \vbfpers{Lukas Mattsson}{lu7511ma-s}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Näringslivsutskottet}
+\begin{vallista}
+    \begin{post}{Vice ENU-ordförande}{1}
+        \pers{Rebecca Ritter}{re4316ri-s}
+    \end{post}
+\end{vallista}
+
+\newpage
+
+\subsubsection{Förvaltningsutskottet}
+\begin{vallista}
+    \begin{post}{Arkivarie}{1-3}
+        \pers{Fredrik Hammar}{mte13fha}
+        \pers{Henrik Fryklund}{kem12hfr}
+        \pers{Johan Persson}{elt13jpe}
+        \pers{Johannes Koch}{elt13jko}
+        \pers{Elin Branzell}{mte14ebr}
+    \end{post}
+    \begin{post}{Ekiperingsexpert}{1-2}
+        \pers{Henrik Stålbom}{he0275st-s}
+    \end{post}
+    \begin{post}{Hustomte}{1-3}
+        \pers{David Uhler Brand}{elt14dbr}
+        \pers{Niklas Karlsson}{tfr13nk1}
+        \pers{Malin Lindström}{mte14mli}
+        \pers{Ester Randahl}{mte14era}
+        \pers{Amanda Wallin}{mat12awa}
+        \pers{Filip Kronström}{elt15fkr}
+    \end{post}
+    \begin{post}{Skattmästare}{1}
+        \vbfpers{Olle Osvald}{mte14oos}
+    \end{post}
+    \begin{post}{Vice Förvaltningschef}{1}
+        \pers{David Uhler Brand}{elt14dbr}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Informationsutskottet}
+\begin{vallista}
+    \begin{post}{Alumniansvarig BME}{1-2}
+        \pers{Linnea Hellholm}{mte14lhe}
+        \pers{Elin Branzell}{mte14ebr}
+    \end{post}
+    \begin{post}{Alumniansvarig E}{1-2}
+        \pers{Emilia Asplund}{elt14eas}
+        \pers{Amelie Bäck}{elt15aba}
+    \end{post}
+    \begin{post}{Chefredaktör}{1}
+        \pers{Olle Osvald}{mte14oos}
+    \end{post}
+    \begin{post}{Fotograf}{1-3}
+        \pers{Elisabeth Hjortswang}{muh10ech}
+        \pers{Molly Lilljebjörn Rusk}{mte14mru}
+        \pers{Eltayeb Bayomi}{elt15eba}
+    \end{post}
+    \begin{post}{Macapär}{1-2}
+        \pers{Axel Voss}{elt15avo}
+        \pers{Oscar Uggla}{elt15oug}
+    \end{post}
+    \begin{post}{Picasso}{1-2}
+        \pers{Stephanie Mirsky}{heb12mst}
+        \pers{Lisa Swanberg}{mte15lsw}
+    \end{post}
+    \begin{post}{Redaktör}{1-4}
+        \pers{Niklas Karlsson}{tfr13nk1}
+        \pers{Malin Lindström}{mte14mli}
+        \pers{Olle Osvald}{mte14oos}
+        \pers{Ester Randahl}{mte14era}
+        \pers{Emil Harvig}{mte14eha}
+    \end{post}
+    \begin{post}{Teknokrat}{2-3}
+        \pers{Johan Persson}{elt13jpe}
+        \pers{Anders Nilsson}{elt13ani}
+        \pers{David Uhler Brand}{elt14dbr}
+        \pers{Henrik Stålbom}{he0275st-s}
+    \end{post}
+    \begin{post}{Vice Kontaktor}{1}
+        \pers{Magnus Lundh}{elt15mlu}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Källarmästeriet}
+\begin{vallista}
+    \begin{post}{Cøl}{1-2}
+        \vbfpers{Emil Nilén}{har13en2}
+        \vbfpers{Carl Sjögren}{psy11cs1}
+    \end{post}
+    \begin{post}{Vice Krögare}{1-2}
+        \vbfpers{Fanny Månefjord}{fa6650ma-s}
+        \vbfpers{Linnea Wenäll}{li5538we-s}
+        \pers{Anton Fristedt}{nat13afr}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Nöjesutskottet}
+\begin{vallista}
+    \begin{post}{Fritidsledare}{1-4}
+        \pers{Malin Lindström}{mte14mli}
+        \pers{Ester Randahl}{mte14era}
+        \pers{Amanda Wallin}{mat12awa}
+        \pers{Malcolm Berghall}{ma7440be-s}
+        \pers{Gustav Svensson}{gu1346sv-s}
+        \pers{Richard Haraldsson}{ri3535ha-s}
+    \end{post}
+    \begin{post}{Idrottsförman}{1-2}
+        \pers{Peter Andersson}{pe4366an-s}
+        \pers{Gustav Svensson}{gu1346sv-s}
+        \pers{Filip Winzell}{fi5666wi-s}
+        \pers{Anton Jigsved}{an8224ji-s}
+    \end{post}
+    \begin{post}{Speleman}{1-2}
+        \pers{Tom Johansson}{elt13tjo}
+        \pers{Patrik Laurell}{elt12pl1}
+        \pers{Jonathan Jakobsson}{elt15jja}
+        \pers{Anes Mehmedagic}{elt15ame}
+    \end{post}
+    \begin{post}{Stridsrop}{1-2}
+        \pers{Linnea Sjödahl}{mte15lsj}
+    \end{post}
+    \begin{post}{Umph-meister}{1-2}
+        \vakant
+    \end{post}
+    \begin{post}{Vice Entertainer}{1-2}
+        \pers{Max Mauritsson}{ma8587ma-s}
+        \pers{Malcolm Berghall}{ma7440be-s}
+        \pers{Gustav Svensson}{gu1346sv-s}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Studierådet}
+\begin{vallista}
+    \begin{post}{Likabehandlingsombud}{1-2}
+        \vbfpers{Fanny Månefjord}{fa6650ma-s}
+        \vbfpers{Lina Samnegård}{li6783sa-s}
+    \end{post}
+    \begin{post}{Skyddsombud}{1}
+        \pers{Fredrik Hammar}{mte13fha}
+    \end{post}
+    \begin{post}{Specialiseringsansvarig}{1}
+        \vakant
+    \end{post}
+    \begin{post}{Vice SRE-Ordförande}{1}
+        \pers{Edvard Carlsson}{ed8030ca-s}
+    \end{post}
+    \begin{post}{Världsmästare}{1-2}
+        \pers{Ebba Ahlberg}{mte14eah}
+        \pers{Jonatan Kronander}{elt15jkr}
+        \pers{Linnea Wenäll}{li5538we-s}
+    \end{post}
+\end{vallista}
+
+\subsubsection{Övriga}
+\begin{vallista}
+    \begin{post}{FpT-ansvarig}{1-2}
+        \pers{Johanna Danielsson}{mte14jda}
+        \pers{Cornelia Sjöberg}{mte14csj}
+    \end{post}
+    \begin{post}{Sigillbevarare}{1}
+        \pers{Henrik Fryklund}{kem12hfr}
+        \pers{Henrik Ramström}{he1374ra-s}
+    \end{post}
+    \begin{post}{Talman}{1}
+        \vbfpers{Fredrik Petersson}{elt14fpe}
+    \end{post}
+\end{vallista}
+
+\subsection{Valberedning}
+\begin{vallista}
+    \begin{post}{Valberedningens Ordförande}{u}
+        \vakant
+    \end{post}
+    \begin{post}{Valberedningens sekreterare}{1}
+        \vakant
+    \end{post}
+    \begin{post}{Valberedningsledamot}{2}
+        \pers{Malin Lindström}{mte14mli}
+        \pers{Henrik Ramström}{he1374ra-s}
+    \end{post}
+\end{vallista}
+
+\subsection{Representanter till TLTH:s utskott}
+\begin{vallista}
+    \begin{post}{Representant till TLTH:s valnämnd}{1}
+        \vakant
+    \end{post}
+\end{vallista}
+
+\begin{signatures}{1}
+\emph{I valberedningens tjänst}
+\signature{Elin Magnusson}{Valberedningens ordförande}
+\end{signatures}
+
+\end{document}

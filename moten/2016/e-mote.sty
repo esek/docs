@@ -157,28 +157,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newenvironment{valforslagslista}{
-    \small
-    \begin{description}[itemsep=3mm,leftmargin=4cm,style=nextline]
-}{
-    \end{description}
-    \normalsize
-}
-
-\newenvironment{utskott}[1]{
-    \item[#1]
-    \begin{description}[leftmargin=5cm,labelsep=0cm,style=nextline,font=\normalfont]
+\newenvironment{vallista}{
+    \begin{description}[leftmargin=65mm,labelsep=0cm,style=nextline,font=\normalfont,itemsep=1mm]
 }{
     \end{description}
 }
 
 \newenvironment{post}[2]{
     \item[#1 (#2)]
-    \begin{itemize}[label={},leftmargin=*,labelsep=0cm]
+    \begin{itemize}[label={},leftmargin=*,labelsep=0cm,itemsep=-2mm]
 }{
     \end{itemize}
 }
 
-\newcommand{\person}[2]{ %namn, id
-    \item #1 (#2)
+\newcommand{\pers}[2]{ %namn, id
+    \item #1 \hspace*{\fill} #2
 }
+
+\newcommand{\vbfpers}[2]{\pers{\textbf{#1}}{#2}}
+
+\newcommand{\vakant}{\item (vakant)}
