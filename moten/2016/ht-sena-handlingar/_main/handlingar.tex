@@ -1,0 +1,32 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Fredrik Peterson}
+\def\sekr{Erik Månsson}
+
+\def\doctype{Sena handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HT/16} %ex S02/16, E01/15, VT/13
+\def\date{2016-11-22} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:B}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\begin{supersection}{Motioner}{}
+    \subfile{../motioner/cophos}
+\end{supersection}
+
+\end{document}
