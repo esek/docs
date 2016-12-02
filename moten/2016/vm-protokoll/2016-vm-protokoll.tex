@@ -1,0 +1,513 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Johan Westerlund}
+\def\ms{Erik Månsson}
+\def\ji{David Uhler Brand}
+\def\jii{Fredrik Nilsson}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Valmötet} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{VM/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-11-29} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{Frånvarande under \S11B}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{\nati{11C}}
+\nv{Øverphøs}{Molly Lilljebjörn Rusk}{BME14}{Frånvarande under \S11C}
+\nv{SRE-ordförande}{Johan Persson}{E13}{Frånvarande under \S11B, \S11C-\S13}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{Frånvarande under \S11B, \S11C-\S13}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{\nati{11B}}
+\nv{Krögare}{Malin Lindström}{BME14}{}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Talman}{Johan Westerlund}{E11}{}
+\end{narvarolista}
+
+\subsection*{Medlemmar}
+\begin{narvarolista}
+\nv{}{Björn Johansson}{E15}{Frånvarande under \S11C}
+\nv{}{Viktor Drakfelt}{E15}{}
+\nv{}{Axel Sondh}{E15}{Frånvarande under \S11C}
+\nv{}{David Uhler Brand}{E14}{}
+\nv{}{Daniel Johansson}{E14}{}
+\nv{}{Elin Andersson}{BME15}{\nati{11C}}
+\nv{}{Madeleine Arkenius}{BME15}{Frånvarande under \S11C}
+\nv{}{Henrik Ramström}{E16}{}
+\nv{}{Johanna Danielsson}{BME14}{}
+\nv{}{Sanna Nordberg}{BME16}{\nati{11C}}
+\nv{}{Albin Nyström Eklund}{BME16}{\nati{11C}}
+\nv{}{Mia Cicovic}{BME16}{Frånvarande under \S11B, \S11C-\S13}
+\nv{}{Lykke Månsson}{BME16}{\nati{11C}}
+\nv{}{Filip Johansson}{E16}{\nati{11C}}
+\nv{}{Martin Ollén}{BME16}{\nati{11C}}
+\nv{}{Peter Andersson}{E16}{\nati{11B}}
+\nv{}{Emil Nilén}{BME14}{}
+\nv{}{Carl Sjögren}{BME14}{\nati{11C}}
+\nv{}{Amanda Lindell}{BME13}{\nafr{11C}}
+\nv{}{Jesper Ek}{E14}{\nati{11B}}
+\nv{}{Isak Marklund}{E16}{\nati{11C}}
+\nv{}{Filip Kronström}{E15}{}
+\nv{}{Martin Alumets}{E15}{\nati{11B}}
+\end{narvarolista}
+\begin{narvarolista}
+\nv{}{Jessica Kågeman}{BME16}{\nati{11C}}
+\nv{}{Anton Fristedt}{E16}{}
+\nv{}{Christian Benson}{E14}{Frånvarande under \S11C}
+\nv{}{Magnus Lundh}{E15}{}
+\nv{}{Fabian Frankel}{E16}{\nati{11B}}
+\nv{}{Philip Johansson}{E16}{\nati{11B}}
+\nv{}{Isabella Hansen}{E16}{\nati{11B}}
+\nv{}{Jonathan Jakobson}{E15}{}
+\nv{}{Johan Ekman}{E15}{\nafr{7}}
+\nv{}{Edvard Carlsson}{E16}{\nati{11C}}
+\nv{}{Rickard Haraldsson}{E16}{\nati{11B}}
+\nv{}{Johan Karlberg}{E14}{}
+\nv{}{Emilia Asplund}{E14}{\nati{11C}}
+\nv{}{Elisabeth Pongratz}{E14}{\nati{11B}}
+\nv{}{Andreas Bengtsson}{BME15}{\nati{11C}}
+\nv{}{Henrik Fryklund}{E13}{\nafr{11C}}
+\nv{}{Sophia Grimmeiss Grahm}{BME14}{}
+\nv{}{Hoang Ngo}{BME15}{\nati{11C}}
+\nv{}{Emil Harvig}{BME14}{Frånvarande under \S1-\S7, \S11B}
+\nv{}{Niklas Karlsson}{E14}{\nafr{4}}
+\nv{}{Kalle Andersson}{BME15}{\naun{7}{11C}}
+\nv{}{Josefin Andersson}{BME15}{\naun{7}{11C}}
+\nv{}{Cornelia Sjöberg}{BME14}{\naun{7}{11C}}
+\nv{}{Linnea Hellholm}{BME14}{Frånvarande under \S1-\S7, \S11C}
+\nv{}{Oscar Uggla}{E15}{\nafr{11B}}
+\nv{}{Sepehr Tayari}{E15}{\nafr{11B}}
+\nv{}{Johan Sievert Lindeskog}{E15}{}
+\nv{}{Jonas Thurborg}{E15}{}
+\nv{}{Fanny Månefjord}{BME16}{}
+\nv{}{Lina Samnegård}{BME16}{}
+\nv{}{Niklas Kjellman}{E14}{\nati{11B}}
+\nv{}{Nicklas Norborg Persson}{E14}{\nati{11C}}
+\nv{}{Amelie Bäck}{E15}{\nati{11C}}
+\nv{}{Linnea Sjödahl}{BME15}{}
+\nv{}{Sofia Rokkones}{BME15}{Frånvarande under \S11C}
+\nv{}{Louise Wedberg}{BME15}{Frånvarande under \S11C}
+\nv{}{Niklas Gustafson}{E15}{Frånvarande under \S11C}
+\nv{}{Elin Magnusson}{BME12}{}
+\nv{}{Elin Branzell}{BME14}{Frånvarande under \S11C}
+\nv{}{Olle Oswald}{BME14}{}
+\nv{}{Johan Persson}{E13}{}
+\nv{}{Rebecca Ritter}{E14}{\nati{11B}}
+\nv{}{Matilda Dahlström}{BME16}{}
+\nv{}{Rasmus Sobel}{BME16}{}
+\nv{}{Max Mauritsson}{BME16}{}
+\nv{}{Anton Jigsved}{BME16}{}
+\end{narvarolista}
+\begin{narvarolista}
+\nv{}{Filip Winzell}{BME16}{}
+\nv{}{Lukas Mattsson}{BME16}{}
+\nv{}{Malcolm Berghall}{E16}{}
+\nv{}{Lisa Swanberg}{BME15}{}
+\nv{}{Olivia Samuelsson}{BME15}{}
+\nv{}{Ester Randahl}{BME14}{}
+\nv{}{Amanda Wallin}{BME14}{\nati{11B}}
+\nv{}{Sanna Evertsson}{BME13}{}
+\nv{}{Elisabeth Klint}{BME14}{}
+\nv{}{Jonatan Kronander}{E15}{}
+\nv{}{Linnea Wenäll}{BME16}{}
+\nv{}{Elin Johansson}{BME16}{\nati{11C}}
+\nv{}{Markus Rahne}{BME14}{}
+\nv{}{Viktor Persson}{E14}{Frånvarande under \S11C}
+\nv{}{Jesper Laurell}{E16}{\nati{11B}}
+\nv{}{Nils Fredrik Nilsson}{E16}{}
+\nv{}{My Reimer}{E11}{\nati{11C}}
+\nv{}{Jennie Karlsson}{E16}{\nati{11B}}
+\nv{}{Anes Mehmedagic}{E15}{}
+\nv{}{Axel Voss}{E15}{}
+\nv{}{Henrik Stålbom}{E16}{}
+\nv{}{Simon Lindvall}{E16}{\nati{11B}}
+\nv{}{Oskar Berg}{E16}{\naun{7}{11B}}
+\nv{}{Pontus Landgren}{E14}{}
+\nv{}{Dennis Dalenius}{E14}{\nati{11C}}
+\nv{}{Paulina Sager}{BME15}{\nati{11C}}
+\nv{}{Christoffer Sörensson}{E15}{\nati{11B}}
+\nv{}{Adam Koch}{E15}{\nati{11B}}
+\nv{}{Fredrik Axelsson}{BME15}{\nafr{11B}}
+\nv{}{Jennifer Hagman}{BME13}{\naun{11B}{11C}}
+\nv{}{Elisabeth Hjortswang}{BME14}{\nati{11C}}
+\end{narvarolista}
+
+\newpage
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{TaFMÖ}{}
+Talman {\mo} förklarade mötet öppnat 17:26.
+
+\emph{Vid mötets början var 97 personer närvarande.}
+
+\p{2}{Val av mötesordförande}{}
+Talman {\mo} valdes.
+
+\p{3}{Val av mötessekreterare}{}
+Kontaktor {\ms} valdes.
+
+\p{4}{Godkännande av tid och sätt}{}
+Johan Westerlund \ypa att alla styrelsekandidater får 5 minuter presentation, 10 minuter utfrågning och 10 minuter diskussion och att övriga funktionärsposter får 2 minuter presentation, 5 minuter utfrågning och 10 min diskussion.
+
+\Mba bifalla yrkandet.
+
+\Mba godkänna tid och sätt.
+
+\p{5}{Val av två justeringspersoner}{}
+\valavj
+
+\p{6}{Adjungeringar}{}
+\emph{\ingaadj}
+
+\p{7}{Godkännande av dagordningen}{}
+Rasmus Sobel \ypa byta plats på val av Köksmästare och val av Vice Sexmästare i dagordningen.
+
+Niklas Gustafson \ypa välja Øverphøs och Co-phøsare i grupp.
+
+\Mba bifalla Rasmus yrkande.
+
+Martin Gemborn Nilsson begärde sluten votering för Niklas yrkande.
+
+\Mba avslå Niklas yrkande.
+
+\Mba godkänna föredragningslistan.
+
+\p{8}{Föregående sektionsmötesprotokoll}{}
+\Mba lägga till protokollet för HT/16 till handlingarna.
+
+\p{9}{Meddelanden}{}
+Dalia Kharallah sa att om två veckor är det måndagsmys i Edekvata där NöjU kommer ha bl.a. filmmys och bjuda på en massa godsaker.
+
+Malin Lindström sa att imorgon kommer KM sälja biljetter till julgillet.
+
+Martin Gemborn Nilsson sa att den 16:e december är det GEMBORN-sittning.
+
+Johannes Koch sa att E och D har ett samarbete med Bosch och uppmanade alla att scanna QR-koderna de satt upp på anslagstavlorna och lösa att utmaningarna. Löser man alla är man välkommen till iDét den 13:e december.
+
+Viktor Persson sa att NollU behöver hjälp med att utvärderna nollningen för att göra överlämningen till nästa Phøs så bra som möjligt.
+
+Stephanie Mirsky uppmanade alla att gilla LED-cafés nya facebooksida och att dricka glögg i caféet på fredagar.
+
+En representant från NollU sa att det är Sporta med E varje fredag.
+
+\p{10}{Fullmäktigeröstning (\href{http://fmval.tlth.se}{\texttt{fmval.tlth.se}})}{}
+\emph{Mötet tog några minuter till att rösta i TLTH:s fullmäktigeval.}
+
+\p{11}{Val}{}
+\begin{paralist}
+    \subp{A}{Val av revisorer}{}
+    \Mba välja följande personer till Revisorer 2017:
+    \begin{tightdashlist}
+        \item Jesper Ek (fys09jek)
+        \item Cornelia Kramer (elt12ckr)
+    \end{tightdashlist}
+
+    \Mba vakantsätta posten Revisorsuppleant.
+
+    \subp{B}{Val av styrelsen}{}
+    Ordförandekandidaten Erik Månsson vill helst klä ut sig till pingvin under nollningen och påstår sig gilla djurdräkter.
+
+    \Mba välja Erik Månsson (elt14ema), 950310-3153, till Ordförande 2017.
+
+    \Mba välja Sophia Grimmeiss Grahm (kem14sgr), 950506-7281, till Förvaltningschef 2017.
+
+    \Mba välja Josefine Sandström (elt14jsa) till Näringslivsutskottets Ordförande 2017.
+
+    \Mba välja Albin Nyström Eklund (bas15aek) till Entertaier 2017.
+
+    \Mba ajournera mötet i 15 minuter.
+
+    \emph{Mötet ajournerades 19:33 och återupptogs 19:55.}
+
+    \Mba välja Johan Karlberg (elt14jka) till Kontaktor 2017.
+
+    \Mba välja Markus Rahne (mte12mra) till Krögare 2017.
+
+    \Mba välja Pontus Landgren (elt14pla) till SRE-ordförande 2017.
+
+    \Mba välja Linnea Sjödahl (mte15lsj) till Sexmästare 2017.
+
+    \Mba välja Daniel Bakic (elt15dba) till Cafémästare 2017.
+
+    \Mba välja Niklas Gustafson (elt15ngu) till Øverphøs 2017.
+
+    Johan Westerlund \ypa ajournera mötet i 10 minuter.
+
+    \Mba bifalla yrkandet.
+
+    \emph{Mötet ajournerades 21:12 och återupptogs 21:25.}
+
+    \subp{C}{Val av funktionärer}{}
+
+    \Mba välja följande personer till Co-phøsare 2017:
+    \begin{tightdashlist}
+        \item Sofia Rokkones (mte15sro)
+        \item Madeleine Arkenius (mte15mar)
+        \item Axel Sondh (eko14as2)
+        \item Louise Wedberg (mte15lwe)
+        \item Björn Johnsson (sta15bjo)
+    \end{tightdashlist}
+
+    Johan Westerlund \ypa om en post inte har fler kandidater än maximalt antal platser för posten, så görs valet med acklamation.
+
+    \Mba bifalla yrkandet.
+
+    \Mba välja följande personer till Vice Cafémästare 2017:
+    \begin{tightdashlist}
+        \item Jonathan Jakobsson (elt15jja)
+        \item Odinn Dånsjö (od4418da-s)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Inköps- och lagerchef 2017:
+    \begin{tightdashlist}
+        \item Elin Johansson (el2220jo-s)
+        \item Jessica Kågeman (je1284ka-s)
+        \item Filip Johansson (fi2541jo-s)
+    \end{tightdashlist}
+
+    Elin Magnusson \ypa kandidater som inte är närvarande på sektionsmötet, med undantag för de som kan närvara via videolänk, och inte blivit nominerade av valberedningen inte kan väljas på mötet.
+
+    \Mba bifalla yrkandet.
+
+    \Mba välja följande personer till Köksmästare 2017:
+    \begin{tightdashlist}
+        \item Henrik Stålbom (he0275st-s)
+        \item Rasmus Sobel (ra2561so-s)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Hovmästare 2017:
+    \begin{tightdashlist}
+        \item Sanna Nordberg (bmp15sno)
+        \item Matilda Dahlström (ma2447da-s)
+    \end{tightdashlist}
+
+    Anders Nilsson \ypa inte läsa upp valberedningens motivering för Vice Sexmästare.
+
+    \Mba avslå yrkandet.
+
+    \Mba välja följande personer till Vice Sexmästare 2017:
+    \begin{tightdashlist}
+        \item Mia Cicovic (mi0454ci-s)
+        \item Henrik Ramström (he1374ra-s)
+    \end{tightdashlist}
+
+    \Mba välja Jessica Kågeman (je1284ka-s) till Preferensmästare 2017.
+
+    \Mba välja följande personer till Sångförmän 2017:
+    \begin{tightdashlist}
+        \item Fredrik Axelsson (mte15fax)
+        \item Andreas Bengtsson (mte15abe)
+    \end{tightdashlist}
+
+    Elin Branzell \ypa ajournera mötet i 15 minuter.
+
+    Pontus Landgren \ypa ajournera mötet i 10 minuter.
+
+    \Mba ajournera mötet i 10 minuter.
+
+    \emph{Mötet ajournerades 22:53 och återupptogs 23:03.}
+
+    \Mba välja Rebecca Ritter (re4316ri-s) till Vice ENU-ordförande 2017.
+
+    \Mba välja David Uhler Brand (elt14dbr) till Vice Förvaltningschef 2017.
+
+    \Mba välja följande personer till Arkivarier 2017:
+    \begin{tightdashlist}
+        \item Johan Persson (elt13jpe)
+        \item Johannes Koch (elt13jko)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Ekiperingsexperter 2017:
+    \begin{tightdashlist}
+        \item Henrik Stålbom (he0275st-s)
+        \item Henrik Fryklund (kem12hdr)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Hustomtar 2017:
+    \begin{tightdashlist}
+        \item Niklas Karlsson (tfr13nk1)
+        \item Malin Lindström (mte14mli)
+        \item Filip Kronström (elt15fkr)
+    \end{tightdashlist}
+
+    \Mba välja Olle Osvald (mte14oos) till Skattmästare 2017.
+
+    \Mba välja Anders Nilsson (elt13ani) till Husstyrelserepresentant 2017.
+
+    \Mba välja Magnus Lundh (elt15mlu) till Vice Kontaktor 2017.
+
+    \Mba välja följande personer till Alumniansvariga BME 2017:
+    \begin{tightdashlist}
+        \item Linnea Hellholm (mte14lhe)
+        \item Elin Branzell (mte14ebr)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Alumniansvariga E 2017:
+    \begin{tightdashlist}
+        \item Emilia Asplund (elt14eas)
+        \item Amelie Bäck (elt15aba)
+    \end{tightdashlist}
+
+    \Mba välja Emil Harvig (mte14eha) till Chefredaktör 2017.
+
+    \Mba välja följande personer till Fotografer 2017:
+    \begin{tightdashlist}
+        \item Elisabeth Hjortswang (muh10ech)
+        \item Molly Lilljebjörn Rusk (mte14mru)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Macapärer 2017:
+    \begin{tightdashlist}
+        \item Axel Voss (elt15avo)
+        \item Oscar Uggla (elt15oug)
+    \end{tightdashlist}
+
+    \Mba välja Lisa Swanberg (mte15lsw) till Picasso 2017.
+
+    \Mba välja följande personer till Redaktörer 2017:
+    \begin{tightdashlist}
+        \item Niklas Karlsson (tfr13nk1)
+        \item Olle Osvald (mte14oos)
+        \item Ester Randahl (mte14era)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Teknokrater 2017:
+    \begin{tightdashlist}
+        \item Anders Nilsson (elt13ani)
+        \item Henrik Stålbom (he0275st-s)
+    \end{tightdashlist}
+
+    \Mba välja Anton Fristedt (nat13afr) till Vice Krögare 2017.
+
+    \Mba välja följande personer till Cøl 2017:
+    \begin{tightdashlist}
+        \item Emil Nilén (har13en2)
+        \item Carl Sjögren (psy11cs1)
+    \end{tightdashlist}
+
+    Anders Nilsson \ypa ajournera mötet i 5 minuter.
+
+    \Mba bifalla yrkandet.
+
+    \emph{Mötet ajournerades 23:54 och återupptogs 23:59.}
+
+    \Mba välja följande personer till Vice Entertainer 2017:
+    \begin{tightdashlist}
+        \item Max Mauritsson (ma8587ma-s)
+        \item Malcolm Berghall (gu1346sv-s)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Fritidsledare 2017:
+    \begin{tightdashlist}
+        \item Malin Lindström (mte14mli)
+        \item Ester Randahl (mte14era)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Idrottsförmän 2017:
+    \begin{tightdashlist}
+        \item Filip Winzell (fi5666wi-s)
+        \item Anton Jigsved (an8224ji-s)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till Spelemän 2017:
+    \begin{tightdashlist}
+        \item Jonathan Jakobsson (elt15jja)
+        \item Anes Mehmedagic (elt15ame)
+    \end{tightdashlist}
+
+    \Mba vakantsätta posten Stridsrop 2017.
+
+    \Mba vakantsätta posten Umph-meister 2017.
+
+    \Mba välja Edvard Carlsson (ed8030ca-s) till Vice SRE-Ordförande 2017.
+
+    Rasmus Sobel \ypa ta valberedningens motivering med kandidaterna i rummet.
+
+    \Mba bifalla yrkandet.
+
+    \Mba välja följande personer till Likabehandlingsombud 2017:
+    \begin{tightdashlist}
+        \item Fanny Månefjord (fa6650ma-s)
+        \item Lina Samnegård (li6783sa-s)
+    \end{tightdashlist}
+
+    \Mba välja Fredrik Nilsson (elt15nni) till Skyddsombud 2017.
+
+    \Mba välja följande personer till Världsmästare 2017:
+    \begin{tightdashlist}
+        \item Jonatan Kronander (elt15jkr)
+        \item Linnea Wenäll (li5538we-s)
+    \end{tightdashlist}
+
+    \Mba välja följande personer till FpT-ansvariga 2017:
+    \begin{tightdashlist}
+        \item Johanna Danielsson (mte14jda)
+        \item Cornelia Sjöberg (mte14csj)
+    \end{tightdashlist}
+
+    \Mba välja Henrik Fryklund (kem12hfr) till Sigillbevarare 2017.
+
+    David Uhler Brand \ypa Fredrik ska få vara i rummet när valberedningen läser upp sin motivering.
+
+    \Mba bifalla yrkandet.
+
+    \Mba välja Fredrik Petersson (elt14fpe) till Talman 2017.
+
+    \subp{D}{Val av valberedning}{}
+
+    \Mba välja Christian Benson (mte14cbe) till Valberedningens Ordförande 2017.
+
+    \Mba välja Emil Nilén (har13en2) till Valberedningens sekreterare 2017.
+
+    \Mba välja följande personer till Valberedningsledamöter 2017:
+    \begin{tightdashlist}
+        \item Henrik Ramström (he1374ra-s)
+        \item Linnea Wenäll (li5538we-s)
+    \end{tightdashlist}
+
+    Rasmus Sobel \ypa ajournera mötet i 20 minuter.
+
+    \Mba avslå yrkandet.
+
+    \subp{E}{Val av representanter till TLTH:s utskott}{}
+
+    \Mba välja Emil Harvig (mte14eha) till Representant till TLTH:s valnämnd 2017.
+
+\end{paralist}
+
+\p{12}{Övrigt}{}
+Johan Westerlund tog farväl till Sektionen \texttt{<3}
+
+\p{13}{TaFMA}{}
+Talman {\mo} förklarade mötet avslutat 00:36.
+
+\emph{Vid mötets slut var 65 personer närvarande.}
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{4}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\signature{\jii}{Justerare}
+\end{signatures}
+\end{document}
