@@ -1,0 +1,248 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Erik Månsson}
+\def\ji{Johannes Koch}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S26/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-12-08} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{}
+\nv{Øverphøs}{Molly Lilljebjörn Rusk}{BME14}{}
+\nv{SRE-ordförande}{Johan Persson}{E13}{}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{}
+\nv{Krögare}{Malin Lindström}{BME14}{}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Kårordförande}{Linus Hammarlund}{}{\nafr{7}}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+\nv{Skattmästare}{Sophia Grimmeiss Grahm}{}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:10.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Tid och sätt}{\bes}
+{\tosg}
+
+\p{5}{Adjungeringar}{\bes}
+{\ingaadj}
+
+\p{6}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{7}{Föredragningslistan}{\bes}
+Föredragningslistan godkändes.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S25/16}
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\entl{Seif Sharif}{Diod}
+\fval{Jonatan Kronander}{Årskurs E-2 ansvarig}
+\fval{Johanna Wikström}{Inköps- och lagerchef 2017}
+
+\fval{Linnea Wenäll (BME16)}{Sexig 2017}
+\fval{Sofia Hildingsson (BME16)}{Sexig 2017}
+\fval{Anton Jigsved (BME16)}{Sexig 2017}
+\fval{Elin Andersson (BME15)}{Sexig 2017}
+\fval{Lykke Månsson (BME16)}{Sexig 2017}
+\fval{Rebecka Gerdtham (BME16)}{Sexig 2017}
+\fval{Kristina Gehrisch (BME16)}{Sexig 2017}
+\fval{Andreas Bennström (BME16)}{Sexig 2017}
+\fval{Paulina Sager (BME15)}{Sexig 2017}
+\fval{Elin Johansson (BME16)}{Sexig 2017}
+\fval{Tim Nilsson (E16)}{Sexig 2017}
+\fval{Nils Persson (E16)}{Sexig 2017}
+\fval{Lina Samnegård (BME16)}{Sexig 2017}
+\fval{Fanny Månefjord (BME16)}{Sexig 2017}
+\fval{Sofia Björnsson (BME16)}{Sexig 2017}
+\fval{Ivar Söderberg (E16)}{Sexig 2017}
+\fval{Truls Martinsson (E16)}{Sexig 2017}
+\fval{Martin Svensson (E16)}{Sexig 2017}
+\fval{Marcus Oknelid (E16)}{Sexig 2017}
+\fval{Isak Marklund (E16)}{Sexig 2017}
+\fval{Max Mauritsson (BME16)}{Sexig 2017}
+\fval{Peter Andersson (E16)}{Sexig 2017}
+\fval{Gustav Svensson (BME16)}{Sexig 2017}
+\fval{Elin Fogelberg (BME16)}{Sexig 2017}
+\fval{Hannes Nilsson (E16)}{Sexig 2017}
+\fval{Filip Winzell (BME16)}{Sexig 2017}
+
+\fval{Andreas Rydberg (E12)}{Näringslivskontakt 2017}
+\fval{Dennis Dalenius (E14)}{Näringslivskontakt 2017}
+\fval{Elisabeth Pongratz (E14)}{Näringslivskontakt 2017}
+\fval{Amanda Wallin (BME14)}{Näringslivskontakt 2017}
+\fval{Ester Randahl (BME14)}{Näringslivskontakt 2017}
+\fval{Mia Grahovic (E14)}{Näringslivskontakt 2017}
+\fval{Henrik Stålbom (E16)}{Näringslivskontakt 2017}
+\fval{Philip Johansson (E16)}{Näringslivskontakt 2017}
+
+\fval{Daniel Johansson (E14)}{Kodhackare 2017}
+\fval{Martin Gemborn Nilsson (E14)}{Kodhackare 2017}
+\fval{Oskar Berg (E16)}{Kodhackare 2017}
+\fval{Nicklas Norborg Persson (E14)}{Kodhackare 2017}
+\fval{Viktor Drakfelt (E15)}{Kodhackare 2017}
+\fval{Dennis Dalenius (E14)}{Kodhackare 2017}
+\fval{David Uhler Brand (E14)}{Kodhackare 2017}
+\fval{Johan Ekman (E15)}{Kodhackare 2017}
+\fval{Fredrik Nilsson (E16)}{Kodhackare 2017}
+\fval{Anders Nilsson (E13)}{Kodhackare 2017}
+\fval{Johannes Larsson (E16)}{Kodhackare 2017}
+\fval{Simon Palmhager (E16)}{Kodhackare 2017}
+\fval{Andreas Sirenius (E14)}{Kodhackare 2017}
+\fval{Alexander Lundqvist (E14)}{Kodhackare 2017}
+\fval{Fredrik Peterson (E14)}{Kodhackare 2017}
+\fval{Isak Öberg (E14)}{Kodhackare 2017}
+\fval{Hannes Byden (E15)}{Kodhackare 2017}
+\fval{Niklas Kjellman (E14)}{Kodhackare 2017}
+\fval{Lukas Forsberg (E15)}{Kodhackare 2017}
+
+\fval{Christoffer Sörenson (E15)}{Källarmästare 2017}
+\fval{Adam Koch (E15)}{Källarmästare 2017}
+\fval{Henrik Stålbom (E15)}{Källarmästare 2017}
+\fval{Jonatan Kronander (E15)}{Källarmästare 2017}
+\fval{Per Josefsson (E14)}{Källarmästare 2017}
+\fval{Rasmus Sobel (BME16)}{Källarmästare 2017}
+\fval{Anes Mehmedagic (E15)}{Källarmästare 2017}
+\fval{Jonathan Jakobsson (E15)}{Källarmästare 2017}
+\fval{Thomas Syski (BME13)}{Källarmästare 2017}
+\fval{Hoang Ngo (BME15)}{Källarmästare 2017}
+\fval{Saga Juniwik (E16)}{Källarmästare 2017}
+\fval{Martin Alumets (E15)}{Källarmästare 2017}
+\fval{Markus Berthilsson (E16)}{Källarmästare 2017}
+\fval{Filip Winzell (BME16)}{Källarmästare 2017}
+\fval{Lisa Swanberg (BME15)}{Källarmästare 2017}
+\fval{Olivia Samuelsson (BME15)}{Källarmästare 2017}
+\fval{Fredrik Nilsson (E16)}{Källarmästare 2017}
+\fval{Axel Falk (E15)}{Källarmästare 2017}
+\fval{Malin Heyden (E16)}{Källarmästare 2017}
+\fval{Richard Haraldsson (E16)}{Källarmästare 2017}
+\fval{Edvard Carlsson (E16)}{Källarmästare 2017}
+\fval{Fabian Frankel (E16)}{Källarmästare 2017}
+\fval{Emil Nilén (BME14)}{Källarmästare 2017}
+\fval{Isak Marklund (E16)}{Källarmästare 2017}
+\fval{Sepehr Tayari (E15)}{Källarmästare 2017}
+\fval{Filip Kronström (E15)}{Källarmästare 2017}
+\fval{Peter Andersson (E16)}{Källarmästare 2017}
+\fval{Filippa Bolin (BME15)}{Källarmästare 2017}
+
+\fval{Sofia Karlén (BME13)}{SRE-ledamot 2017}
+\fval{Johan Persson (E13)}{SRE-ledamot 2017}
+\fval{Viktor Hjelm (E13)}{SRE-ledamot 2017}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Check in}{\info}
+Martin sa att E6 har haft brunch och håller på att planera inför G.E.M.B.O.R.N.-sittningen.
+
+Malin sa att KM har haft glöggille som folk var glada för, och att KM nu håller på att fixa inför Julgillet.
+
+Anders har jobbat mycket med Sophia med bokföring och överlämning.
+
+Dalia sa att NöjU har haft överlämningsmiddag med gamla och nya NöjU. På måndag är det måndagsmys!
+
+Johannes sa att ENU har fixat med de sista fakturorna för året, och sa att de har ett sista event för året med Bosch.
+
+Johan sa att SRE håller på med CEQ.
+
+Molly sa att NollU håller på med överlämning och ska ha överlämningsmiddag.
+
+Stephanie är det bra med! CM jobbar på och de förlänga öppettiderna fungerar bra.
+
+Erik är det också bra med. Han har haft en del att göra med den nya styrelsen.
+
+Fredrik är det fint med. Han vet inte vad han hållt på med.
+
+Sophia är det också bra med!
+
+\subp{B}{Kåren informerar}{\info}
+Linus sa att Kåren mår bra. Han sa också att FM klubbade igenom värdegrunden som vi diskuterat på remiss. Posten som Nollegeneral har blivit tillsatt. Mycket av Kårens fokus ligger på överlämning just nu.
+
+\subp{C}{Ekonomi}{\info}
+Anders gav en ekonomisk rapport. Han påminde alla om att lämna in sina sektionskort och nycklar. Han sa också att inga köp får göras efter verksamhetsårets slut utan att få ett godkännande av honom först.
+
+\end{paragrafer}
+
+\p{11}{Modulo 10 inbetalning}{\dis}
+Fredrik pratade om hur Modulo 10-inbetalningen fungerar.
+
+Mötet diskuterade.
+
+\p{12}{Nästa styrelsemöte}{\bes}
+{\Mba} årets sista styrelsemöte ska äga rum 2016-12-13 12:10 i E:1426.
+
+\p{13}{Beslutsuppföljning}{\bes}
+Malin har köpt in och installerat stekbordet till en kostnad av \SI{7475.80}{kr}.
+
+Malin \ypa stryka \emph{Inköp av stekbord} från beslutsuppföljningen.
+
+\Mba bifalla yrkandet.
+
+Malin har köpt in kokplattor till en kostnad av \SI{1398}{kr}.
+
+Malin \ypa stryka \emph{Inköp av kokplattor} från beslutsuppföljningen.
+
+\Mba bifalla yrkandet.
+
+\p{14}{Övrigt}{\dis}
+Stephanie sa att i veckan har caféet testat att ha öppet en halvtimme extra. Vi har fått ökade intäkter och det har fungerat bra. De vill prova att ha extraöppet en vecka till.
+
+Fredrik frågade om försäljningen har minskat före 15.
+
+Stephanie svarade att hon inte har upplevt att den har det.
+
+Mötet pratade om att hjälpa till att jobba i LED-café.
+
+Anders frågade om någon visste var den gröna borrmaskinen är.
+
+\p{15}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 12:44.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
