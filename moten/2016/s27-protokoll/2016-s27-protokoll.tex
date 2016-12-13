@@ -1,0 +1,177 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Fredrik Peterson}
+\def\ms{Johan Karlberg}
+\def\ji{Johannes Koch}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S27/16} %ex S02/16, E1/15, VT/13
+\def\date{2016-12-13} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Fredrik Peterson}{E14}{}
+\nv{Kontaktor}{Erik Månsson}{E14}{}
+\nv{Förvaltningschef}{Anders Nilsson}{E13}{}
+\nv{Cafémästare}{Stephanie Mirsky}{E13}{}
+\nv{Øverphøs}{Molly Lilljebjörn Rusk}{BME14}{}
+\nv{SRE-ordförande}{Johan Persson}{E13}{}
+\nv{ENU-ordförande}{Johannes Koch}{E13}{}
+\nv{Sexmästare}{Martin Gemborn Nilsson}{E14}{\nati{11}}
+\nv{Krögare}{Malin Lindström}{BME14}{}
+\nv{Entertainer}{Dalia Khairallah}{E15}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+\nv{Skattmästare}{Sophia Grimmeiss Grahm}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Johan Westerlund}{E11}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+\end{narvarolista}
+
+\subsection*{Adjungerande}
+\begin{narvarolista}
+\nv{Kontaktor 2017}{Johan Karlberg}{E14}{}
+\nv{SRE-ordförande 2017}{Pontus Landgren}{E14}{}
+\nv{Cafémästare 2017}{Daniel Bakic}{E15}{}
+\nv{Øverphøs 2017}{Niklas Gustafson}{E15}{\nafr{4}}
+\nv{Sexmästare 2017}{Linnea Sjödahl}{BME15}{}
+\nv{Krögare 2017}{Markus Rahne}{BME14}{}
+\nv{Entertainer 2017}{Albin Nyström Eklund}{BME16}{}
+%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFSÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:14.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Tid och sätt}{\bes}
+{\tosg}
+
+\p{5}{Adjungeringar}{\bes}
+Johan Karlberg, Pontus Landgren, Sophia Grimmei{\ss} Grahm, Daniel Bakic, Niklas Gustafson, Linnea Sjödahl, Markus Rahne och Albin Nyström Eklund adjungerades.
+%{\ingaadj}%
+
+%Förnamn Efternamn adjungerades
+
+\p{6}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{7}{Föredragningslistan}{\bes}
+%Föredragningslistan godkändes.
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+%Föredragningslistan godkändes med yrkandet.
+%Föredragningslistan godkändes med samtliga yrkanden.
+Dalia \ypa Albin ska montera ihop en flöjt och spela köp varmkorv under hela mötet.\\
+Malin \ypa att Albin ska spela spanien också.\\
+Dalia jämkade sig med Malins yrkande.\\
+Anders \ypa lägga till \S14$\gamma$ Förvaltningschef Electus visar prov på räkningskunskaper efter \S14. \\
+Erik \ypa byta plats på \S10A och \S10B. \\
+Malin \ypa lägga till \S14$\Omega$, den nya sexmästaren ska möte Dalia i Martin äter.\\
+Erik \ypa Cauchys integralformel ska finnas i protokollet.\\
+Malin \ypa Erik ska kallas Åstorps stolthet samt få tillhörande mailadress.\\
+Föredragningslistan godkändes med samtliga yrkanden.
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S26/16}
+%\ingaprot
+
+\p{9}{Fyllnadsval/Entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+%\fval{Namn}{Post}
+%\entl{Namn}{Post}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{B}{Check in}{\info}
+Anders mår bra.\\
+Johannes mår bra.\\
+Johan mår coolt.\\
+Malin mår bra.\\
+Molly mår bra.\\
+Dalia mår bra.\\
+Martin mår bra.\\
+Stephanie mår bra.\\
+Fredrik säger att alla mår bra.\\
+\subp{A}{Kåren informerar}{\info}
+Fredrik meddelar att Jacob har hur mycket tid som helst.\\
+Jacob säger hej.
+\end{paragrafer}
+
+\p{11}{Nya ordförande provar klubban}{\bes} %TODO
+$f(z_0) = \frac{1}{2\pi i} \int_C\frac{f(z)dz}{z-z_0}$\\
+Fredrik \ypa Erik ska ha klubban i munnen.\\
+Anders \ypa Erik ska provar klubban genom att slå den 100 gånger på Fredriks bakdel.\\
+Dalia \ypa Erik ska köra yoga samtidigt som han provar klubban.\\
+Johan \ypa nya styrelsen ska tillbe Erik när han provar klubban.\\
+Anders \ypa allt ska filmas från 7,5 vinklar.\\
+Johan \ypa nya styrelsen ska sjunga blinka lilla stjärna och äta pepparkakor när Erik provar klubban.\\
+\Mbabay\\
+Erik provade klubban.
+\p{12}{Nya ordförande visar prov på sångkunskaper }{\bes} %TODO
+Anders \ypa nya styrelsen ska beatboxa till Eriks sång.\\
+Dalia \ypa Albin ska spela flöjt till Eriks sång.\\
+Malin \ypa nya styret ska gå i Luciatåg när Erik framför sin sång.\\
+Johan \ypa $"$O heliga natt$"$ är låten som ska framföras.\\
+\Mbabay\\
+Erik sjöng samtidigt som han ledde ett luciatåg.
+\p{13}{Nästa styrelsemöte}{\bes}
+{\Mba} nästa styrelsemöte ska äga rum 2017-01-19 12:10 i E:1426.
+
+\p{14}{Beslutsuppföljning}{\bes}
+{\Ibfu}
+%\Mbaby bifalla yrkandet
+%\Mbabay bifalla alla
+%\Mbaay avslå yrkandet
+\p{14$\gamma$}{Förvaltningschef Electus visar prov på räkningskunskaper}{\dis}
+Nya Förvaltningschefen kan inte räkna
+\p{14$\Omega$}{Martin äter}{\dis}
+Johan \ypa Linnea ska stå på bordet när hon möter Martin i Martin äter.\\
+\Mbaby\\
+Dalia vann.
+\p{15}{Övrigt}{\dis}
+Johannes \ypa nästa års styrelse får åka till Qvidinge med hjälp av beslutet som togs på HT16 samt att det skall läggas på beslutsuppföljning till styrelsemöte 5 nästa år.\\
+\Mbaby
+\p{16}{OFSA}{\bes}
+{\mo} förklarade mötet avslutat 12:51.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}

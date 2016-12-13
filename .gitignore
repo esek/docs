@@ -6,6 +6,7 @@ build/
 *.fdb_latexmk
 *.fls
 *.out
+*.toc
 
 !_res/*
 !styrdokument/stadga/_res/*
