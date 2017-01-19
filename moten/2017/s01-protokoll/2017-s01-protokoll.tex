@@ -1,0 +1,231 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Erik Månsson}
+\def\ms{Johan Karlberg}
+\def\ji{Pontus Landgren}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S01/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-01-18} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Erik Månsson}{E14}{}
+\nv{Kontaktor}{Johan Karlberg}{E14}{}
+\nv{Förvaltningschef}{Sophia Grimmeiss Grahm}{BME14}{}
+\nv{Cafémästare}{Daniel Bakic}{E15}{}
+\nv{Øverphøs}{Niklas Gustafson}{E15}{}
+\nv{SRE-ordförande}{Pontus Landgren}{E14}{}
+\nv{ENU-ordförande}{Josefine Sandström}{E14}{}
+\nv{Sexmästare}{Linnea Sjödahl}{BME15}{}
+\nv{Krögare}{Markus Rahne}{BME14}{}
+\nv{Entertainer}{Albin Nyström Eklund}{BME16}{}
+\end{narvarolista}
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{\nafr{3}}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+%\nv{Skattmästare}{Olle Oswald}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Fredrik Peterson}{E14}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+\end{narvarolista}
+
+\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:14.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+Johan nominerade Pontus.
+
+{\valavj}
+
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}
+
+\p{6}{Adjungeringar}{\bes}
+{\ingaadj}
+
+%Förnamn Efternamn adjungerades
+
+\p{7}{Godkännande av dagordningen}{\bes}
+Pontus \ypa lägga till punkt \S14.1 ``Inköp av SRE-tröjor''.
+
+Albin \ypa lägga till punkt \S14.2 ``Dömd''.
+
+Josefine \ypa lägga till punkt \S14.3 ``Facebooksidor''.
+
+Daniel \ypa lägga till punkt \S14.4 ``Pant''.
+
+Josefine \ypa lägga till punkt \S14.5 ``Teknikfokus''.
+
+Erik \ypa lägga till  \S14.6 ``Jubileumsansvarig''.
+%Dagordningen godkändes
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+%Föredragningslistan godkändes med yrkandet.
+
+Föredragningslistan godkändes med samtliga yrkanden.
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S27/16}
+%\ingaprot
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+%\fval{Namn}{Post}
+%\entl{Namn}{Post}
+\entl{Andreas Rydberg}{Näringslivskontak}
+\entl{Emil Harvig}{Chefredaktör}
+\entl{Jonatan Kronander}{Källarmästare}
+\entl{Peter Andersson}{Källarmästare}
+\entl{Linnea Wenäll}{Årskurs BME-1 ansvarig}
+\entl{Sofia Rokkones}{Årskurs BME-2 ansvarig}
+\fval{Alexander Arvebratt}{Diod}
+\fval{Johan Sievert Lindeskog}{Diod}
+\fval{Jonas Thurborg}{Diod}
+\fval{Viktor Drakfeldt}{Diod}
+\fval{Adem Saran}{Diod}
+\fval{Mansoor Ashrati}{Diod}
+\fval{Linnea Nilsson}{Diod}
+\fval{Björn Fridqvist Nimvik}{Diod}
+\fval{Seif Sharif}{Diod}
+\fval{Sanna Nordberg}{Diod}
+\fval{Oskar Berg}{Diod}
+\fval{Oscar Uggla}{Vice Krögare}
+\fval{Jennifer Ramkull}{Källarmästare}
+\fval{Eltayeb Bayomi}{Fotograf}
+\fval{Lykke Månsson}{Øvergudsphadder}
+\fval{Andreas Benström}{Øvergudsphadder}
+\fval{Artur Lidström}{Umphmeister}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+Punkten protokollfördes ej.
+\subp{B}{Utskottsrapporter}{\info}
+InfU fungerar bra.
+
+SRE kör sin CEQ-tävling. Markus Törmänen har meddelat Pontus att Ericsson är intresserade av att arrangera något event på sektionen. Pontus har meddelat detta till Josefine.
+
+ENU har sitt första möte imorgon.
+
+KM har satt ett datum till det första gillet, den 24 Januari. Markus vill få folk taggade till gillet.
+
+NöjU har haft kickoff, beställt tröjor och de har planerat kommande event för våren. Ett lag till dömd ska anmälas idag.
+
+Sexet har börjat med planering inför kommande sittningar.
+
+NollU har valt Øvergudsphaddrar och börjat sätta datum för året.
+
+LED fungerar bra. Daniel funderar på att fortsätta med de utökade öppettiderna. Alla i utskottet känner sig bekväma med sina poster, de har fått många dioder men vill ha fler.
+
+FVU jobbar för att få klart förra årets bokföring, Sophia har börjat med årets.
+\subp{C}{Ekonomisk rapport}{\info}
+Shopia hade inget att rapportera mer än att ekonomin mår bra.
+\subp{D}{Kåren informerar}{\info}
+Kåren har precis kommit tillbaka från tentan. Deras första styrelsemöte är nästa vecka och någon vecka senare har Fullmäktige sitt första möte.
+\end{paragrafer}
+
+\p{11}{Val av Vice Ordförande}{\bes}
+Erik nominerade Sophia Grimmeiss Grahm till Vice Ordförande.
+
+Sophia Grimmeiss Grahm valdes till Vice Ordförande.
+\p{12}{C-cert}{\info}
+Erik och Sophia har varit på C-cert utbildning. Den handlade mest om lagar. I stort sköter sektionen sig bra. Sophia anser att vi måste bli bättre på att se till att brandvägarna fungerar som de ska, hon anser att de ska kontrolleras innan varje event så som en sittning eller ett gille.
+
+Sophia informerade även om att serveringslokaler är alla lokaler som används till ett event, må det vara förvaringslokaler till saker som används under ett event eller lokalen där eventet äger rum. Ingen privat alkohol ska förvaras i serveringslokaler.
+Det är viktigt att event med fördrink inte blandar drinken innan den är beställd. En timma efter att man har städat ska lokalen vara tom.
+\p{13}{Städvecka}{\info}
+SRE och Sexet har städvecka.
+``Blomman'' är längst inne i biljard.
+\p{14}{KPL och Skiphte}{\dis}
+Mötet diskuterade Skiphtet.
+
+Lopthet är bokat, ljudanläggningen är bokad och sittningen ska planeras.
+Innan sittningen brukar det vara en utbildning riktad till funktionärer som berör ämnen så som rättigheter, skyldigheter och jämnstäldhet.
+Skiphte är det bästa Erik vet men han påpekar att det är styrelsen som städar.
+Erik vill att sexet är ansvariga för att städa köket.
+
+Mötet diskuterade KPL.
+
+Stugan som var tänkt är upptagen.
+Albin funderar på vad han ska förbereda till KPL och han vill att en bild på sig själv ska finnas med under KPL då han själv inte kan närvara.
+\p{14.1}{Inköp av SRE-tröjor}{\bes}
+På HT/16 beslutades att sektionen ska köpa in tröjor till KM, CM, ENU och Sexet men inte till SRE.
+
+Pontus \ypa avsätta 3000kr från dispositionsfonden till att köpa tröjor till SRE och lägga det på beslutsuppföljning till möte 5.
+
+Mötet ansåg att pengarna kan avsättas från SREs budget.
+
+Pontus drog tillbaka sitt yrkande.
+\p{14.2}{Dömd}{\dis}
+Sista anmälningsdagen är idag, Albin funderar på hur han ska göra. 6 personer har anmält intresse men fler verkar taggade.
+Laget blir återbetalningsskyldiga om laget inte fylls.
+Albin ifrågasätter om han kan använda någon budget om någon drar sig ur.
+Niklas föreslår att Albin ska informera de intreserade om att det är bindande när man anmäler sig. Förra året bokades 10 platser och sen jagades folk för att fylla platser.
+\p{14.3}{Facebooksidor}{\dis}
+Många utskott vill införa facebooksidor.
+Kåren har skurit ner på antalet facebooksidor, Erik anser att det har gjort kårens sida mer attraktiv och att vi bör följa deras exempel.
+Mötet anser att ämnet behövs diskuteras längre, i nuläget görs inga nya sidor.
+\p{14.4}{Pant}{\dis}
+Daniel vill att en utav soptunnorna i LED ska vara till pant.
+Mötet kom fram till att Daniel ska kontakta husintendenten P-H.
+\p{14.5}{Teknikfokus}{\dis}
+Josefine vill få folk mer taggade till Teknikfokus.
+%\Mbaby bifalla yrkandet
+%\Mbabay bifalla alla
+%\Mbaay avslå yrkandet
+\p{14.6}{Jubileumsansvarig}{\bes}
+Erik \ypa utse Anders Nilsson till Jubileumsansvarig.
+
+\Mbaby
+\p{15}{Nästa styrelsemöte}{\bes}
+{\Mba} nästa styrelsemöte ska äga rum 2017-01-26 12:10 i 1426.
+\p{16}{Beslutsuppföljning}{\bes}
+{\Ibfu}
+\p{17}{Övrigt}{\dis}
+\p{18}{OFMA}{\bes}
+{\mo} förklarade mötet avslutat 13:01.
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
