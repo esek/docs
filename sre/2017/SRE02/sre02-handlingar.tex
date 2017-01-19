@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{studierådsmöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{SRE01/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-01-17} %YYYY-MM-DD
+\def\docauthor{Pontus Landgren}
+
+\usepackage{../sre-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Information om punkterna}
+
+\begin{paragrafer}
+\p{11}{Lorem ipsum}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{12}{Lorem ipsum}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{18}{Lorem ipsum}
+
+\end{paragrafer}
+
+\begin{signatures}{1}
+\it{I studierådets tjänst}
+\signature{\docauthor}{SRE-ordförande}
+\end{signatures}
+
+\end{document}
