@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Pontus Landgren}
+%\def\ms{}
+%\def\ji{}
+%\def\jii{}
+
+\def\doctype{Minnesanteckningar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{studierådsmöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{SRE01/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-01-17} %YYYY-MM-DD
+\def\docauthor{Pontus Landgren}
+
+\usepackage{../sre-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\begin{narvarolista}
+\nv{Edvard Carlsson}{E16}{}{}
+\nv{Ellen Nilsson}{BME15}{}{}
+\nv{Fanny Månefjord}{BME16}{}{}
+\nv{Fredrik Nilsson}{E16}{}{}
+\nv{Frida Börnfors}{BME14}{}{}
+\nv{Johan Persson}{E13}{}{}
+\nv{Jonatan Kronander}{E15}{}{}
+\nv{Lina Samnegård}{BME16}{}{}
+\nv{Linnea Wenäll}{BME16}{}{}
+\nv{Pontus Landgren}{E14}{Ordförande}{}
+\nv{Sofia Karlén}{BME13}{}{}
+\nv{Viktor Hjelm}{E13}{}{}
+
+\end{narvarolista}
+
+
+\section*{Minnesanteckningar}
+\begin{paragrafer}
+\p{1}{Hur mår alla?}
+
+
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{1}
+\signature{\mo}{Mötesordförande}
+%\signature{\ms}{Mötessekreterare}
+%\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
