@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{studierådsmöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{SRE 01/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-01-17} %YYYY-MM-DD
+\def\docauthor{E-sektionen}
+
+\def\mtime{12:10}
+\def\place{E:1407/1408}
+
+\usepackage{../sre-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paralist}
+    \pli{Hur mår alla?}{}
+ 	\pli{CEQ}{}
+ 	\pli{Pluggkväll}{}
+ 	\pli{Övrigt}{}   
+    
+    
+\end{paralist}
+
+
+\begin{signatures}{1}
+    \emph{I studierådets tjänst}
+    \signature{Pontus Landgren}{SRE-ordförande}
+\end{signatures}
+
+\end{document}
