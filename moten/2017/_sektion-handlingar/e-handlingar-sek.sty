@@ -1,0 +1,145 @@
+\usepackage[utf8]{inputenc}
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{busek}{
+	\def\arraystretch{1.5}
+	\tabularx{\textwidth}{| p{1.5cm} | X | X | X | p{2cm} |}
+		\hline
+		\textbf{Taget} & \textbf{Beslut} &\textbf{Tilldelat} & \textbf{Förtydligande} & \textbf{Redovisas}\\
+		\hline
+}{
+	\endtabularx
+	\vspace{-\baselineskip}
+	\resetarraystretch
+}
+
+\newcommand{\beslutsek}[5]{#1 & #2 & #3 & #4 & #5 \\\hline} %taget, beslut, tilldelat, notering
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{supersection}[2]{
+    \newpage
+    \addcontentsline{toc}{section}{#1 #2}
+    \vspace*{6cm}
+    \begin{center}
+        {\Huge #1}\par
+        {\large #2}
+    \end{center}
+    \newpage
+}{
+    \fancyfoot[L]{}
+}
+
+\newenvironment{utskottsrapporter}{
+    \begin{supersection}{Utskottsrapporter}{}
+}{
+    \end{supersection}
+}
+
+\newenvironment{valforslags}{
+    \begin{supersection}{Valberedningens förslag}{}
+}{
+    \end{supersection}
+}
+
+\newenvironment{berattelser}{
+    \begin{supersection}{Verksamhetsberättelser}{från föregående år}
+}{
+    \end{supersection}
+}
+
+\newenvironment{stadgeandringar}{
+    \begin{supersection}{Stadgeändringar}{i andra läsningen}
+}{
+    \end{supersection}
+}
+
+\newenvironment{motioner}{
+    \begin{supersection}{Motioner}{med styrelsens svar}
+}{
+    \end{supersection}
+}
+
+\newenvironment{propositioner}{
+    \begin{supersection}{Propositioner}{}
+}{
+    \end{supersection}
+}
+
+\newenvironment{verksplaner}{
+    \begin{supersection}{Verksamhetsplan}{}
+}{
+    \end{supersection}
+}
+
+\newenvironment{verksplanuppfar}{
+    \begin{supersection}{Uppföljning av verksamhetsplan}{}
+}{
+    \end{supersection}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\limitedffl}[1]{\fancyfoot[L]{\parbox{12cm}{#1}}}
+
+\newcommand{\motion}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Motion: #1}
+    \subsection*{Motion: #1}
+}
+
+\newcommand{\motionssvar}{
+    \subsection*{Styrelsens svar på motionen}
+}
+
+\newcommand{\proposition}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Proposition: #1}
+    \subsection*{Proposition: #1}
+}
+
+\newcommand{\utskottsrapport}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Utskottsrapport: #1}
+    \subsection*{#1}
+}
+
+\newcommand{\berattelse}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Verksamhetsberättelse: #1}
+    \subsection*{#1}
+}
+
+\newcommand{\stadgeandring}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Stadgeändring i andra läsning: #1}
+    \subsection*{Stadgeändring i andra läsning: #1}
+}
+
+\newcommand{\valforslag}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{#1}
+    \subsection*{#1}
+}
+
+\newcommand{\verksplan}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Verksamhetsplan #1}
+    \subsection*{Verksamhetsplan #1}
+}
+
+\newcommand{\verksplanuppf}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Uppföljning av verksamhetsplan #1}
+    \subsection*{Uppföljning av verksamhetsplan #1}
+}
+
+\newcommand{\beslutsuppfoljning}[1]{
+    \addcontentsline{toc}{subsection}{#1}
+    \limitedffl{Beslutsuppföljning: #1}
+    \subsection*{Beslutsuppföljning: #1}
+}
