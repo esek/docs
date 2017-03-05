@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2017-03-05} %YYYY-MM-DD
+\def\doctitle{Äskning av pengar för skärmar till baren}
+
+\def\docauthor{Anders Nilsson, Oscar Uggla}
+
+\usepackage{./e-askning}
+\usepackage{../e-sek}
+
+\begin{document}
+    \heading{\doctitle}
+
+    \subsection*{Bakgrund}
+    Vid de tillfällena när E-sektionen gille har en längre kö till baren så brukar det ta ganska lång tid att servera alla. En del av problemet är att folk inte vet vad de vill köpa innan de kommer fram till kassan och en av anledningarna till det är att de inte ser vilket sortiment som serveras. För att kunna öka takten på köerna samt lättare kunna marknadsföra sortimentet borde man implementera en lösning likt D-sektionen gjorde i höstas dvs. skärmar ovanför baren som visar sortimentet sortimentet.
+
+    \subsection*{Implementation}
+    Eftersom vi har en ventilationstrumma vid taket kommer vi vara tvugna att ha liggande skärmar istället för stående på högkant likt D-sektionen. Implementationen av systemet bygger på att montera upp skärmarna ovanför baren riktat mot CM-lagret och ev. montera extra fästen för att kunna flytta dem så de kan riktas ut mot edekvata då kön vill riktas om. Var skärm kommer var kopplat till en raspbarry som kollar på en hemsida som visar sortimentet. Hemsidan byggs sådant att den går att snabb redigera i webbläsaren med en CMS (Content Management System).
+
+    \subsection*{Förslag}
+    Vi yrkar på
+    \begin{attsatser}
+        \att köpa in 2st 27\,''-skärmar med tillhörande VESA-fästen (1990-2490kr/skärm)
+        \att köpa in 2st Raspberry Pi 3 Kit, d.v.s. \textit{Raspberry Pi, micro-sd, case och laddare} (749-817kr/kit)
+        \att köpa in 2-4st väggfästen (199-379kr/st)
+        \att ev. köpa in 2st HDMI-sladdar om befintliga inte räcker/fungerar (100-199kr/st)
+        \att budgeten sätts till 8000kr (dock kommer projektet troligen landa runt ca. 6300kr)
+    \end{attsatser}
+
+    \begin{signatures}{2}
+        I  DDG:s tjänst
+        \signature{Anders Nilsson}{Teknokrat 2017}
+        \signature{Oscar Uggla}{Macapär 2017}
+    \end{signatures}
+\end{document}
