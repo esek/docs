@@ -1,0 +1,155 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Erik Månsson}
+\def\ms{Johan Karlberg}
+\def\ji{Daniel Bakic}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S04/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-02-09} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Erik Månsson}{E14}{}
+\nv{Kontaktor}{Johan Karlberg}{E14}{}
+\nv{Förvaltningschef}{Sophia Grimmeiss Grahm}{BME14}{}
+\nv{Cafémästare}{Daniel Bakic}{E15}{}
+\nv{Øverphøs}{Niklas Gustafson}{E15}{\nafr{9}}
+\nv{SRE-ordförande}{Pontus Landgren}{E14}{}
+\nv{ENU-ordförande}{Josefine Sandström}{E14}{}
+\nv{Sexmästare}{Linnea Sjödahl}{BME15}{}
+\nv{Krögare}{Markus Rahne}{BME14}{}
+\nv{Entertainer}{Albin Nyström Eklund}{BME16}{}
+\end{narvarolista}
+
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+\nv{Generalsekreterare}{Agnes Sörliden}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Fredrik Peterson}{E14}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+\end{narvarolista}
+
+
+\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:10.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}
+
+\p{6}{Adjungeringar}{\bes}
+{\ingaadj}
+
+%Förnamn Efternamn adjungerades
+
+\p{7}{Godkännande av dagordningen}{\bes}
+Dagordningen godkändes.
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+%Föredragningslistan godkändes med yrkandet.
+%Föredragningslistan godkändes med samtliga yrkanden.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S03/17}
+%\ingaprot
+
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+%\fval{Namn}{Post}
+%\entl{Namn}{Post}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+Punkten protokollfördes ej.
+\subp{B}{Utskottsrapporter}{\info}
+InfU går frammåt, inga konstigheter.\\
+Josefine meddelade att Bearingpoint vill ha en lunchföreläsning v. 12, vilket Josefine hoppas är uppskattat bland BME-studenterna. Ericsson är fortfarande taggade på att samarbeta och det går frammåt.\\
+KM har bestämt att höja priset på klägg från 30 kr till 35 kr, detta för att kunna ha svenskt nötkött i kläggen samt för att ge mer utrymme till specialburgare. Funkisklägg höjs också, till 20 kr. KM ska även anordna en företagspub med Accenture den 28 februari.\\
+FVU går bra.\\
+Albin meddelade att NöjUs kläder har anlänt, bowlingturneringen verkar som väntat bli lyckad och alla i utskottet har något att jobba med under våren.\\
+E6 har arrangerat sin första sittning, de höll en sittning för Athena och det gick väldigt bra. Linnea har varit på kollegieskipthe med de andra sexmästarna och våran krögare i helgen och det var kul. Planeringen till Funktionärsskiphtet har börjat.\\
+SRE har arbetat med CEQ-granskning och Pontus samlar statistik från tentorna i LP2. Pontus har besökt PLBME och fått uppdatering på hur det går för BME-programmet. Han meddelade även att kåren kommer att hålla en utbildning för alla utbildningsbevakare inom en snar framtid.\\
+NollU har börjat att ha möten med alla utskott för att se vad de har för synpunkter om sitt engagemang under nollningen samt övriga synpunkter.\\
+CM går bra.\\
+\subp{C}{Ekonomisk rapport}{\info}
+Sophia sa att vi har fått pengar från data för teknikfokus och utedischot. Hon sa även att vi har gott om pengar på banken i nuläget som följd av sagda utbetalningar. Hon har börjat att prata med Anders Nilsson om bokslutet för 2016.
+\subp{D}{Kåren informerar}{\info}
+Kåren är i uppstartsfas, allt har kommit igång, Arkad har snart en hel projektgrupp. Hur mår teknologen enkäten är fortfarande ute, svara på den! Den går ut till alla teknologer, den ger bra underlag. Styrelsen vill påminna om styrelseutbildningen. Nominering till fullmäktige är öppen för de poster tillträder till sommaren.
+\end{paragrafer}
+
+\p{11}{Examensbankett}{\bes}
+Erik \ypa sätta Hampus Pettersson till ansvarig för examensbanketten och sätta det på beslutsuppfattning till S15.\\
+\Mbaby
+\p{12}{Attestering}{\dis}
+Det står ingenstans vad som gäller återbetalning i nuläget berättade Sophia. Hon påpekade att kortkontraktet är bra, riktlinjer och policys står detaljerat, men sektionen bör lägga till någon kommentar om att det även gäller om någon annan använder kortinnehavarens kort. Mötet bör kolla på vad vi gör om någon använder kortet felaktigt. Sophia ska lägga upp riktlinjer i driven.
+\p{13}{Datum för VT/17}{\bes}
+Ett antal datum diskuterades.\\
+Erik \ypa VT/17 ska äga rum den 25e april.\\
+\Mbaby
+\p{14}{Styrelsemedlemmar som phaddrar}{\dis}
+Niklas sa att styrelsemedlemmar söker phaddrar som alla andra.\\
+Mötet diskuterade ämnet.\\
+Mötet anser att om man känner att man är lämplig och om det inte påverkar andra uppdrag på sektionen så kan man söka phadder.
+\p{15}{Nästa styrelsemöte}{\bes}
+{\Mba} nästa styrelsemöte ska äga rum 2017-02-16 12:10 i E:1426.
+
+\p{16}{Beslutsuppföljning}{\bes}
+{\Ibfu}
+
+\p{17}{Övrigt}{\dis}
+Josefine sa följande; nästa vecka ska vi börja göra reklam för ``Lunch med en ingenjör''.
+\p{18}{OFSMA}{\bes}
+{\mo} förklarade mötet avslutat 12:44.
+
+\end{paragrafer}
+\newpage
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}

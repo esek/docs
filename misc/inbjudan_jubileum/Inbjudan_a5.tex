@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2017}
+\def\doctitle{Inbjudan till E-sektionens 55-års Jubileum}
+\def\docauthor{Johan Karlberg}
+
+\usepackage{../../e-sek}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=-10mm,
+    left=25mm,
+    right=25mm,
+    bottom=10mm
+}
+
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand{\inviteto}[1]{
+
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+    \begin{center}
+        \includegraphics[width=4cm]{sigill}
+        \par
+        \vspace*{3mm}
+
+        \textit{\textbf{\Large \doctitle}}
+
+        {\it
+            E-sektionen vid Lunds Tekniska Högskola\\
+            har den stora äran att inbjuda dig\\
+            \vspace*{4mm}
+            {\Large #1}\\
+            \vspace*{-2mm}
+            \line(1,0){220} \par \vspace*{-1mm}
+            med respektive till E-sektionens 55-års Jubileum.
+        }
+    \end{center}
+
+    \vspace*{\baselineskip}
+
+    {\it Vi börjar med pub fredagen den 5:e maj i Edekvata, dörrarna öppnas 19:00 med förtur för anmälda fram till 20:00. Klädsel för denna pub är ovve.
+
+    Vi fortsätter festligheterna lördagen den 6:e maj med bal i Kårhusets Gasquesal. 17:00 bjuds det på fördrink i E-foajén och balen börjar 19:00. Klädsel på balen är högtidsdräkt med akademiska ordnar.
+
+    Respektive anmodas till en kostnad av 600kr per kuvert, eller 500kr om personen är medlem i teknologkåren.
+
+    Det kommer att finnas möjlighet att köpa till ett alkoholpaket till ett pris av 100kr och sexa till ett pris av 50kr, vilket inte ingår i inbjudan och anmäls i förväg. Anmälan till balen samt puben sker senast den 24:e mars genom kontakt med Johan Karlberg på Kontaktor@esek.se.
+    }\newpage
+}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\begin{document}
+\inviteto{Ulla Andersson}
+\inviteto{Monica Almqvist}
+\inviteto{Viktor Öwall}
+\inviteto{Per-Henrik Rasmussen}
+\inviteto{Mats Cedervall}
+\inviteto{Erik Månsson}
+\inviteto{Johan Karlberg}
+\inviteto{Sophia Grimmeiss Grahm}
+\inviteto{Daniel Bakic}
+\inviteto{Niklas Gustafson}
+\inviteto{Pontus Landgren}
+\inviteto{Josefine Sandström}
+\inviteto{Linnea Sjödahl}
+\inviteto{Markus Rahne}
+\inviteto{Albin Nyström Eklund}
+\inviteto{My Reimer}
+\inviteto{Niklas Claesson}
+\inviteto{Iulius Borcea}
+\inviteto{Tomas Nilsson}
+\inviteto{Fredrik Peterson}
+\inviteto{Hanna Nevalainen}
+\inviteto{Elin Bonnevier}
+\inviteto{Johan Westerlund}
+\inviteto{Sara Gunnarsson}
+\end{document}

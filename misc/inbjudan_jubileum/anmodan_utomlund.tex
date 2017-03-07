@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2017}
+\def\doctitle{Anmodan till E-sektionens 55-års Jubileum}
+\def\docauthor{Johan Karlberg}
+
+\usepackage{../../e-sek}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=1mm,
+    left=25mm,
+    right=25mm,
+    bottom=10mm
+}
+
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand{\anmodanto}[2]{
+
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+    \begin{center}
+        \includegraphics[width=4cm]{sigill}
+        \par
+        \vspace*{4mm}
+
+        \textit{\textbf{\Large \doctitle}}
+
+        {\it
+        E-sektionen vid Lunds Tekniska Högskola\\
+        har den stora äran att anmoda\\
+            \vspace*{5mm}
+            {\Large #1}\\
+            \vspace*{-2mm}
+            \line(1,0){220} \par \vspace*{-1mm}
+            till E-sektionens 55-års Jubileum.
+        }
+    \end{center}
+
+    \vspace*{\baselineskip}
+
+    {\it Vi börjar med pub fredagen den 5:e maj i Edekvata, dörrarna öppnas 19:00. Klädsel för denna pub är ovve.
+
+    Vi fortsätter festligheterna lördagen den 6:e maj med bal i Kårhusets Gasquesal. 17:00 bjuds det på fördrink i E-foajén och balen börjar 19:00. Klädsel på balen är högtidsdräkt med akademiska ordnar.
+
+    Anmodan gäller {#2} representanter och kostnaden är 600kr per kuvert. Det kommer att finnas möjlighet att köpa till ett alkoholpaket till ett pris av 100kr och sexa till ett pris av 50kr, vilket anmäls i förväg. Anmälan till balen samt puben sker senast den 24:e mars genom kontakt med Johan Karlberg på Kontaktor@esek.se.
+    }
+
+    \newpage
+}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\begin{document}
+\anmodanto{Konglig Elektrosektionen}{9}
+\anmodanto{MIT-Sektionen}{8}
+\anmodanto{Elektroteknologsektionen}{6}
+\end{document}
