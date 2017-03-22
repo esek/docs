@@ -3,25 +3,52 @@
 \usepackage[swedish]{babel}
 
 \def\doctitle{E-sektionens mentorsprogram 2017}
-\def\date{2017-03-17} %YYYY-MM-DD
+\def\date{2017-03-22} %YYYY-MM-DD
 \def\docauthor{Erik Månsson}
 
 \def\headl{\\ \doctitle}
-\def\headr{Utkast 2 \\ \date}
+\def\headr{Utkast 4 \\ \date}
 
 \usepackage{../e-sek}
+
+\setcounter{secnumdepth}{0} %ta bort numrering av sections
 
 \begin{document}
     \heading{\doctitle}
 
-    Detta dokument beskriver och behandlar ett mentorsprogram som E-sektionen kan komma att anordna under nollningen 2017.
+    Detta dokument beskriver och behandlar ett mentorsprogram som E-sektionen kan komma att anordna under höstterminen 2017.
 
-    \section*{Bakgrund och syfte}
-    Studieresultaten för nyaantagna studenter till E-sektionens program har under en tid varit bristande, särskilt för dem som pluggar Elektroteknik.
+    \tableofcontents
+
+    \newpage
+
+    \section{Förord}
+    Att införa ett mentorsprogram för sektionen är något som jag funderat på under en längre tid här på sektionen.
+    Jag har förhoppningen att det ska kunna hjälpa våra nya medlemmar att bättre komma igång med sina studier och känna sig mindre stressade.
+    Det är något som ligger i allas intresse - LTH vill ha bättre studieresultat och vi vill ha gladare medlemmar.
+
+    Bakom detta dokument ligger många timmars arbete med mycket skrivande och bollande fram och tillbaka.
+    Jag skulle vilja tacka styrelsen och studievägledningen som hjälpt till.
+    Särskilt tack till vår Studievägledare Ingrid Holmberg och vår Studierådsordförande Pontus Landgren som hjälpt mig dra igång programmet.
+
+    \vspace*{1\baselineskip}
+    För E-sektionen
+    \vspace*{1.5cm}
+    \par
+    \parbox{5.8cm}{
+        \rule{5.0cm}{0.4pt}\\
+        Erik Månsson\\
+        \emph{Ordförande 2017}
+    }
+
+    \newpage
+
+    \section{Bakgrund och syfte}
+    Studieresultaten för nyantagna studenter till E-sektionens program har under en tid varit bristande, särskilt för dem som pluggar Elektroteknik.
     Många känner sig stressade och har svårt att planera sin tid och lägga upp sina studier i början, och det är tar för lång tid för dem att lära sig att göra det.
     För nyantagna studenter finns det mycket man kan ta lärdom av de äldre studenterna, men det kan vara svårt att verkligen få bra kontakt med en äldre student.
 
-    De nyaantagna studenterna har sina phaddrar att prata med, men en phaddergrupp är det ungefär 6 phaddrar på 10-12 nyantagna studenter, så med dem blir det ofta ingen riktigt personlig kontakt.
+    De nyantagna studenterna har sina phaddrar att prata med, men en phaddergrupp är det ungefär 6 phaddrar på 10-12 nyantagna studenter, så med dem blir det ofta ingen riktigt personlig kontakt.
     Dessutom finns phaddrarna först och främst till för att hjälpa de nyantagna studenterna in i studentlivet och för att skapa sammanhållning i sektionen.
     En phadder rådfrågar man oftast om mer praktiska saker, till exempel hur det går till att skriva en tenta eller vilken färg telefonkiosken Telefonkiosken har.
 
@@ -29,7 +56,7 @@
     Under pluggkvällen hjälper pluggphaddrarna \emph{alla} deltagare under pluggkvällen.
     Det innebär att även med pluggphaddrarna kan det vara svårt för en nyantagen student att få någon längre personlig diskussion.
 
-    Föreningen för kvinnor som läser Elektroteknik på LTH, Elektra, har ett mentorskapsprogram.
+    Föreningen för kvinnor som läser Elektroteknik på LTH, Elektra, har ett mentorsprogram.
     Programmet är mycket omtyckt både av studenterna såväl som studievägledningen, som sponsrar programmet ekonomiskt.
     I stort sett går programmet ut på att adepten får träffa sin mentor över en fika ett antal gånger under första terminen, där man kan diskutera allt mellan himmel och jord.
     Dess syfte är mer eller mindre samma som föreningens syfte, här taget från föreningens hemsida:
@@ -39,7 +66,7 @@
     Notera att vi här ser ett litet överlapp med sektionens phaddrar, som också bidrar mycket till sammanhållningen i och över årskurserna på programmen.
     För Elektra och sektionen är detta inget problem alls, men om sektionens mentorer skulle ha samma syfte som Elektras, hade mentorernas roll överlappat phaddrarnas.
 
-    Syftet med E-sektionens mentorsprogram är först och främst \textbf{att främja den personliga kontakten mellan adapten, en nyantagen student, och mentorn, en äldre student}.
+    Syftet med E-sektionens mentorsprogram är först och främst \textbf{att främja den personliga kontakten mellan adepten, en nyantagen student, och mentorn, en äldre student}.
     Tanken med en sådan kontakt är att adepten ska kunna bolla idéer och prata om sin studiesituation öppet med någon som har mycket erfarenhet.
     Målet är att det ska hjälpa adepten att bättre och snabbare lära sig planera sin tid och lägga upp sina studier.
     I slutändan är visionen att det ska hjälpa fler nyantagna studenter till att klara sig bättre i början och stanna kvar på sitt program.
@@ -47,24 +74,157 @@
 
     \newpage
 
-    \section*{Utformning av mentorskapsprogrammet}
+    \section{Ansvariga för mentorsprogrammets genomförande}
+    Mentorsprogrammet arrangeras i första hand av styrelsen i samråd med studierådet.
+    Programmet är alltså \emph{inte} en del av nollningen som arrangeras av Ph\o set.
+    Det betyder att mentorerna väljs i en process helt separat från valet av phaddrar, och likt phadder är mentor ej en funktionärspost på sektionen, och behöver därför varken gå genom sektions- eller styrelsemöte.
 
-    \section*{Mentorerna}
+    Från styrelsen är Ordföranden och Studierådsordföranden huvudansvariga för genomförandet av programmet.
+    Det inkluderar bland annat att informera sektionen om programmet, välja mentorer, utbilda mentorer, och utvärdera programmet.
+    Från styrelsen och/eller studierådet väljs också 1-2 personer som tillsammans med de huvudansvariga intervjuar och väljer mentorer.
+    De personerna väljs av de huvudansvariga i samråd med styrelsen och studierådet.
+    Eftersom valet av mentorer ska vara helt oberoende av valet av phaddrar bör \O verph\o set ej vara en del av gruppen som intervjuar och väljer mentorer.
 
-    \subsection*{Vem är en passande mentor?}
-    %Endim
-    %år 3-4 då den är mentor
-    %samma program
+    \section{Vem är en passande mentor?}
+    En passande mentor ska kunna ses som en bra förebild för adepten.
+    Personen bör vara en erfaren och trevlig student som klarar av sina studier bra och pluggar på samma program som adepten.
+    Mer konkret finns också följande krav för att en person ska få bli mentor:
+    \begin{dashlist}
+        \item Bör påbörja minst sitt tredje år på LTH.
+        \item Bör vara i god fas med sitt program - alltså inte ha flertalet kurser efter sig.
+        \item Bör ej påbörja mer än sitt femte år på sitt program.
+        \item Bör ha klarat av endimensionell analys under sitt första år på LTH.
+    \end{dashlist}
 
-    \subsection*{Val av mentorer}
-    %2-3 per
+    Om det blir brist på sökande kan det första kravet förbises, men då bör personen ha klarat av alla ordinarie kurser i programmet.
 
+    Det finns också saker som ska vara \emph{mindre} relevant för huruvida en person är passande för att vara mentor eller inte:
+    \begin{dashlist}
+        \item Om personen har bytt program under sin studietid.
+        \item Om personen är någon form av phadder under nollningen.
+        \item Hur aktiv personen är i sektionen eller annan studentorganisation.
+    \end{dashlist}
 
-    \section*{Inför mentorskapsprogrammet}
+    Skulle personen vara phadder under nollningen bör dennes adepter ej vara i samma phaddergrupp som mentorn.
+    Detta är för att undvika att en mentor får dubbla roller gentemot en adept.
 
-    \section*{Utvärdering av programmet}
+    \section{Valprocessen för mentorer}
+    Som tidigare nämnt består gruppen som väljer in mentorer av Ordföranden, Studierådsordföranden, samt 1-2 andra ledamöter från styrelsen och/eller studierådet.
+    Gruppen ska intervjua alla sökande med undantag för de som hjälper till att arrangera programmet.
+    Intervjuernas ska hållas korta, och mer eller mindre samma frågor ska ställas till samtliga intervjuade.
+    Frågorna som ställs ska göra så att gruppen får en god uppfattning om personen är passande utan att behöva tidigare kunskaper om personen.
+    Gruppen ska sträva efter att vara så opartisk som möjligt i sina val av mentorer, så valen ska till största men inte nödvändigtvis uteslutande del grunda sig på intervjun med kandidaten.
 
-    \begin{signatures}{1}
-        \signature{Erik Månsson}{Ordförande 2017}
-    \end{signatures}
+    \newpage
+
+    Under inga som helst omständigheter får följande tas hänsyn till i valprocessen:
+    \begin{dashlist}
+        \item Kön
+        \item Könsidentitet och könsuttryck
+        \item Etnisk tillhörighet
+        \item Religion eller annan trosuppfattning
+        \item Funktionsnedsättning
+        \item Sexuell läggning
+        \item Ålder
+    \end{dashlist}
+
+    Utlysandet av att ansökan till mentor har öppnat sker lämpligtvis i samband med ett informationsmöte, öppet för hela sektionen.
+    Information om programmet och ansökan ska också ges i sektionens vanliga informationskanaler i samråd med Kontaktorn.
+    Ansökningen bör vara öppen i 1-2 veckor, sedan bör intervjuerna utföras på max 2 veckor.
+    Valet av mentorer ska offentliggöras innan vårterminens slut.
+
+    Antalet adepter per mentor är en balansgång.
+    Förmodligen kommer antalet sökande sätta en undre gräns för antalet.
+    Gör det inte det så bör en mentor ha minst 2-3 adepter för att begränsa antalet mentorer.
+    Har å andra sidan en mentor för många adepter finns risken att den personliga kontakten blir lidande och att mentorerna får för mycket att göra.
+    Med anledning av det är den rekommenderade övre gränsen 4 adepter per mentor.
+
+    \section{Utbildning av mentorer}
+    I början av höstterminen innan programmet startat ska huvudansvariga i samarbete med studievägledningen hålla en kort utbildning av mentorerna.
+    Det innebär bland annat att utbilda mentorerna i:
+    \begin{dashlist}
+        \item Syftet med mentorsprogrammet.
+        \item Vad ofta anses som god studieteknik.
+        \item Hur man är en bra lyssnare.
+        \item Hur man bollar idéer för att adepten själv ska komma fram till lösningar.
+    \end{dashlist}
+
+    \section{Utformning av mentorsprogrammet}
+    I stort går programmet ut på att adepten får träffa sin mentor tre gånger under sin första termin.
+    De träffas i en avslappnad miljö där det är lätt att prata, gärna där man kan ta en fika samtidigt.
+    Den första träffen är i läsvecka 2-3, då adepten avklarat sin första vecka på sina kurser.
+    Den andra träffen är i läsvecka 6-7, inför att tentaplugget drar igång.
+    Den sista träffen är i läsvecka 2-3 efter tentorna, för att kunna återkoppla och utvärdera tillsammans.
+    Efter de bestämda träffarna får adepten och mentorn med fördel fortsätta hålla kontakten på eget initiativ.
+
+    Kostnaden för fikan täcks av sektionen, eftersom att kostnaden inte ska vara ett hinder för varken adept eller mentor att delta i programmet.
+    Budgeten utgår ifrån en fika på Studiecentrum eller LED-café, men det är okej att gå till andra caféer också.
+
+    Efter varje möte rapporterar mentorn till huvudansvariga att den haft träff med adepten, så att huvudansvariga kan ha koll på hur det går med programmet.
+    Mentorn gör också en utläggsräkning för fikan, som får tillbaka upp till beloppet som står i den ekonomiska översikten.
+
+    \newpage
+
+    \section{Ekonomisk översikt}
+    \begin{tabularx}{\textwidth}{Xrrr}
+        \textbf{Aktivitet} & \textbf{\`a pris} & \textbf{Antal} & \textbf{Summa} \\
+        \hline
+        Informationsmöte, kaffe & & & \SI{100}{kr} \\
+        Mentorsutbildning, kaffe och fika & & & \SI{350}{kr} \\
+        1:a träffen, kaffe och kaka & \SI{50}{kr} & 120 & \SI{6000}{kr} \\
+        2:a träffen, kaffe och kaka & \SI{50}{kr} & 120 & \SI{6000}{kr} \\
+        3:e träffen, kaffe & \SI{20}{kr} & 120 & \SI{2400}{kr} \\
+        \hline
+        Summa kostnader & & & \SI{14850}{kr}\\
+        Budgeteras till & & & \SI{15000}{kr}\\
+        Sponsring från SVL & & & ? \\
+        \hline
+        Budget för E-sektionen & & & ? \\
+    \end{tabularx}
+
+    \vspace*{\baselineskip}
+
+    \section{Tidsplan}
+    \begin{tabularx}{\textwidth}{rclX}
+        \textbf{Vecka} & \textbf{Läsperiod} & \textbf{Läsvecka} & \textbf{Aktivitet} \\
+        \hline
+        16 & 4 & Omtenta & \\
+        17 & 4 & 5 & Informationsmöte, ansökan öppen \\
+        18 & 4 & 6 & Ansökan öppen, \emph{vårterminsmöte} \\
+        19 & 4 & 7 & Intervjuer \\
+        20 & 4 & 8 & Intervjuer \\
+        21 & 4 & Inläsning & \\
+        22 & 4 & Tenta & Val av mentorer offentliggörs \\
+        \\
+        34 & 1 & 0 & \emph{Omtenta- och introvecka} \\
+        35 & 1 & 1 & Mentorsutbildning \\
+        36 & 1 & 2 & 1:a träffen \\
+        37 & 1 & 3 & 1:a träffen \\
+        40 & 1 & 6 & 2:a träffen \\
+        41 & 1 & 7 & 2:a träffen \\
+        44 & 2 & 1 & 3:e träffen \\
+        45 & 2 & 2 & 3:e träffen \\
+        46 & 2 & 3 & Utvärderingsenkät skickas ut \\
+        47 & 2 & 4 & \emph{Preliminärt höstterminsmöte} \\
+        48 & 2 & 5 & Utvärderingsenkäten sammanställs, möte med SVL \\
+        49 & 2 & 6 & Utvärdering sammanställs \\
+    \end{tabularx}
+
+    \newpage
+
+    \section{Utvärdering av programmet}
+    Efter programmets slut ska programmet utvärderas av huvudansvariga.
+    Det görs lämpligtvis genom att skicka ut en enkät till alla mentorer och adepter, vars svar sedan sammanfattas av huvudansvariga.
+    Huvudansvariga diskuterar och utvärderar sedan programmet tillsammans med studievägledningen, och slutligen skriver ner en övergripande utvärdering.
+    Utvärderingen ska sedan delges till sektionen.
+
+    Anses det att mentorsprogrammet är värt att fortsätta med kan det vara en bra idé att:
+    \begin{dashlist}
+        \item Fundera på vilka som ska vara huvudansvariga för programmet i framtiden.
+        \item Kolla över tidsschemat.
+        \item Uppdatera detta dokument med förbättringar till nästa år.
+        \item Ge nästkommande huvudansvariga hjälp med att driva programmet.
+        \item Kolla på att lägga in programmet i sektionens styrdokument, förslagsvis som en riktlinje till att börja med.
+    \end{dashlist}
+
 \end{document}
