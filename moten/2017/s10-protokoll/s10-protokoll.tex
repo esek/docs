@@ -1,0 +1,164 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Erik Månsson}
+\def\ms{Johan Karlberg}
+\def\ji{Josefine Sandström}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S10/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-04-06} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Erik Månsson}{E14}{}
+\nv{Kontaktor}{Johan Karlberg}{E14}{}
+%\nv{Förvaltningschef}{Sophia Grimmeiss Grahm}{BME14}{}
+\nv{Cafémästare}{Daniel Bakic}{E15}{}
+\nv{Øverphøs}{Niklas Gustafson}{E15}{}
+\nv{SRE-ordförande}{Pontus Landgren}{E14}{}
+\nv{ENU-ordförande}{Josefine Sandström}{E14}{}
+\nv{Sexmästare}{Linnea Sjödahl}{BME15}{}
+\nv{Krögare}{Markus Rahne}{BME14}{}
+\nv{Entertainer}{Albin Nyström Eklund}{BME16}{}
+\end{narvarolista}
+
+\begin{comment}
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+\nv{Kårrepresentant}{Jacob Karlsson}{}{}
+\nv{Aktivietssamordnare}{Lovisa Majtorp}{}{}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+%\nv{Skattmästare}{Olle Oswald}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Fredrik Peterson}{E14}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+\end{narvarolista}
+\end{comment}
+
+\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:12.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+Johan nominerade Josefine.\\
+Niklas nominerade sig själv.\\
+Niklas drog tillbaka sin nominering.\\
+{\valavj}
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}
+
+\p{6}{Adjungeringar}{\bes}
+{\ingaadj}
+
+%Förnamn Efternamn adjungerades
+
+\p{7}{Godkännande av dagordningen}{\bes}
+Dagordningen godkändes.
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+%Föredragningslistan godkändes med yrkandet.
+%Föredragningslistan godkändes med samtliga yrkanden.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprot{S09/17}
+%\ingaprot
+
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+%\fval{Namn}{Post}
+\entl{Dennis Dalenius}{Kodhackare}
+\end{fyllnadsval}
+\newpage
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+Punkten protokollfördes ej.
+\subp{B}{Utskottsrapporter}{\info}
+Det går bra för CM.
+
+Det ska inte vara några konstigheter hos FVU.
+
+I InfU går allt bra, Pontus spam ska snart vara löst, han har fått ett formulär också. Allt annat rullar på som vanligt.
+
+Hos KM är ruljansen som vanligt, sista gillet innan påskledigheten står för dörren. Krögartrion ska hålla litet halvterminsmöte inom kort och testa maten inför Jubileumsgillet.
+
+NollU har jobbat inför Temasläppet. Kläder osv är på gång. Mycket diskussioner.
+
+ENU har det lugnt från förra veckan, fortsätter att mejla företag. Josefine har fakturerat lite och ska fakturera lite åt NollU.
+
+NöjU har genomfört Agent 00E och det blev lyckat. Det var 40 deltagare. De hade däremot satsat på cirka 80 st. Påskjakt idag som fritidsledare drivit. Verkar ha blivit lyckad. Tandembiljetter släpps om 13 min och i år kommer de sälja alla biljetter. Nöju planerar att hålla någon grillkväll eller liknande den 4:e maj, jubileumsveckan.
+
+E6 hade en sittning för alumner från E, W och K tillsammans med de sexmästerierna i lördags. Det gick superbra och det var väldigt kul att samarbeta med sexmästerier på andra sektioner. De har börjat planera för Temasläppssittningen som de håller tillsammans med D6.
+
+För SRE har det inte hänt något nämnvärt sedan förra veckan. Kontinuerligt arbete med CEQ pågår, annars är det ganska lugnt just nu.
+\subp{C}{Ekonomisk rapport}{\info}
+Sophia var inte närvarande men vi har pengar på banken sa Erik.
+\subp{D}{Kåren informerar}{\info}
+Ingen kårrepresentant var närvarande.
+\end{paragrafer}
+
+\p{11}{VT/17}{\dis}
+Erik gick igenom vad som har diskuterats innan för de som missat det. Bland annat om huruvida kravprofilerna ska vara öppna för alla och om vilka propositioner som ska läggas. Diskussion om valprocesser fördes också, främst valprocessen för co-phøs men även allmänna val.
+
+Mötet tog även upp att testamenten allmänt borde finnas inte bara till styrelseposter, det ska vara lättare att gå på en post.
+\p{12}{Medaljer till jubiléet}{\dis}
+Mötet diskuterade ämnet.
+\p{13}{Riktlinje: Återbetalningsskyldighet}{\bes}
+Erik \ypa antaga riktlinjen i sin helhet.\\
+\Mbaby
+\p{14}{Sektionsgrodan}{\dis}
+Mötet diskuterade ämnet, om någon vill så finns möjligheten att engagera sig i detta.
+\p{15}{Nästa styrelsemöte}{\dis}
+{\Mba} nästa styrelsemöte ska äga rum 2017-04-27 12:10 i E:1426.
+\p{16}{Beslutsuppföljning}{\bes}
+%{\Ibfu}
+Skjuts upp till nästa möte.
+\p{17}{Övrigt}{\dis}
+Kvällsmöten 04-17 och 04-19.\\
+Arkivet är ett mötesrum.
+\p{18}{OFMA}{\bes}
+{\mo} förklarade mötet avslutat 12:56.
+
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
