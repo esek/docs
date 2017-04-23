@@ -1,0 +1,65 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S11/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-04-27} %YYYY-MM-DD
+\def\docauthor{E-sektionen}
+
+\def\mtime{12:10}
+\def\place{E:1426}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paralist}
+    \pli{OFMÖ}{\bes}
+    \pli{Val av mötesordförande}{\bes}
+    \pli{Val av mötessekreterare}{\bes}
+    \pli{Val av justeringsperson}{\bes}
+    \pli{Godkännande av tid och sätt}{\bes}
+    \pli{Adjungeringar}{\bes}
+    \pli{Godkännande av dagordningen}{\bes}
+    \pli{Föregående mötesprotokoll}{\bes}
+    \pli{Fyllnadsval och entledigande av funktionärer}{\bes}
+
+    \pli{Rapporter}{}
+    \begin{paralist}
+        \pli{Hur mår alla?}{\info}
+        \pli{Utskottsrapporter}{\info}
+        \pli{Ekonomisk rapport}{\info}
+        \pli{Kåren informerar}{\info}
+    \end{paralist}
+
+    \pli{VT/17}{\dis}
+
+    \pli{Nästa styrelsemöte}{\bes}
+    \pli{Beslutsuppföljning}{\bes}
+    \pli{Övrigt}{\dis}
+    \pli{OFMA}{\bes}
+\end{paralist}
+
+\section*{Beslutsuppföljning}
+\begin{beslutsuppf}
+    \beslut{S03/17}{55-års jubileum}{}{Anders Nilsson}{S10/17}
+    \beslut{S04/17}{Examensbankett}{}{Hampus Pettersson}{S15/17}
+    \beslut{S07/17}{Inköp av Raspberry Pi:s}{}{Anders Nilsson}{S09/17}
+    \beslut{S07/17}{Inköp av skärmar till baren}{}{Anders Nilsson}{S10/17}
+\end{beslutsuppf}
+
+\begin{signatures}{1}
+    \emph{I styrelsens tjänst}
+    \signature{Erik Månsson}{Ordförande}
+\end{signatures}
+
+\end{document}
