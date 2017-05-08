@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Erik Månsson}
+\def\sekr{Johan Karlberg}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Extra Sektionsmöte} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{E01/17} %ex S02/16, E01/15, VT/13
+\def\date{2017-05-18} %YYYY-MM-DD
+\def\docauthor{\ordf}
+
+\def\mtime{12:10}
+\def\place{E:C}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{\bes}
+    \pli{Val av mötesordförande}{\bes}
+    \pli{Val av mötessekreterare}{\bes}
+    \pli{Godkännande av tid och sätt}{\bes}
+    \pli{Val av två justeringspersoner}{\bes}
+    \pli{Adjungeringar}{\bes}
+    \pli{Godkännande av dagordningen}{\bes}
+    \pli{Föregående sektionsmötesprotokoll}{\bes}
+    \pli{Meddelanden}{\info}
+
+    \pli{Entledigande av SRE-ordförande}{\bes}
+    \pli{Val av SRE-ordförande}{\bes}
+
+    \pli{Övrigt}{\dis}
+    \pli{TaFMA}{\bes}
+\end{paralist}
+
+\begin{signatures}{1}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+\end{signatures}
+
+\end{document}
