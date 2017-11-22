@@ -5,7 +5,7 @@
 \def\ordf{Erik Månsson}
 \def\sekr{Johan Karlberg}
 
-\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\doctype{Sena handlingar} %ex. Kallelse, Handlingar, Protkoll
 \def\mname{Valmötet} %ex. styrelsemöte, vårterminsmöte
 \def\mnum{VM/17} %ex S02/16, E01/15, VT/13
 \def\date{2017-11-21} %YYYY-MM-DD
@@ -20,7 +20,22 @@
 
 \begin{document}
 
-\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+%\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        \includegraphics[width=7cm]{sigill}\\
+        \vspace*{1.5cm}
+        \heading{{\doctype} till {\mname} {\mnum}}\par
+        {\Large {\date} {\mtime} i {\place}}
+    \end{center}
+    %\vspace*{1cm}
+    {Dessa sena handlingar är en uppdaterad version av handlingarna.
+    Bara de motkandidater som anmält sin motkandidatur till styrelseposter i tid enligt reglementet finns med.
+    Personer som avsagt sig sin kandidatur till en viss post finns inte längre med i listan.
+    Alla poster är uppdaterade för att stämma överens med det uppdaterade reglementet efter HT/17.}
+\end{titlepage}
 
 \tableofcontents
 \newpage
@@ -94,20 +109,17 @@
     \end{post}
     \begin{post}{Entertainer}{u}
         \vbfpers{Adam Belfrage}{ad6718be-s}
-        \pers{Adla Jebara}{nod14aj1}
-        \pers{Johan Siwerson}{jo8447si-s}
     \end{post}
     \begin{post}{Kontaktor}{u}
         \vbfpers{Axel Voss}{elt15avo}
-        \pers{William Marnfeldt}{wi2214ma-s}
     \end{post}
     \begin{post}{Krögare}{u}
         \vbfpers{Malin Heyden}{ma5002he-s}
         \pers{Carl Spangberg}{ca6267sp-s}
+        \pers{Filip Winzell}{ca6267sp-s}
     \end{post}
     \begin{post}{SRE-ordförande}{u}
         \vbfpers{Fanny Månefjord}{fa6650ma-s}
-        \pers{Axel Sandqvist}{ax3715sa-s}
     \end{post}
     \begin{post}{Sexmästare}{u}
         \vbfpers{Alexander Wik}{al8224wi-s}
@@ -117,7 +129,6 @@
     \end{post}
     \begin{post}{Øverphøs}{u}
         \vbfpers{Sonja Kenari}{nat14sta}
-        \pers{Adla Jebara}{nod14aj1}
         \pers{Andreas Bennström}{an1201be-s}
         \pers{Jonathan Benitez}{jo6205be-s}
     \end{post}
@@ -145,7 +156,6 @@
     \begin{post}{Vice Sexmästare}{1}
         \vbfpers{Amanda Zarkout}{am5425za-s}
         \vbfpers{Moa Rönnlund}{mo4347ro-s}
-        \pers{Jakob Pettersson}{ja7401pe-s}
     \end{post}
     \begin{post}{Barmästare}{2}
       \vakant
@@ -195,11 +205,8 @@
     \end{post}
     \begin{post}{Alumniansvarig E}{2}
       \vakant
-    \end{post} 
+    \end{post}
 \end{vallista}
-
-\newpage
-
 \subsubsection{Förvaltningsutskottet}
 \begin{vallista}
     \begin{post}{Vice Förvaltningschef}{1}
@@ -268,16 +275,13 @@
     \begin{post}{Vice Krögare}{2}
         \vbfpers{Filip Winzell}{fi5666wi-s}
         \vbfpers{Stephanie Bol}{st3051bo-s}
-        \pers{Hjalmar Tingberg}{hj0713ti-s}
         \pers{Amanda Gustafsson}{am7578gu-s}
         \pers{Filip Larsson}{fi2341la-s}
-        \pers{Tor Hammarbäck}{to3567ha-s}
         \pers{Carl Spangberg}{ca6267sp-s}
     \end{post}
     \begin{post}{Cøl}{2}
         \vbfpers{Viktor Persson}{elt14vpe}
         \vbfpers{Carl Spangberg}{ca6267sp-s}
-        \pers{Tor Hammarbäck}{to3567ha-s}
     \end{post}
 \end{vallista}
 
@@ -362,7 +366,7 @@
 \subsection{Valberedning}
 \begin{vallista}
     \begin{post}{Valberedningens Ordförande}{u}
-      \pers{Pontus Landgren}{elt14pla}
+      \vbfpers{Pontus Landgren}{elt14pla}
     \end{post}
     \begin{post}{Valberedningens sekreterare}{1}
       \pers{Olle Osvald}{mte14oos}
