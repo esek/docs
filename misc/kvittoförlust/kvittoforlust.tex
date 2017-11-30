@@ -1,0 +1,25 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\year{2017}
+\def\doctitle{Kvittoförlust}
+\def\date{2017-11-29} %YYYY-MM-DD
+\def\docauthor{Johan Karlberg}
+\def\pers{Kalle Anderson}%personen som har tappat bort kvittot
+\def\fvc{Sophia Grimmeiss Grahm}%fvc
+\def\ordf{Erik Månsson}%ordförande
+\def\belopp{160}
+\usepackage{../../e-sek}
+
+\begin{document}
+  \heading{\doctitle}
+
+  Härmed intygar jag, \pers, att jag köpt mat för sektionens räkning till vårt mentorsmöte och glömt ta kvitto. Summan var på \SI{\belopp}{kr} och var för tre adepter och mig.
+  \begin{signatures}{3}
+    Lund, \date
+    \signature{\ordf}{Ordförande, E-sektionen}
+    \signature{\fvc}{Förvaltningschef, E-sektionen}
+    \signature{\pers}{}
+  \end{signatures}
+\end{document}
