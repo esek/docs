@@ -1,0 +1,292 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Daniel Bakic}
+\def\ms{Axel Voss}
+\def\ji{Adam Belfrage}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S01/18} %ex S02/16, E1/15, VT/13
+\def\date{2018-01-24} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Daniel Bakic}{E15}{}
+\nv{Kontaktor}{Axel Voss}{E15}{}
+\nv{Förvaltningschef}{Magnus Lundh}{E15}{}
+\nv{Cafémästare}{Elin Johansson}{BME16}{}
+\nv{Øverphøs}{Andreas Bennström}{BME16}{}
+\nv{SRE-ordförande}{Fanny Månefjord}{BME16}{}
+\nv{ENU-ordförande}{Isabella Hansen}{E16}{}
+\nv{Sexmästare}{Alexander Wik}{BME17}{}
+\nv{Krögare}{Malin Heyden}{E16}{}
+\nv{Entertainer}{Adam Belfrage}{BME17}{}
+\end{narvarolista}
+
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+\nv{Inköps- och lagerchef}{Sofie Johannesson}{E17}{}
+\nv{Inköps- och lagerchef}{Fabian Sondh}{E17}{}
+\nv{Inköps- och lagerchef}{Albin Pålsson}{E17}{}
+\nv{Kårrepresentant}{Agnes Sörliden}{}{}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+%\nv{Kårrepresentant}{Jacob Karlsson}{}{\nafr{3}}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+%\nv{Skattmästare}{Olle Oswald}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Erik Månsson}{E14}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+\end{narvarolista}
+
+\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:16.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}
+
+\p{6}{Adjungeringar}{\bes}
+{\ingaadj}
+%Förnamn Efternamn adjungerades
+
+
+\p{7}{Godkännande av dagordningen}{\bes}
+Dagordningen godkändes
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+
+%Föredragningslistan godkändes med yrkandet.
+%Föredragningslistan godkändes med samtliga yrkanden.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+%\latillprot{S27/16}
+\ingaprot
+
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\fval{Lejla Alibegovic}{Näringslivskontakt}
+\fval{Jennie Karlsson }{Näringslivskontakt}
+\fval{Elin Branzell}{Näringslivskontakt}
+\fval{Ludvig pettersson}{Näringslivskontakt}
+\fval{Linnea Nilsson}{Näringslivskontakt}
+\fval{Thomas Syski}{Näringslivskontakt}
+\fval{Fredrik Nilsson}{Näringslivskontakt}
+\fval{Filip Larsson }{Näringslivskontakt}
+\fval{Andreas Bengtsson }{Näringslivskontakt}
+\fval{Johan Vikstrand}{Näringslivskontakt}
+\fval{Jonathan Jakobsson}{Näringslivskontakt}
+\fval{Markus Rahne}{Kodhackare}
+\fval{Carl Sjögren}{Kodhackare}
+\fval{Rasmus Sobel}{Kodhackare}
+\fval{Christian Benson}{Kodhackare}
+\fval{Per Josefsson}{Kodhackare}
+\fval{Daniel Johansson}{Kodhackare}
+\fval{Johan Karlberg}{Kodhackare}
+\fval{Nicklas Persson}{Kodhackare}
+\fval{Niklas Kjellman}{Kodhackare}
+\fval{Axel Sondh}{Kodhackare}
+\fval{Adam Koch }{Kodhackare}
+\fval{Amelie Bäck}{Kodhackare}
+\fval{August Zenk}{Kodhackare}
+\fval{Christoffer Sörensson}{Kodhackare}
+\fval{Filip Kronström}{Kodhackare}
+\fval{Hannes Bydén}{Kodhackare}
+\fval{Johan Ekman}{Kodhackare}
+\fval{Sonja Kenari}{Kodhackare}
+\fval{Anton Fristedt}{Kodhackare}
+\fval{Fabian Frankel}{Kodhackare}
+\fval{Ivar Söderberg}{Kodhackare}
+\fval{Jennifer Ramkull }{Kodhackare}
+\fval{Martin Svensson}{Kodhackare}
+\fval{Oskar Berg}{Kodhackare}
+\fval{Simon Palmhager}{Kodhackare}
+\fval{David Karlsson}{Kodhackare}
+\fval{Erik Rydengård}{Kodhackare}
+\fval{Gustav Jönemo}{Kodhackare}
+\fval{Johan Sievert Lindeskog}{Kodhackare}
+\fval{David Karlsson}{Sexig}
+\fval{Adam Rosandell}{Sexig}
+\fval{Jakob Pettersson}{Sexig}
+\fval{Klara Indebetou }{Sexig}
+\fval{Isa Clementsson}{Sexig}
+\fval{Henrik von Friesendorff}{Sexig}
+\fval{Ebba Lindgärde}{Sexig}
+\fval{Sophia Carlsson}{Sexig}
+\fval{Tina Tabandeh}{Sexig}
+\fval{Ragnhild Kilborn }{Sexig}
+\fval{Axel Sandqvist}{Sexig}
+\fval{Amjad Belbisi}{Sexig}
+\fval{Johan Halldin}{Sexig}
+\fval{Timothy Burfield}{Sexig}
+\fval{Rebecka Lövgren}{Sexig}
+\fval{Melina Alnasser}{Sexig}
+\fval{Emma Hjörneby}{Sexig}
+\fval{Caroline Zander}{Sexig}
+\fval{Jonathan Benitez}{Sexig}
+\fval{Marcus Ascard}{Sexig}
+\fval{Fabian Sondh}{Sexig}
+\fval{Tina Tabandeh}{Likabehandlingsombud}
+\fval{Lina Samnegård}{Halvledare}
+\fval{Isa Clementsson}{Halvledare}
+\fval{Johanna Wikström}{Halvledare}
+\fval{Viktor Drakfeldt}{Halvledare}
+\fval{Adam Rosandell}{Diod}
+\fval{Amjad Belbisi}{Diod}
+\fval{Axel Stenström}{Diod}
+\fval{Anton Jigsved}{Diod}
+\fval{Max Wither}{Diod}
+\fval{Severin Pfister}{Diod}
+\fval{Paulina Sager}{Diod}
+\fval{Jessica Kågeman}{Diod}
+\fval{Martin Ollén }{Diod}
+\fval{Hjalmar Tingberg}{Diod}
+\fval{Eltayeb Bayomi}{Diod}
+\fval{Gabriela Medina}{Diod}
+\fval{Jennifer Ramkull}{Diod}
+\fval{Anton Fristedt}{Diod}
+\fval{Hannes Björk}{Diod}
+\fval{Alfred Hirschfeld}{Diod}
+\fval{Felix Långberg}{Diod}
+\fval{Alexander Arvebratt}{Diod}
+\fval{Mohammad Bijani}{Diod}
+\fval{Anton Jigsved}{ØverGudsPhadder}
+\fval{Sophia Carlsson}{ØverGudsPhadder}
+\entl{Ebba Lindgärde}{Likabehandlingsombud}
+%\fval{Namn}{Post}
+%\entl{Namn}{Post}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+Punkten protokollfördes ej.
+
+\subp{B}{Utskottsrapporter}{\info}
+Alex höll sitt första event, fika med Athena.
+
+Adam har haft mycket på gång med NöjU, de planerar bland annat DreamhackE.
+
+Det har gått bra i CM. De har fått nya muggar och därför infört stor kaffe samtidigt som de sänkt priset på småmackor. Mötet med halvledarna gick bra, Elin jobbar på att utbilda nya dioder och att hitta fler för att fylla tiderna.
+
+Phøset hade sin första träff i veckan.
+
+Det har inte hänt så mycket i InfU än.
+
+Magnus har delat ut lite nycklar.
+
+Studierådet är i sin uppstartsfas och anmäler sig till utbildningar.
+
+KM har beställt tröjor och jobbare har skrivit upp sig på gillen
+
+ENU är i uppstartsfas och ska ha sitt första möte den 25/1, just nu är det fullt fokus på Teknikfokus.
+
+Daniel och Magnus har varit på C-cert. De har även varit på banken och ändrat sig till firmatecknare.
+
+\subp{C}{Ekonomisk rapport}{\info}
+
+Ekonomin ser bra ut, Magnus har betalat fakturor och bokfört.
+
+\subp{D}{Kåren informerar}{\info}
+
+Kåren är i uppstartsfas. De väljer funktionärer och alla introduceras.
+
+\end{paragrafer}
+
+\p{11}{Val av Vice Ordförande}{\bes}
+Daniel nominerade Magnus till Vice Ordförande.
+
+Magnus valdes till Vice Ordförande.
+\p{12}{C-cert}{\info}
+
+Daniel informerade om att det är väldigt noga med att ingen alkohol får medtages till serveringsutrymmen, detta gäller även edekvata.
+Daniel vill ha en kort utbildning med funktionärer angående detta.
+
+\p{13}{Städvecka}{\info}
+CM och ENU har städvecka.
+
+\p{14}{Avig och Braig}{\info}
+Till alla event behövs en ansvarig och en brandansvarig.
+
+\p{15}{Halvledare access}{\dis}
+Daniel och Elin har pratat om access till Halvledare. De behöver tillgång till sopcontainern.
+Halvledare behöver också access till LED och Ulla.
+
+Mötet diskuterade ämnet.
+
+Daniel \ypa ge Halvledare access.
+
+\Mbaby
+\p{16}{Ekonomiutbildning}{\dis}
+Mötet diskuterade tid och datum för ekonomiutbildning.
+
+\Mba ekonomiutbilningen ska äga rum den 2018-01-31 klockan 12:00.
+\p{17}{KPL och Skiphte}{\dis}
+
+Daniel \ypa prata om Skiphtet och KPL efter mötet.
+
+\Mbaby
+
+\p{18}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2017-02-01 12:10 i E:1124.
+
+\p{19}{Beslutsuppföljning}{\bes}
+Adam \ypa stryka Jumbopriset till SåS från beslutsuppföljningen.
+%{\Ibfu}
+
+\Mbaby
+
+\p{20}{Övrigt}{\dis}
+Kåren kommer sponsra Nollekollen eftersom de inte kommer ha någon nolleguide i år.
+Kåren kollar även på anmälningssystem för biljetter, de försöker få en bra deal för alla sektioner.
+
+Phøset vill ha lite egna enskilda möten med alla utskott.
+
+Axel informerar om hemsidan.
+
+\p{21}{OFMA}{\bes}
+{\mo} förklarade mötet avslutat 12:49.
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
