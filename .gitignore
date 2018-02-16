@@ -9,6 +9,8 @@ build/
 *.toc
 .DS_Store
 
+.vscode/
+
 !_res/*
 !styrdokument/stadga/_res/*
 !moten/2016-vt-handlingar/_res/*
