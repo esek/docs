@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\erik{Erik Månsson}
+
+\def\doctitle{Diplom}
+\def\date{2018-02-16} %YYYY-MM-DD
+\def\longdate{fredagen den 16:e februari 2018}
+\def\docauthor{\erik}
+
+\usepackage{../../e-sek}
+
+\fancyfoot[R]{}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    includeheadfoot,
+    top=25mm,
+    left=32mm,
+    right=32mm,
+    bottom=20mm,
+    headheight=42pt
+}
+
+\newcommand{\diplom}[1]{
+    \vspace*{2mm}
+
+    \begin{center}
+        \includegraphics[width=6cm]{sigill}\par
+        \vspace*{6mm}
+        {\Large Diplom tilldelat {#1}}\par
+        {\Large För en fantastisk insats i LED-café 2017}\par
+        {\Large E-sektionen inom TLTH}\par
+        \vspace*{1mm}
+    \end{center}
+
+    \vspace*{8mm}
+
+    Sektionen vill tacka dig, {#1}, för dina enorma insatser i LED-café 2017. När Sektionen behövt det som mest, har du tillsammans med resten av Cafémästeriet ställt upp i vått och torrt. Trots oväntade omständigheter har ni lyckats driva caféets verksamhet på bästa sätt.
+
+    \begin{signatures}{1}
+        I E-sektionens tjänst \\
+        Lund, {\longdate}
+        \signature{\docauthor}{Ordförande 2017}
+    \end{signatures}
+}
+
+\begin{document}
+
+\diplom{Daniel Bakic}
+\diplom{Jonathan Jakobsson}
+\diplom{Elin Johansson}
+\diplom{Filip Johansson}
+\diplom{Jessica Kågeman}
+\diplom{Johanna Wikström}
+
+\end{document}
