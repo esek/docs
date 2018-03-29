@@ -1,0 +1,197 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Daniel Bakic}
+\def\sekr{Axel Voss}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Vårterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{VT/18} %ex S02/16, E01/15, VT/13
+\def\date{2018-04-24} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:B}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Beslutsuppföljning}{}
+    \pli{Utskottsrapporter}{}
+    \pli{Uppföljning av verksamhetsplan}{}
+    \pli{Ekonomisk rapport}{}
+
+    \pli{Val}{}
+        \begin{paralist}
+            \pli{Val av funktionärer}{}
+            \pli{Val av hedersmedlemmar}{}
+        \end{paralist}
+    \pli{Verksamhetsberättelser för 2017}{}
+    \pli{Bokslut för 2017}{}
+    \pli{Revisionsberättelse för 2017}{}
+    \pli{Styrelsens förslag till resultatdisposition}{}
+    \pli{Uttag ur sektionens fonder sedan förra terminsmötet}{}
+    \pli{Frågan om ansvarsfrihet för 2017}{}
+        \begin{paralist}
+            \pli{Funktionärer}{}
+            \pli{Utskott}{}
+            \pli{Styrelse}{}
+            \pli{Revisorer}{}
+            \pli{Valberedning}{}
+        \end{paralist}
+
+    \pli{Behandling av motioner}{}
+        \begin{paralist}
+            \pli{Inköp av ny sektionskamera}{}
+            \pli{Uppdaterad utrustning för linbanan}{}
+            \pli{Internationell Nolleguide}{}
+            \pli{Utskottsmärken}{}
+            \pli{Internationell Nolleguide}{}
+            \pli{Kvalitetskrav}{}
+            \pli{E-speleman}{}
+        \end{paralist}
+    \pli{Behandling av propositioner}{}
+        \begin{paralist}
+            \pli{Uppdatering av funktionärers skyldigheter i reglemente}{}
+            \pli{Införande av UtEDischoansvarig}{}
+            \pli{Införskaffande av nya miktrovågsugnar}{}
+            \pli{Upprustning av sektionens server}{}
+            \pli{Ändring av hur Sektionen väljer Phøs}{}
+        \end{paralist}
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+\end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\begin{supersection}{Beslutsuppföljningar}{}
+    \subsection{Överblick}
+    \begin{busek}
+        \beslutsek{VM/17}{Äskning av pengar till mentorsprogram}{}{VT/18}
+        \end{busek}
+    \newpage
+
+    \subfile{../besuppf/fanb}
+\end{supersection}
+
+\subfile{../_other/ekonomisk_rapport}
+\newpage
+
+\addcontentsline{toc}{subsection}{Balansrapport}
+\includepdf[pages=-]{../_res/balansrapport.pdf}
+
+\subfile{../_other/budgetuppfoljning}
+\newpage
+
+\subfile{../_other/revisionsberattelse}
+\newpage
+
+\subfile{../_other/revisionsberattelse_tillagg}
+\newpage
+
+\subfile{../_other/disp}
+\newpage
+
+\subfile{../_other/uttag}
+\newpage
+
+\begin{utskottsrapporter}
+    \subfile{../utskottsrapporter/cm}
+    \subfile{../utskottsrapporter/e6}
+    \subfile{../utskottsrapporter/enu}
+    \subfile{../utskottsrapporter/fvu}
+    \subfile{../utskottsrapporter/infu}
+    \subfile{../utskottsrapporter/km}
+    \subfile{../utskottsrapporter/noju}
+    \subfile{../utskottsrapporter/nollu}
+    \subfile{../utskottsrapporter/sre}
+    \subfile{../utskottsrapporter/styret}
+    \subfile{../utskottsrapporter/vb}
+\end{utskottsrapporter}
+
+\begin{supersection}{Uppföljningar av verksamhetsplaner}{}
+    \subfile{../verksplanuppfar/2018-vt-avg}
+    \subfile{../verksplanuppfar/2018-vt-nuv}
+\end{supersection}
+
+\begin{berattelser}
+    \subfile{../berattelser/styret}
+    \subfile{../berattelser/cm}
+    \subfile{../berattelser/e6}
+    \subfile{../berattelser/enu}
+    \subfile{../berattelser/fvu}
+    \subfile{../berattelser/infu}
+    \subfile{../berattelser/km}
+    \subfile{../berattelser/noju}
+    \subfile{../berattelser/nollu}
+    \subfile{../berattelser/sre}
+    \subfile{../berattelser/vb}
+\end{berattelser}
+
+\begin{supersection}{Val av funktionärer}{}
+\subfile{../valforslag/valforslag}
+\end{supersection}
+\newpage
+
+\begin{motioner}
+    \subfile{../motioner/bananaband}
+    \subfile{../motionssvar/bananaband}
+    \subfile{../motioner/bled_cafe}
+    \subfile{../motionssvar/bled_cafe}
+    \subfile{../motioner/cm_pump}
+    \subfile{../motionssvar/cm_pump}
+    \subfile{../motioner/examenstavlor}
+    \subfile{../motionssvar/examenstavlor}
+    \subfile{../motioner/inspektorskladsel}
+    \subfile{../motionssvar/inspektorskladsel}
+\end{motioner}
+
+\begin{propositioner}
+    \subfile{../propositioner/kravprof}
+    \subfile{../propositioner/krrvalreg}
+    \subfile{../propositioner/mentorsprog}
+    \subfile{../propositioner/mojt}
+    \subfile{../propositioner/pasystem}
+    \subfile{../propositioner/projektfunk}
+    \subfile{../propositioner/remgt}
+    \subfile{../propositioner/phosval}
+\end{propositioner}
+
+\begin{supersection}{Bokslut 2016}{}
+    \includepdf[pages=-]{../_res/bokslut/balansrapport.pdf}
+    \includepdf[pages=-]{../_res/bokslut/resultatrapport_sektionen.pdf}
+    \includepdf[pages=-]{../_res/bokslut/resultatrapporter_alla_utskott.pdf}
+\end{supersection}
+
+\end{document}
