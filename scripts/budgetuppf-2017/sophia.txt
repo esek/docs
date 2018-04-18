@@ -1,14 +1,14 @@
 Sektionen
 SEK01
 Sektionsavgifter = + 41 490
-Sektionsaktiviteter = − 9 313,47
+Sektionsaktiviteter = − 10380
 Representation = − 5 790,73
 Funkionärsvård = − 61 669,76
 Arbetglädje = - 18 479,36
 Arbetskläder Funktionärer = 0
 Medaljer = 0
 Pant = + 5 196,70
-Expo = - 943
+Expo = - 1209
 
 SEK02
 Revisorer = 0
