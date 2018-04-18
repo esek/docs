@@ -1,0 +1,104 @@
+Sektionen
+SEK01
+Sektionsavgifter = + 41 490
+Sektionsaktiviteter = − 10380
+Representation = − 5 790,73
+Funkionärsvård = − 61 669,76
+Arbetglädje = - 18 479,36
+Arbetskläder Funktionärer = 0
+Medaljer = 0
+Pant = + 5 196,70
+Expo = - 1209
+
+SEK02
+Revisorer = 0
+SEK03
+Valbered = 0
+SEK05
+Skiphte = -3 590,04
+
+Sexmästeriet
+SEX01
+E6 Allmänt = + 35 067,90
+
+Näringslivsutskottet
+ARMU01
+Sponsring = + 82394,11
+Teknikfokus = + 168 608,50
+
+
+Informationsutskottet
+INFU01
+Alumniverksamhet = 0
+Nolleguide = - 6280
+Datordrift = - 500,08
+Ljud och ljus = + 1480,30
+HeHE = 0
+
+Källarmästeriet
+KM01
+Gille = 21 245,60
+Fast tillstånd = −9000
+
+
+Cafémästeriet
+CM01
+LED = + 90341,19
+Tillsyn = -1900
+LED-tack=0
+Summa =  88 441,19
+
+CM02
+Mojter = + 300,76
+
+Styrelsen
+STY01
+Klädsel = -6 500,25
+Styrelserepresentation = - 4 730,00
+Styrelsen internt = -10549,76
+Summa  = -21 780,01
+
+Nöjesutskottet
+NOJU01
+Allmänt = -1528.55
+
+NOJU02
+Biljard och spel = - 618,00
+Tandem = 0
+Sångarstriden = 0
+Utedischo = + 25000
+Summa noju02 = 24 304,40
+
+NOJU03
+Sporta med E = -4 769,00
+
+Summa
+
+Studierådet
+SRE01
+CEQ-intäkter = + 10000
+SRE disponibelt = -5359
+Summa = 4 641,00
+
+Nolleutskottet
+PHOS01
+Nollning Allmänt = -24481,63
+Phöset internt  = -18 079,85
+
+
+Phaddertack = -3747,42
+Summa = -46 308,90
+
+Förvaltningsutskottet
+FVU01
+Expedition = - 8694,55
+Kontantfri lösning = -21 386,06
+Fin. int. och kost. = -3 352,50
+E-shop = + 4059,73
+Arkiv = 0
+
+FVU02
+Edekvata = -14016,05
+Trivsel = − 552,80
+
+ Summa (fvu01 + 02)= - 43942,23
