@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+    \def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+    \def\mnum{S10/18} %ex S02/16, E1/15, VT/13
+    \def\date{2018-04-26} %YYYY-MM-DD
+    \def\docauthor{Daniel Bakic}
+    
+    \def\mtime{12:10}
+    \def\place{E:1124}
+    
+    \usepackage{../e-mote}
+    \usepackage{../../../e-sek}
+    
+    \begin{document}
+    
+    \heading{{\doctype} till {\mname} {\mnum}}
+    
+    \section*{Tid och plats}
+    \tidplats
+    
+    \section*{Föredragningslista}
+    \begin{paralist}
+        \pli{OFMÖ}{\bes}
+        \pli{Val av mötesordförande}{\bes}
+        \pli{Val av mötessekreterare}{\bes}
+        \pli{Val av justeringsperson}{\bes}
+        \pli{Godkännande av tid och sätt}{\bes}
+        \pli{Adjungeringar}{\bes}
+        \pli{Godkännande av dagordningen}{\bes}
+        \pli{Föregående mötesprotokoll}{\bes}
+        \pli{Fyllnadsval och entledigande av funktionärer}{\bes}
+        \pli{Rapporter}{}
+        \begin{paralist}
+            \pli{Hur mår alla?}{\info}
+            \pli{Utskottsrapporter}{\info}
+            \pli{Ekonomisk rapport}{\info}
+            \pli{Kåren informerar}{\info}
+            \pli{Omvärldsrapport}{\info}
+        \end{paralist}
+    
+        
+        \pli{Nästa styrelsemöte}{\bes}
+        \pli{Beslutsuppföljning}{\bes}
+        \pli{Övrigt}{\dis}
+        \pli{OFMA}{\bes}
+      \end{paralist}
+    
+    \newpage
+    
+    \section*{Beslutsuppföljning}
+    %\emph{Beslutsuppföljningen är tom!}
+    \begin{beslutsuppf}
+    \beslut{S09/18}{GDPR}{}{Styrelsen}{S10/18}
+    \beslut{S09/18}{Kaffekokare}{}{Malin Heyden}{S11/18}
+    \beslut{S09/18}{Biljardaccess}{}{Axel Voss}{S11/18}
+    \beslut{S09/18}{Uppföljning ögondush och maskindiskmedel}{}{Axel Sandqvist}{S11/18}
+    \end{beslutsuppf}
+    
+    \begin{signatures}{1}
+        \emph{I styrelsens tjänst}
+        \signature{Daniel Bakic}{Ordförande}
+    \end{signatures}    
+    
+    \end{document}
