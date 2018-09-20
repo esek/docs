@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2018}
+\def\doctitle{NollEgasquen \date}
+\def\docauthor{Erik Månsson}
+
+\usepackage{../../../e-sek}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=1mm,
+    left=25mm,
+    right=25mm,
+    bottom=0mm
+}
+
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+    \begin{center}
+        \includegraphics[width=6cm]{sigill}
+        \par
+        \vspace*{5mm}
+
+        \textit{\textbf{\Large \doctitle}}
+
+        {\it
+            The E-guild within the Faculty of Engineering\\ 
+            at Lund University\\
+            has the great honor to request
+            \par \vspace*{8mm}
+            \line(1,0){220} 
+            \par \vspace*{-1mm}
+            with respective to this year's Nollegasque.
+        }
+    \end{center}
+
+    \vspace*{\baselineskip}
+
+    {\it
+    The Nollegasque takes place in Gasquesalen at Kårhuset on Saturday 29th of September and the doors open at 18:00. After the sittning there will be a fireworks show followed by an eftersläpp that lasts until 3.00. 
+    
+    The dress code for the evening is formal (white tie).
+
+    Registration should be made by September the 21st at a cost of 300 kr per envelope, or 250 kr if no alcohol is desired.
+    }
+\end{document}
