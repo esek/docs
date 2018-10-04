@@ -1,293 +1,468 @@
-\documentclass[10pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[swedish]{babel}
-\def\mo{Erik Månsson}
-\def\ms{Axel Voss}
-\def\ji{xxx}
-\def\jii{xxx}
-
-\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
-\def\mname{Vårterminsmöte} %ex. styrelsemöte, Vårterminsmöte
-\def\mnum{VT/18} %ex S02/16, E1/15, VT/13
-\def\date{2018-04-24} %YYYY-MM-DD
-\def\docauthor{\ms}
-
-\usepackage{../e-mote}
-\usepackage{../../../e-sek}
-
-\begin{document}
+    \documentclass[10pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    \def\mo{Erik Månsson}
+    \def\ms{Axel Voss}
+    \def\ji{Henrik Ramström}
+    \def\jii{Pontus Landgren}
+    
+    \def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+    \def\mname{Vårterminsmöte} %ex. styrelsemöte, Vårterminsmöte
+    \def\mnum{VT/18} %ex S02/16, E1/15, VT/13
+    \def\date{2018-04-24} %YYYY-MM-DD
+    \def\docauthor{\ms}
+    
+    \usepackage{../e-mote}
+    \usepackage{../../../e-sek}
+    
+    \begin{document}
 \showsignfoot
 
 \heading{{\doctype} för {\mname} {\mnum}}
 
 %\naun{}{} %närvarane under
+%\frun{}{} %frånvarande under
 %\nati{}{} %närvarande till och med
 %\nafr{}{} %närvarande från och med
 \section*{Närvarande}
 \subsection*{Styrelsen}
 \begin{narvarolista}
-    \nv{Ordförande}{Daniel Bakic}{E15}{}
+	\nv{Entertainer}{Adam Belfrage}{BME17}{}
+	\nv{Sexmästare}{Alexander Wik}{BME17}{}
+	\nv{Øverphøs}{Andreas Bennström}{BME16}{\frun{14}{21B}}
 	\nv{Kontaktor}{Axel Voss}{E15}{}
-	\nv{Förvaltningschef}{Magnus Lundh}{E15}{}
+	\nv{Ordförande}{Daniel Bakic}{E15}{}
 	\nv{Cafémästare}{Elin Johansson}{BME16}{}
-	\nv{Øverphøs}{Andreas Bennström}{BME16}{}
 	\nv{SRE-ordförande}{Fanny Månefjord}{BME16}{}
 	\nv{ENU-ordförande}{Isabella Hansen}{E16}{}
-	\nv{Sexmästare}{Alexander Wik}{BME17}{}
+	\nv{Förvaltningschef}{Magnus Lundh}{E15}{\frun{14}{21B}}
 	\nv{Krögare}{Malin Heyden}{E16}{}
-	\nv{Entertainer}{Adam Belfrage}{BME17}{}
 \end{narvarolista}
 
 \subsection*{Medlemmar}
 \begin{narvarolista}
+	\nv{}{Amanda Gustafsson}{BME17}{\nati{22}{A}}
+	\nv{}{Amanda Nilsson}{BME16}{\nati{21}{A}}
+	\nv{}{Anton Jigsved}{BME16}{}
+	\nv{}{Björn F. Nimvik}{E15}{}
+	\nv{}{Edvard Carlsson}{E16}{}
+	\nv{}{Emil P. Lundh}{E17}{\nafr{14}{A}}
+	\nv{}{Filip Winzell}{BME16}{\nati{22}{A}}
+	\nv{}{Hannes Björk}{E17}{}
+	\nv{}{Henrik Ramström}{E16}{}
+	\nv{}{Henrik von Friesendorff}{BME17}{\nati{22}{A}}
+	\nv{}{Jennie Karlsson}{E16}{\nati{21}{A}}
+	\nv{}{Jessica Kågeman}{BME16}{\nati{21}{A}}
+	\nv{}{Johan Karlberg}{E14}{}
+	\nv{}{Johan Siwerson}{E17}{}
+	\nv{}{Johan Wikstrand}{E17}{\nati{22}{A}}
+	\nv{}{Johannes Larsson}{E16}{}
+	\nv{}{Jonathan Benitez}{E17}{}
+	\nv{}{Josefine Sandström}{E14}{}
+	\nv{}{Kajsa Ekenberg}{BME17}{\nati{22}{A}}
+	\nv{}{Lina Samnegård}{BME16}{\nati{21}{A}}
+	\nv{}{Linnea Sjödahl}{BME15}{}
+	\nv{}{Markus Rahne}{BME14}{}
+	\nv{}{Max Mauritsson}{BME16}{\nati{22}{A}}
+	\nv{}{Moa Rönnlund}{E17}{\nati{22}{A}}
+	\nv{}{Pontus Landgren}{E14}{}
+	\nv{}{Rasmus Sobel}{BME16}{}
+	\nv{}{Sanna Nordberg}{BME16}{}
+	\nv{}{Saga Juniwik}{E16}{}
+	\nv{}{Sonja Kenari}{E16}{}
+	\nv{}{Sophia Carlsson}{BME17}{}
+	\nv{}{Sophia Grimmeiss Grahm}{BME14}{}
+	\nv{}{Stephanie Bol}{BME17}{\nati{22}{A}}
+	\nv{}{Tom Andersson}{E15}{}
+	\nv{}{Tove Börjeson}{E17}{}
 \end{narvarolista}
 
 \subsection*{Ständigt adjungerande}
 \begin{narvarolista}
-\nv{Talman}{Erik Månsson}{E14}{}
-%\nv{Post}{Namn}{Klass}{}
+	\nv{Revisor}{Anders Nilsson}{E13}{\nafr{21}{B}}
+	\nv{Talman}{Erik Månsson}{E14}{}
+	\nv{Revisor}{Fredrik Peterson}{E14}{}
+	\nv{Inspektor}{Monica Almqvist}{----}{\naun{14}{14}}
 \end{narvarolista}
 
 \begin{comment}
 \subsection*{Adjungerande}
 \begin{narvarolista}
-%\nv{Post}{Namn}{Klass}{}
+	\nv{Post}{Hannes Åström}{D-sektionen}{}
 \end{narvarolista}
 \end{comment}
 
 \newpage
 \section*{Protokoll}
 \begin{paragrafer}
-\p{1}{TaFMÖ}{}
-Talman {\mo} förklarade mötet öppnat 17:xx.
+	\p{1}{TaFMÖ}{}
+	Talman {\mo} förklarade mötet öppnat 17:20.
 
-\p{2}{Val av mötesordförande}{}
-Talman {\mo} valdes.
+	\p{2}{Val av mötesordförande}{}
+	Talman {\mo} valdes.
 
-\p{3}{Val av mötessekreterare}{}
-Kontaktor {\ms} valdes.
+	\p{3}{Val av mötessekreterare}{}
+	Kontaktor {\ms} valdes.
 
-\p{4}{Godkännande av tid och sätt}{}
-Tid och sätt godkändes.
+	\p{4}{Godkännande av tid och sätt}{}
+	Tid och sätt godkändes.
 
-\p{5}{Val av två justeringspersoner}{}
-\valavj
+	\p{5}{Val av två justeringspersoner}{}
+	\valavj
 
-\p{6}{Adjungeringar}{}
-\ingaadj
+	\p{6}{Adjungeringar}{}
+	%\ingaadj
+	Hannes Åström från D-sektionen.
+	\p{7}{Godkännande av dagordningen}{}
+	Erik Månsson \ypa att lägga till ``Sena Motioner'' under \S23.
 
-\p{7}{Godkännande av dagordningen}{}
-XX XX \ypa att lägga till ``xx xx xx'' under \S XX.
+	Erik Månsson \ypa välja posten inspektor när Monica Almqvist ankommer.
 
-%Föredragningslistan godkändes.
-%Föredragningslistan godkändes med yrkandet.
-%Föredragningslistan godkändes med samtliga yrkanden.
+	%Föredragningslistan godkändes.
+	%Föredragningslistan godkändes med yrkandet.
+	Föredragningslistan godkändes med samtliga yrkanden.
 
-\p{8}{Föregående sektionsmötesprotokoll}{}
-\latillprot{VM/18}
+	\p{8}{Föregående sektionsmötesprotokoll}{}
+	\latillprot{VM/17}
 
-\p{9}{Meddelanden}{}
-Ingen hade något att meddela.
+	\p{9}{Meddelanden}{}
+	Daniel Bakic vill att alla ska ta vara på att att man kan förändra och förbättra sektionen.
 
-\p{10}{Beslutsuppföljning}{}
+	Adam Belfrage \ypa Daniel Bakic ska ta av sig sina solglasögon.
 
-\p{11}{Utskottsrapporter}{}
-Möjligheten att ställa frågor till styrelsen och valberedningen gavs.
+	Mötet diskuterade frågan.
 
-\p{12}{Uppföljning av verksamhetsplan}{}
-Möjligheten att ställa frågor till styrelsen och valberedningen gavs.
+	Erik Månsson \ypa streck i debatten.
 
-\p{13}{Ekonomisk rapport}{}
+	\Mbabay
 
-%\textbf{\Mba lägga den ekonomiska rapporten till handlingarna.}
+	Sophia Grimmeiss Grahm informerade om att kåren har sitt temasläpp den 3:e Maj.
 
-\p{14}{Val}{}
-\begin{paragrafer}
-    \subp{A}{Val av funktionärer}{}
+	Andreas Bennström informerade om att E-phøs har temasläpp den 4:e Maj.
 
-%Mötet vakantsatte allt i klump.
+	Malin Heyden meddelade att det är tacogille den 27:e April.
 
-\textbf{\Mba vakantsätta posten Teknikfokusansvarig.}\par
+	Markus Rahne meddelade att f1-röj har spikat sitt tema.
 
-\textbf{\Mba vakantsätta posten Redaktör.}\par
+	Adam Belfrage meddelade att biljetter till Paintball kommer säljas i E-foajen.
 
-\textbf{\Mba vakantsätta posten Teknokrat.}\par
+	\p{10}{Beslutsuppföljning}{}
 
-\textbf{\Mba vakantsätta posten Fritidsledare.}\par
+	Erik Månsson \ypa stryka \emph{Äskning av pengar
+		till mentorsprogram} från Beslutsuppföljning.
 
-\textbf{\Mba vakantsätta posten Karnevalsmalaj.}\par
+	Total kostnad uppgick till 3080 kr och budget var på 15 000 kr.
 
-\textbf{\Mba vakantsätta posten Stridsrop.}\par
+	\Mbaby
 
-\textbf{\Mba vakantsätta posten Umph-meister.}\par
+	\p{11}{Utskottsrapporter}{}
+	Möjligheten att ställa frågor till styrelsen och valberedningen gavs.
 
-\textbf{\Mba vakantsätta posten Revisorsuppleant.}\par
-\end{paragrafer}
-\end{paragrafer}
-	\begin{paragrafer} \item[] %quick and dirty
+	\p{12}{Uppföljning av verksamhetsplan}{}
+	Möjligheten att ställa frågor till styrelsen och valberedningen gavs.
+
+	\p{13}{Ekonomisk rapport}{}
+	Magnus Lundh presenterade den ekonomiska rapporten.
+
+	Sektionen har bra ekonomi, våra tillgångar uppnår ungefär en miljon kronor.
+
+	Johan Karlberg undrade om sektionen behöver spendera mer pengar.
+
+	Magnus Lundh svarade att sektionen egentligen behöver spendera mer pengar.
+
+	Erik Månsson undrade hur caféet går nu när sektionen inte längre betalar ut lön till någon fast anställd.
+
+	Magnus Lundh svarade att han tyvärr inte har några exaka siffror på detta.
+
+	Sonja Kenari undrade hur mycket vinst sektionen får gå med skattemässigt.
+
+	Magnus Lundh svarade att vi egentligen inte får ha någon vinst men att vi placerar överskottet i interna fonder.
+
+
+	\p{14}{Val av funktionärer}{}
+
+	\textbf{\Mba välja Johan Wikstrand till Teknikfokusansvarig.}\par
+
+	\textbf{\Mba välja Albin Nyström Eklund till Revisorsuppleant.}\par
+
+	\textbf{\Mba välja Jonathan Benitez till Inköp och Lagerchef.}\par
+
+	\textbf{\Mba välja Monica Almqvist till Inspektor.}\par
+
+
+	\p{15}{Verksamhetsberättelser för 2017}{}
+	%Styrelsen 2016 och Valberedningen 2016 gav sina verksamhetsberättelser för 2016.
+	%\textbf{\Mba lägga verksamhetsberättelsen för 2017 till handlingarna.}
+
+	\emph{Ingen hade några kommentarer på verksamhetsberättelserna}
+
+
+	\p{16}{Bokslut för 2017}{}
+	Sophia Grimmeiss Grahm prestenterade bokslutet för 2017.
+
+	\p{17}{Revisionsberättelse för 2017}{}
+	Erik Månsson presenterade revisionsberättelsen för 2017.
+
+	\textbf{Mötet beslutade att bifalla revisorernas första yrkande.
+	\emph{``Att resultat- och balansräkning fastställes.''}}
+
+	\p{18}{Styrelsens förslag till resultatdisposition}{}
+	Daniel Bakic presenterade förslaget till resultatdisposition.
+
+	\textbf{Mötet beslutade att bifalla revisorernas andra yrkande.
+	\emph{``Att styrelsens förslag till resultatsdisposition tages.''}}
+	\newpage
+	\p{19}{Uttag ur sektionens fonder sedan förra terminsmötet}{}
+	Daniel Bakic berättade om uttagen ur sektionens fonder sedan förra terminsmötet.
+
+	Sophia Grimmeiss Grahm undrade om mötet har koll på de olika fonderna.
+
+	En förklaring på fonderna gavs och kan läsas \href{https://eee.esek.se/files/styrdokument/budgetar/budget-2018.pdf}{\textbf{här} (från sida 4)}.
+
+	\p{20}{Frågan om ansvarsfrihet för 2017}{}
 	\begin{paragrafer}
-    \subp{B}{Val av hedersmedlemmar}{}
+		\subp{A}{Funktionärer}{}
+		\textbf{\Mba finna funktionärerna 2017 ansvarsfria.}
+		\subp{B}{Utskott}{}
+		\textbf{\Mba finna utskotten 2017 ansvarsfria.}
+		\subp{C}{Styrelse}{}
+		\textbf{\Mba finna styrelsen 2017 ansvarsfria.}
+		\subp{D}{Revisorer}{}
+		\textbf{\Mba finna revisorerna 2017 ansvarsfria.}
+		\subp{E}{Valberedning}{}
+		\textbf{\Mba finna valberedningen 2017 ansvarsfria.}
+
+
+	\end{paragrafer}
+
+	\p{21}{Behandling av motioner}{}
+	\begin{paragrafer}
+		\subp{A}{Införande av E-speleman}{}
+		Henrik Ramström presenterade motionen.
+
+		Emil P. Lundh undrade mer specifikt vilka arbetsområden som är tidskrävande.
+
+		Henrik Ramström svarade att kontakt med företag angående sponsring har varit det som tagit mest tid.
+
+		Malin Heyden undrar vad espelemannen ska göra när det inte är dreamhacke.
+
+		Henrik Ramström svararde att denne kan hjälpa till under spelkvällar men att tanken är att det kommer vara dreamhacke oftare.
+
+		Daniel Bakic presenterade styrelsens svar.
+
+		\textbf{\Mba avslå motionen}
+
+		\Mba ajournera mötet till klockan 19.05.
+
+		\subp{B}{Införande av en Färgspecialist}{}
+
+		Henrik Ramström presenterade motionen.
+
+		Daniel Bakic prestenterade styrelsens svar.
+
+		Mötet diskuterade frågan.
+
+		Henrik Ramström \ypa streck i debatten.
+
+		\Mbaby
+
+		\textbf{\Mba avslå motionen och styrelsens svar i sin helhet.}
+
+		\subp{C}{Inköp av ny sektionskamera}{}
+		Daniel Bakic presenterade motionen.
+
+		Daniel Bakic presenterade styrelsens svar på motionen.
+
+		\textbf{\Mba bifalla motionen med styrelsens svar i sin helhet.}
+
+		\subp{D}{Kvalitetskrav}{}
+		Adam Belfrage presenterade motionen.
+
+		Daniel Bakic presenterade styrelsens svar på motionen.
+
+		\textbf{\Mba avslå motionen i sin helhet.}
+
+		\subp{E}{Uppdaterad utrustning för linbanan}{}
+		Magnus Lundh presenterade Motionen.
+
+		Daniel bakic presenterade styrelsens svar.
+
+		\textbf{\Mba bifalla motionen i sin helhet.}
+
+		\subp{F}{Internationell Nolleguide}{}
+
+		Edvard Carlsson presenterade motionen.
+
+		Daniel Bakic presenterade styrelsens svar.
+
+		Mötet diskuterade frågan.
+
+		\textbf{\Mba bifalla motionen utan styrelsens tilläggsyrkande.}
+
+		\Mba ajournera mötet till 20.05.
+
+		\subp{G}{Inköp av Sexmästarsabel}{}
+
+		Markus Rahne presenterade motionen.
+
+		Sexmästare Alexander Wik vill inte ha en sabel.
+
+		Daniel Bakic presenterade styrelsens svar på motionen.
+
+		Rahne \ypa stryka \emph{``och sittande Sexmästare''} från sitt sista yrkande eftersom denne inte stödjer motionen, samt att i sitt första yrkande ändra modell till m/1893.
+
+		Tom Andersson lyfte fram att den planerade budgeten klarar av att täcka även en sabel av modell 1893.
+
+		Andreas Bennström \ypa streck i debatten.
+
+		\Mbaby.
+
+		Mötet diskuterade frågade.
+
+		\textbf{\Mba avslå motionen i sin helhelt.}
+
+		\subp{H}{Utskottsmärken}{}
+
+		Henrik Ramström presenterade motionen.
+
+		Fanny Månefjord undrade vad utskottsordförande skulle göra.
+
+		Henrik Ramström svarade att det är utskottsordförande som fattar beslut om vilka märken som kommer användas och ansvarar för att dela ut dessa till sina respektive utskott.
+
+		Daniel Bakic presenterade styrelsens svar på motionen.
+
+		Henrik Ramström jämkade sig med styrelsens yrkande.
+
+		Linnea Sjödahl undrade om man får märke även om man inte är med i utskottet längre.
+
+		Henrik Ramström menar att märkena kommer ta slut väldigt snabbt då.
+
+		Sanna Nordberg undrade om gamla funktionärer i alla fall kan få möjlighet att köpa dessa.
+
+		Henrik Ramström ska kolla vidare på det.
+
+		Pontus Landgren \ypa lägga till ``Uppföljning Utskottsmärken'' till nästa sektionsmöte med ekiperingsexperterna som ansvariga.
+
+		\textbf{Mötet beslutade att bifalla motionen med styrelsens ändringsyrkande och Pontus tilläggsyrkande}
+	\end{paragrafer}
+
+	\p{22}{Behandling av propositioner}{}
+	\begin{paragrafer}
+		\subp{A}{Inköp av umph-box}{}
+
+		Daniel Bakic presenterade propositionen.
+
+		\textbf{\Mba bifalla propositionen i sin helhet.}
+		\subp{B}{Införskaffande av nya mikrovågsugnar}{}
+		Daniel Bakic presenterade propositionen.
+
+		\textbf{\Mba bifalla propositionen i sin helhet.}
+		\subp{C}{Ändring av hur sektionen väljer Phøs}{}
+		Andreas Bennström presenterade propositionen.
+
+		Mötet diskuterade frågan.
+
+		Pontus Landgren menar att argumentet med minskad arbetsbelastning på valberedning inte stämmer. Detta eftersom det fortfarande är lika många intervjuer från valberedningens sida.
+
+		Fredrik Peterson sa att propositionen borde läggas på hösterminsmötet istället. Detta eftersom man då hinner testa den aktuella processen två gånger innan den röstas igenom på mötet och ändras.
+
+		Henrik Ramström yrkande på streck i debatten.
+
+		\Mbaby
+
+		Fredrik Peterson \ypa återremittera propositionen till HT18
+
+		\textbf{\Mba återremittera propositionen HT18.}
+
+		\Mba ajournera mötet till klockan 21.35.
+
+		Mötet återupptogs klockan 21:37.
+
+		\subp{D}{Uppdatering av funktionärers skyldigheter i reglemente}{}
+		Elin Johansson presenterade propositionen.
+
+		\textbf{\Mba bifalla propositionen i sin helhet.}
+		\subp{E}{Införande av UtEDischoansvarig}{}
+		Adam Belfrage presenterade propositionen.
+
+		Adam Belfrage \ypa stryka de tre sista att-satserna.
+
+		Pontus Landgren \ypa justera reglementestillägget i propositionen från \emph{ ``...och eventuell UtEDischoansvarig.'' } till \emph{ ``...och UtEDischoansvarig.'' }.
+
+		\textbf{\Mba bifalla propositionen tillsammans med Pontus Landgrens yrkande och Adam Belfrages ändringsyrkande.}
+	\end{paragrafer}
+
+	\p{23}{Behandling av sena motioner}{}
+	\begin{paragrafer}
+		\subp{A}{Borttagandet av redaktionella organ från stadgan}{}
+
+		Erik Månsson och Sophia Grimmeiss Grahm presenterade motionen.
+
+		\textbf{\Mba bifalla motionen i sin helhet.}
+
+		\subp{B}{Vice-poster som styrelsens suppleanter}{}
+		Erik Månsson och Sophia Grimmeiss Grahm presenterade motionen.
+
+		\textbf{\Mba bifalla motionen i sin helhet.}
+
+		\subp{C}{Upprustning av bar i Edekvata}{}
+		Markus Rahne presenterade motionen.
+
+		Henrik Ramström undrade om det inte är smidigare och billigare med rostfritt stål.
+
+		Markus Rahne svarade att han redan har undersökt saken och anser att det är jobbigare att montera och framförallt dyrare.
+
+		\textbf{\Mba bifalla motionen i sin helhet.}
+		\subp{D}{Inköp av ny tappanordning}{}
+		Markus Rahne presenterade motionen.
+
+		Markus Rahne \ypa istället köpa in en tappanordning med kontakt av typ L40 med en budget på 7500kr.
+
+		\textbf{\Mba bifall motionen med Markus Rahnes ändringsyrkande.}
+	\end{paragrafer}
+	\p{24}{Övrigt}{}
+	\textbf{\Mba välja Hannes Björk till posten Chefredaktör.}
+
+	Björn \ypa justera budgeten för ``PHOS01 NollU allmänt'' med \SI{-12000}{kronor} till \SI{-32000}{kronor}. \emph{En förtydling av yrkandet kan ses under bilagor.} 
+
+	Anders \ypa en notis läggs till i protokollet under punkten övrigt att en sen handling inkommit och behandlats av sektionsmötet.
+	Handlingen behandlar en budgetjustering av PHOS01 NollU allmänt och att den sena handlingen lades till övriga sena handlingar under mötets gång.
+
+	\textbf{\Mbabay}
+
+	Björn F. Nimvik \ypa sänka priser för Gasquebiljetter. \emph{En förtydling av yrkandet kan ses under bilagor.} 
+
+	Anders Nilsson ifrågasatte varför detta yrkande lyfts först nu. När en motion borde ha skickats in innan mötet så att alla sektionenes medlemmar fått chans att läsa igenom den.
+
+	Björn F. Nimvik svararde att han inte var upplyst om att budgetrevideringar kunde genomföras under Vårterminsmöte.
+
+	Sophia Grimmeiss Grahm menar att eftersom budgetkravet på E6 har sänkts finns det ingen anledning till att yrkandet ska gå igenom.
+
+	Anders Nilsson menar att detta kan lyftas hos styrelsen och att man i så fall tar pengar från dispositionsfonden vid behov.
+
+	Johan Karlberg svararade att man med kravsänkningen på sexmästeriets budget och kombination med äskning från styrelsen vid behov har stor marginal att räkna med.
+
+	Björn F. Nimvik la ner sitt yrkande. 
+
+	\p{25}{TaFMA}{}
+	Talman {\mo} förklarade mötet avslutat 22.52.
+
 \end{paragrafer}
-
-\p{15}{Verksamhetsberättelser för 2017}{}
-%Styrelsen 2016 och Valberedningen 2016 gav sina verksamhetsberättelser för 2016.
-\textbf{\Mba lägga verksamhetsberättelsen för 2016 till handlingarna. Beslutet togs på \S20}
-
-\p{16}{Bokslut för 2017}{}
-Anders Nilsson prestenterade bokslutet för 2016.
-%\textbf{\Mba lägga bokslutet 2016 till handlingarna.}
-
-\p{17}{Revisionsberättelse för 2017}{}
-Jesper Ek presenterade revisionsberättelsen för 2016.
-%\textbf{\Mba lägga revisionsberättelsen 2016 till handlingarna.}
-Jesper Ek tog tillbaka sitt yrkande om
-\begin{attsatser}
-    \att resultat- och balansräkning fastställes,
-    \att styrelsens förslag till resultatsdisposition tages, samt
-    \att styrelsen för 2016 beviljas ansvarsfrihet.
-\end{attsatser}
-
-\p{18}{Styrelsens förslag till resultatdisposition}{}
-Anders Nilsson presenterade förslaget till resultatdisposition.
-
-Jesper Ek yrkade på
-\begin{attsatser}
-    \att resultat- och balansräkning fastställes, samt
-    \att styrelsens förslag till resultatsdisposition tages.
-\end{attsatser}
-
-\Mbaby
-
-\textbf{\Mba godkänna resultatdispositionen}
-
-\p{19}{Uttag ur sektionens fonder sedan förra terminsmötet}{}
-Erik Månsson berättade om uttagen ur sektionens fonder sedan förra terminsmötet.
-
-\p{20}{Frågan om ansvarsfrihet för 2016}{}
-    \begin{paragrafer}
-        \subp{A}{Funktionärer}{}
-        \textbf{\Mba finna funktionärerna 2016 ansvarsfria.}
-        \subp{B}{Utskott}{}
-        \textbf{\Mba finna utskotten 2016 ansvarsfria.}
-        \subp{C}{Styrelse}{}
-        \textbf{\Mba finna styrelsen 2016 ansvarsfria.}
-        \subp{D}{Revisorer}{}
-        \textbf{\Mba finna revisorerna 2016 ansvarsfria.}
-        \subp{E}{Valberedning}{}
-        \textbf{\Mba finna valberedningen 2016 ansvarsfria.}
-
-        Erik Månsson \ypa ta 45 minuters matpaus.
-
-        Fredrik Peterson \ypa ta 30 minuters matpaus.
-
-        Rasmus Sobel \ypa ta 35 minuters matpaus.
-
-        Josefine Sandström \ypa ta 40 minuters matpaus.
-
-        Fredrik Peterson jämkade sig med Rasmus Sobel.
-
-        \ji  \ypa ta 37,5 minuters matpaus.
-
-        Erik Månsson begär sluten votering.
-
-        Erik Månsson \ypa sträck i debatten.
-
-        \Mbaby.
-
-        Mötet bestlutade att ajournera mötet i 35 minuter.
-
-        Mötet återupptogs 18:56.
-    \end{paragrafer}
-
-    \p{21}{Behandling av motioner}{}
-        \begin{paragrafer}
-          \subp{A}{Make E-lektro banana band great again}{}
-
-
-          \subp{B}{BLED-café}{}
-
-          \subp{C}{Förbättrad förvaring för sektionens lager}{}
-
-          \Mba bifalla motionen i sin helhet.
-
-          \subp{D}{Ansvarig för uppdatering av examenstavlor}{}
-
-          \Mba bifalla motionen i sin helhet.
-
-          \subp{E}{Representationsklädsel åt Inspektorn}{}
-
-          \Mba bifalla motionen i sin helhet.
-      \end{paragrafer}
-
-
-      \p{22}{Behandling av propositioner}{}
-          \begin{paragrafer}
-            \subp{A}{Öppna kravprofiler för valberedning}{}
-            Erik Månsson presenterade propositionen.
-
-            \Mba bifalla propositionen i sin helhet.
-
-            Pontus Landgren \ypa på 5 minuter paus efter propositionen.
-
-            Mötet ajounerades i 5 minuter.
-
-            Mötet återupptogs 19:57
-            \subp{B}{Flytta policybeslut ``Närvaro vid Sektionsmöte'' till reglementet och uppdatera valmetoden}{}
-            Erik Månsson presenterade propositionen.
-
-            \Mba bifalla propositionen i sin helhet.
-            \subp{C}{Äskning av pengar till mentorsprogram}{}
-            Erik Månsson presenterade propositionen med bakgrund.
-
-            \Mba bifalla propositionen i sin helhet.
-            \subp{D}{Uppgradering av ljudsystem i Edekvata}{}
-            Pontus Landgren presenterade propositionen.
-
-            \Mba bifalla propositionen i sin helhet.
-            \subp{E}{Inköp av PA-toppar}{}
-            Pontus Landgren presenterade propositionen.
-
-            \Mba bifalla propositionen i sin helhet.
-            \subp{F}{Införande av projektfunktionärer}{}
-            Erik Månsson presenterade propositionen.
-
-            Erik Månsson yrkar på att ändra den sista punkten i att-satsen till:
-            ``Har en mandatperiod som bestäms vid valtillfället, och är maximalt ett år lång.''
-
-            Styrelsen jämkade sig med Erik Månssons yrkande.
-
-            \Mba bifalla propositionen i sin helhet med ändringsyrkandet.
-            \subp{G}{Borttagning av giltig terminsräkning i reglementet}{}
-            Erik Månsson presenterade propositionen sittandes.
-
-            \Mba bifalla propositionen i sin helhet.
-            \subp{H}{Ändring av hur Sektionen väljer Phøs}{}
-            Mötet ajounerades i 5 minuter.
-
-            Niklas Gustafson presenterade propositionen.
-
-            \Mba bifalla propositionen i sin helhet.
-        \end{paragrafer}
-
-\p{23}{Övrigt}{}
-Anders Nilsson informerade om jubileumsveckan som just nu är igång.
-\begin{itemize}
-  \item På torsdag är det målning av cylindern, ätas korv och spelas musik.
-  \item På fredagen är det gille, det är asnice.
-  \item På lördag är det bal med eftersläpp.
-\end{itemize}
-
-\p{24}{TaFMA}{}
-Talman {\mo} förklarade mötet avslutat 20:59.
-
-\end{paragrafer}
-
-%\newpage
 \hidesignfoot
 \begin{signatures}{4}
-\signature{\mo}{Mötesordförande}
-\signature{\ms}{Mötessekreterare}
-\signature{\ji}{Justerare}
-\signature{\jii}{Justerare}
+	\signature{\mo}{Mötesordförande}
+	\signature{\ms}{Mötessekreterare}
+	\signature{\ji}{Justerare}
+	\signature{\jii}{Justerare}
 \end{signatures}
+\newpage
+\section*{Bilagor}
+\thispagestyle{empty}
+%\includepdf[pages=-,pagecommand={\section{Bilagor} \thispagestyle{empty}}, fitpaper=true]{../vt-handlingar/motioner/nollubudget.pdf}
+%\includepdf[pages=-]{../vt-handlingar/motioner/nollubudget.pdf}
+\includegraphics[scale=0.8]{../vt-handlingar/motioner/nollubudget.pdf}
+\newpage
+\thispagestyle{empty}
+\includegraphics[scale=0.8]{../vt-handlingar/motioner/gasque.pdf}
+%\includepdf[pages=-]{../vt-handlingar/motioner/gasque.pdf}
 \end{document}
