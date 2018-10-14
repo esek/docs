@@ -1,0 +1,187 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Daniel Bakic}
+\def\ms{Magnus Lundh}
+\def\ji{Isabella Hansen}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S19/18} %ex S02/16, E1/15, VT/13
+\def\date{2018-09-27} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+	\nv{Ordförande}{Daniel Bakic}{E15}{}
+	%\nv{Kontaktor}{Axel Voss}{E15}{}
+	\nv{Förvaltningschef}{Magnus Lundh}{E15}{}
+	\nv{Cafémästare}{Elin Johansson}{BME16}{}
+	\nv{Øverphøs}{Andreas Bennström}{BME16}{}
+	\nv{SRE-ordförande}{Fanny Månefjord}{BME16}{\nati{14}}
+	\nv{ENU-ordförande}{Isabella Hansen}{E16}{}
+	\nv{Sexmästare}{Alexander Wik}{BME17}{}
+	\nv{Krögare}{Malin Heyden}{E16}{}
+	\nv{Entertainer}{Adam Belfrage}{BME17}{}
+\end{narvarolista}
+\subsection*{Ständigt adjungerande}
+
+
+\begin{narvarolista}
+	%\nv{Inköps- och lagerchef}{Sofie Johannesson}{E17}{}
+	%\nv{Inköps- och lagerchef}{Fabian Sondh}{E17}{}
+	%\nv{Inköps- och lagerchef}{Albin Pålsson}{E17}{}
+	%\nv{Kårordförande}{Linus Hammarlund}{}{}
+	%\nv{Kårrepresentant}{Jacob Karlsson}{}{\nafr{3}}
+	\nv{Kårrepresentant}{Hanna Järpedal}{}{}
+	\nv{Kårrepresentant}{Philip Johansson}{}{}
+	%\nv{Valberedningens ordförande}{Pontus Landgren}{}{}
+	%\nv{Skattmästare}{Olle Oswald}{}{}
+	%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+	%\nv{Kårrepresentant}{John Alvén}{}{}
+	%\nv{Nollegeneral}{Jakob Nilsson}{}{}
+	%\nv{Skyddsombud}{Axel Sandqvist}{E17}{}
+	%\nv{Saga}{}{}{}
+	%\nv{Max}{}{}{}
+	%\nv{Talman}{Erik Månsson}{E14}{}
+	%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+	%\nv{Inspektor}{Monica Almqvist}{}{}
+	\nv{Sigillbevarare}{Henrik Ramström}{E16}{}
+	%\nv{Vice Entertainer}{Emil Bergström}{}{}
+\end{narvarolista}
+
+\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+	%\nv{Teknokrat}{Oscar Uggla}{E15}{}
+	%\nv{Post}{Namn}{Klass}{}
+\end{narvarolista}
+\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+	\p{1}{OFMÖ}{\bes}
+	Ordförande {\mo} förklarade mötet öppnat 12:18.
+
+	\p{2}{Val av mötesordförande}{\bes}
+	{\valavmo}
+
+	\p{3}{Val av mötessekreterare}{\bes}
+	{\valavms}
+
+	\p{4}{Val av justeringsperson}{\bes}
+	{\valavj}
+
+	\p{5}{Godkännande av tid och sätt}{\bes}
+	{\tosg}
+
+	\p{6}{Adjungeringar}{\bes}
+	{\ingaadj}
+	%Förnamn Efternamn adjungerades
+
+	\p{7}{Godkännande av dagordningen}{\bes}
+	Daniel \ypa lägga till sena handlingar till dagordningen.
+
+	Henrik Ramström \ypa lägga till \S14 ``Rengöring av fikafika''.
+
+	%Dagordningen godkändes.
+	%Föredragningslistan godkändes med yrkandet.
+	Föredragningslistan godkändes med samtliga yrkanden.
+
+	\p{8}{Föregående mötesprotokoll}{\bes}
+	%\latillprot{}
+	\ingaprot
+
+	\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+	\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+		%\fval{namn}{post}
+		\entl{Lisa Linárd Pedersen}{SRE-ledamot}
+	\end{fyllnadsval}
+
+	\p{10}{Rapporter}{}
+	\begin{paragrafer}
+		\subp{A}{Hur mår alla?}{\info}
+		Punkten protokollfördes ej.
+
+		\subp{B}{Utskottsrapporter}{\info}
+		Punkten protokollfördes ej.
+
+		\subp{C}{Ekonomisk rapport}{\info}
+		Ekonomin ser kanonfin ut - Pengar rullar in som det ska, det går bra nu!
+		\subp{D}{Kåren informerar}{\info}
+		Balmästare saknas till nyårsbalen och är öppen att söka för den som är intresserad.
+    Priset på Rulle har blivit  dyrare. Kostnaden är nu 4 kr/km och minsta debitering 120 kr.
+    Kåren jobbar med en remiss på alkohol och droger. Kårens Nollningsutskott har omstrukturerats.
+    Från och med nästa år kommer Nollegeneralen inte vara arvoderad och har delats upp i två poster.
+    Nästa helg är det Styrelseutbildning. Det kommer en extern föreläsare som brukar vara uppskattad.
+
+		\subp{E}{Omvärldsrapport}{\info}
+
+		Denna vecka finns det ingenting nytt att rapportera.
+
+	\end{paragrafer}
+
+	\p{11}{Expo}{\dis}
+	Mötet diskuterade vad som skulle göras på expot.
+
+
+	\p{12}{Funktionärstack}{\dis}
+	Punkten diskuterades och några förslag om vad man kan göra kom upp.
+
+	\p{13}{Samarbete med WEIQ}{\bes}
+	Daniel, Magnus och Malin hade möte med WEIQ som letade VIP-kunder för att testa deras app och koncept.
+	De var positiva och trodde att detta kan vara sågot som kan gynna sektionen.
+	Mötet belsutade att testa deras lösning på ett gille senare i år.
+
+	\p{14}{Rengöring av fikafika}{\dis}
+	De nya riktlinjerna för städningen av fikafika ansågs vara omständiga och att det inte alltid behövdes städas så noga.
+	Punkten diskuterades och det påpekades att detta som sagt bara var riktlinjer.
+
+
+	\p{15}{Nästa styrelsemöte}{\bes}
+	\Mba nästa styrelsemöte ska äga rum nästa torsdag 2018-10-04 klockan 12:10 i E:1124.
+
+	\p{16}{Beslutsuppföljning}{\bes}
+
+	Daniel \ypa skjuta upp ``Styrelsemärke'' till nästa styrelsemöte.
+
+	\Mbaby
+
+	Daniel \ypa stryka ``Flagga till F'' från beslutsuppföljningen.
+
+	\Mbaby
+
+
+	%\Ibfu
+	\p{17}{Övrigt}{\dis}
+
+	Sektionens Gopro är försvunnen. Den tros vara i PA som ska finkammas för att den ska komma fram!
+
+	Henrik behöver ha in design på utskottsmärken som beslutades på VT18.
+
+	\p{18}{OFMA}{\bes}
+	{\mo} förklarade mötet avslutat 13:03.
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+	\signature{\mo}{Mötesordförande}
+	\signature{\ms}{Mötessekreterare}
+	\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
