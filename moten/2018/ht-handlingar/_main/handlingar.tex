@@ -1,0 +1,125 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Daniel Bakic}
+\def\sekr{Axel Voss}
+\def\fvc{Magnus Lundh}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HT/18} %ex S02/16, E01/15, VT/13
+\def\date{2018-11-22} %YYYY-MM-DD
+\def\docauthor{\sekr}
+ 
+\def\mtime{17:15}
+\def\place{E:A}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Beslutsuppföljning}{}
+    \pli{Utskottsrapporter}{}
+    \pli{Uppföljning av verksamhetsplan}{}
+    \pli{Ekonomisk rapport}{}
+    \pli{Uttag ur Sektionens fonder sedan förra terminsmötet}{}
+    \pli{Resultatrapport från första halvan av verksamhetsåret}{}
+
+    \pli{Behandling av motioner}{}
+        \begin{paralist}
+          \pli{Döp om Kontaktor till Kommunikator}{}
+          \pli{Ändra namnet på likabehandlingsombudet}{}
+          \pli{Namnbyte av funktionärspost}{}
+          \pli{Veckoliga Studiekvällar med tilltugg}{}
+        \end{paralist}
+    \pli{Behandling av propositioner}{}
+        \begin{paralist}
+            \pli{Budgetförslag för 2018}{}
+            \pli{Verksamhetsplansförslag för 2018}{}
+            \pli{Flytta posten alumniansvarig till ENU}{}
+            \pli{Barmästare i E6}{}
+            \pli{Omstrukturering av CM}{}
+            \pli{Namnbyte av Flickor på Teknis}{}
+            \pli{Uppdatering av postbeskrivning i InfU}{}
+            \pli{Uppdatering av postbeskrivning i Nöjesutskottet}{}
+        \end{paralist}
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+    \end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\subfile{../_other/ekonomisk_rapport}
+\newpage
+\addcontentsline{toc}{subsection}{Balansrapport}
+
+
+\subfile{../_other/uttag}
+\newpage
+
+\begin{supersection}{Beslutsuppföljningar}{}
+    \subsection{Överblick}
+    \begin{busek}
+
+    \end{busek}
+
+\newpage
+
+
+\end{supersection}
+
+\begin{utskottsrapporter}
+
+\end{utskottsrapporter}
+    
+\begin{supersection}{Verksamhetsplaner}{}
+
+\end{supersection}
+    
+\begin{supersection}{Uppföljningar av verksamhetsplaner}{}
+
+\end{supersection}
+    
+\begin{motioner}
+
+\end{motioner}
+    
+\begin{propositioner}
+
+\end{propositioner}
+    
+\begin{supersection}{Halvårsbokslut 2018}{}
+
+\end{supersection}
+
+\end{document}
