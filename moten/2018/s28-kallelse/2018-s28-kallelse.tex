@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+    \def\mname{Styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+    \def\mnum{S28/18} %ex S02/16, E1/15, VT/13
+    \def\date{2018-12-10} %YYYY-MM-DD
+    \def\docauthor{Daniel Bakic}
+    
+    \def\mtime{17:15}
+    \def\place{E:C}
+    
+    \usepackage{../e-mote}
+    \usepackage{../../../e-sek}
+    
+    \begin{document}
+    
+    \heading{{\doctype} till {\mname} {\mnum}}
+    
+    \section*{Tid och plats}
+    \tidplats
+    
+    \section*{Föredragningslista}
+    \begin{paralist}
+        \pli{OFMÖ}{\bes}
+        \pli{Val av mötesordförande}{\bes}
+        \pli{Val av mötessekreterare}{\bes}
+        \pli{Val av justeringsperson}{\bes}
+        \pli{Godkännande av tid och sätt}{\bes}
+        \pli{Adjungeringar}{\bes}
+        \pli{Godkännande av dagordningen}{\bes}
+        \pli{Föregående mötesprotokoll}{\bes}
+   
+        \pli{Val av Cophøs}{\bes}
+        
+        \pli{Övrigt}{\dis}
+        \pli{OFMA}{\bes}
+      \end{paralist}
+    
+    %\newpage
+    
+   % \section*{Beslutsuppföljning}
+   % \emph{Beslutsuppföljningen är tom!}
+  %  \begin{beslutsuppf}
+  %      \beslut{S25/18}{Kassaskåp}{}{Daniel Bakic}{S29/18}
+  %      \end{beslutsuppf}
+    
+    \begin{signatures}{1}
+        \emph{I styrelsens tjänst}
+        \signature{Daniel Bakic}{Ordförande}
+    \end{signatures}    
+    
+    \end{document}
