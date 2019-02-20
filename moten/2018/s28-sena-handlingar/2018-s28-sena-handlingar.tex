@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\ordf{Daniel Bakic}
+    \def\sekr{Axel Voss}
+    
+    \def\doctype{Sena Handlingar} %ex. Kallelse, Handlingar, Protkoll
+    \def\mname{styrelsemöte} %ex. styrelsemöte, vårterminsmöte
+    \def\mnum{S28/18} %ex S02/16, E01/15, VT/13
+    \def\date{2018-12-10} %YYYY-MM-DD
+    \def\docauthor{\sekr}
+    
+    \def\mtime{17:15}
+    \def\place{E:C}
+    
+    \usepackage{../_sektion-handlingar/e-handlingar-sek}
+    \usepackage{../e-mote}
+    \usepackage{../../../e-sek}
+    
+    \begin{document}
+    
+    \firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+    
+    \newpage
+    
+
+    
+    \section{Sökande till Cophøs}
+    \emph{Valberedningens förslag är det markerat i fet stil som står högst upp.}
+    \begin{vallista}
+        \begin{post}{Cophøs}{5}
+            \vbfpers{Fredrik Berg}{his15fbe}
+            \vbfpers{Freja Sahlin}{fr7123sa-s}
+            \vbfpers{Saga Juniwik}{sa8645ju-s}
+            \vbfpers{Tina Tabandeh}{ti3018ta-s}
+            \vbfpers{Tove Börjeson}{to4335bo-s}
+            \pers{Carl Rutholm}{ca2742ru-s}
+            \pers{Filip Larsson}{fi2341la-s}
+            \pers{Johan Siwerson}{jo8447si-s}
+            \pers{Tom Andersson}{elt14tan}
+        \end{post}
+    \end{vallista}
+
+
+
+    \begin{signatures}{3}
+        \emph{I Sektionens tjänst}
+        \signature{\ordf}{Ordförande}
+        \signature{\sekr}{Kontaktor}
+        \signature{Pontus Landgren}{Valberedningens ordförande}
+    \end{signatures}
+\end{document}
+    
