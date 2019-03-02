@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Erik Månsson}
+\def\sekr{Johan Karlberg}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HT/16} %ex S02/16, E01/15, VT/13
+\def\date{2016-11-22} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:B}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Beslutsuppföljning}{}
+
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+\end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\section{Beslutsuppföljning}
+\begin{busek}
+    \beslutsek{VT/15}{Ett beslut}{Några personer}{...}{}
+\end{busek}
+
+\begin{supersection}{Beslutsuppföljning}{}
+    %\subfile{../besuppf/example}
+\end{supersection}
+
+\begin{utskottsrapporter}
+    \subfile{../utskottsrapporter/example}
+\end{utskottsrapporter}
+
+\begin{valforslags}
+    \subfile{../valforslag/example}
+\end{valforslags}
+
+\begin{berattelser}
+    \subfile{../berattelser/example}
+\end{berattelser}
+
+\begin{stadgeandringar}
+    \subfile{../stadgeandringar/example}
+\end{stadgeandringar}
+
+\begin{motioner}
+    \subfile{../motioner/example}
+    \subfile{../motionssvar/example}
+\end{motioner}
+
+\begin{propositioner}
+    \subfile{../propositioner/example}
+\end{propositioner}
+
+\end{document}
