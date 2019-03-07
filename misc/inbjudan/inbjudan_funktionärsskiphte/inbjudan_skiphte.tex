@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\date{2018}
+    \def\doctitle{Inbjudan till NollEgasquen \date}
+    \def\docauthor{Erik Månsson}
+    
+    \usepackage{../../../e-sek}
+    
+    \usepackage{geometry}
+    \geometry{
+        a5paper,
+        top=1mm,
+        left=25mm,
+        right=25mm,
+        bottom=10mm
+    }
+    
+    \fancyhead[L]{}
+    \fancyfoot[R]{}
+    
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    
+    \newcommand{\inviteto}[1]{
+    
+        \begin{tikzpicture}[remember picture, overlay]
+          \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+        \end{tikzpicture}
+    
+        \begin{center}
+            \includegraphics[width=5cm]{sigill}
+            \par
+            \vspace*{4mm}
+    
+            \textit{\textbf{\Large Funktionärsskiphte}}
+    
+            {\it
+                E-sektionen vid Lunds Tekniska Högskola\\
+                har den stora äran att inbjuda dig\\
+                \vspace*{5mm}
+                {\Large #1}\\
+                \vspace*{-2mm}
+                \line(1,0){220} \par \vspace*{-1mm}
+               till årets Funktionärsskiphte.
+            }
+        \end{center}
+    
+        \vspace*{\baselineskip}
+    
+        {\it
+        Funktionärsskiphtet äger rum i E-husets foaje  fredagen den 1:e februari och dörrarna öppnas klockan 19:00. Klädsel är ouvve och enligt temat "Expedition E-sektion".
+    
+    Anmälan görs i ett returnerande mail.
+       }
+    
+        \newpage
+    }
+\begin{document}
+%\inviteto{Niklas Gustafson}
+\inviteto{Monica Almqvist}
+%\inviteto{Molly Lilljebjörn Rusk}
+%\inviteto{Henrik Fryklund}
+%\inviteto{Angelica Persson}
+%\inviteto{Olof Jansson}
+%\inviteto{Iulius Borcea}
+%\inviteto{Johan Larsson}
+%\inviteto{Henrik Ohlsson}
+%\inviteto{Emil Ohlsson}
+%\inviteto{Linnea Sjödahl}
+%\inviteto{Martin Gemborn Nilsson}
+%\inviteto{Adam Waks}
+%\inviteto{Jennifer Hagman}
+%\inviteto{Axel Brommesson Lundholm}
+%\inviteto{Sara Gunnarsson}
+%\inviteto{Magnus Meijer}
+%\inviteto{Jasmina Sofić}
+
+\end{document}
