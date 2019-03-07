@@ -1,0 +1,187 @@
+\usepackage[utf8]{inputenc}
+
+%document title
+
+\newcommand{\doctitle}{\doctype\ \mnum}
+
+%header
+
+\def\headl{}
+\def\headr{\doctitle\\\date}
+
+%sign footer
+
+\newcommand{\showsignfoot}{
+	\fancyfoot[L]{
+		Signaturer: \\
+	}
+	\fancyfoot[C]{
+		\parbox[t]{2cm}{{\scriptsize MO:} \rule[-0.5\baselineskip]{1cm}{0.4pt}} %mötesordförande
+		\parbox[t]{2cm}{{\scriptsize MS:} \rule[-0.5\baselineskip]{1cm}{0.4pt}} %mötessekreterare
+		\ifdef{\jii}{%
+			\parbox[t]{2cm}{{\scriptsize J1:} \rule[-0.5\baselineskip]{1cm}{0.4pt}} %justerare 1
+			\parbox[t]{2cm}{{\scriptsize J2:} \rule[-0.5\baselineskip]{1cm}{0.4pt}} %justerare 2
+		}{%
+			\parbox[t]{2cm}{{\scriptsize J:} \rule[-0.5\baselineskip]{1cm}{0.4pt}} %justerare
+		}
+	}
+}
+
+\newcommand{\hidesignfoot}{
+	\fancyfoot[L]{}
+	\fancyfoot[C]{}
+}
+
+%protokoll
+
+\newenvironment{paragrafer}{
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+\newcommand{\p}[3]{
+	\ifstrempty{#3}{%
+	\item[\textbf{\S#1}] #2\par
+	}{%
+		\item[\textbf{\S#1}] #2 \hspace*{\fill} \textbf{#3}\par
+	}
+}
+
+\newcommand{\subp}[3]{%
+	\ifstrempty{#3}{%
+	\item[\textbf{#1)}] #2\par
+	}{%
+		\item[\textbf{#1)}] #2 \hspace*{\fill} \textbf{#3}\par
+	}
+}
+
+%närvarolista
+
+\newenvironment{narvarolista}{
+	\vspace{-0.4cm}
+	\begin{table}[H]
+	\begin{tabular}{llll}
+}{
+	\end{tabular}
+	\end{table}
+	\vspace{-0.1cm}
+}
+
+\newcommand{\nv}[4]{
+	#1 & #2 & #3 & #4 \\
+}
+
+%fyllnadsval/entledigande av funktionärer
+
+\newenvironment{fyllnadsval}{
+	\newtoggle{harval}%
+	\togglefalse{harval}%
+}{
+	\iftoggle{harval}{\vspace{-\baselineskip}}{\emph{Inga fyllnadsval.}}%
+}
+
+\newcommand{\fvalentl}[3]{
+	\toggletrue{harval}%
+	#1 #2 som #3.\\%
+}
+\newcommand{\fval}[2]{\fvalentl{#1}{valdes}{#2}}
+\newcommand{\entl}[2]{\fvalentl{#1}{entledigades}{#2}}
+
+%beslutsuppföljning
+
+\newenvironment{beslutsuppf}{
+	\def\arraystretch{1.5}
+	\vspace{-\baselineskip}
+	\begin{table}[H]
+	\begin{tabular}{| p{1.5cm} | p{5cm} | p{3cm} | p{2cm} |}
+		\hline
+		\textbf{Möte} & \textbf{Beslut} & \textbf{Uppdraget åt} & \textbf{Redovisas}\\
+		\hline
+}{
+	\end{tabular}
+	\end{table}
+	\vspace{-\baselineskip}
+	\resetarraystretch
+}
+
+\newcommand{\beslut}[5]{#1 & \emph{#2}\par #3 & #4 & #5 \\\hline} %möte, titel, text, person(er), redovisas
+
+%quick commands
+
+\newcommand{\naun}[2]{Närvarande under \S#1 - \S#2}
+\newcommand{\frun}[2]{Frånvarande under \S#1 - \S#2}
+\newcommand{\nati}[1]{Närvarande t.o.m. \S#1}
+\newcommand{\nafr}[1]{Närvarande fr.o.m. \S#1}
+\newcommand{\latillprot}[1]{Protokoll för #1 lades till handlingarna.}
+
+\newcommand{\Mbastrykabu}[1]{\textbf{\Mba stryka ``#1'' från beslutsuppföljningen.}}
+\newcommand{\ypaltbu}[3]{\ypa ``#1'' läggs till beslutsuppföljningen #2 med #3 som ansvarig.}
+\newcommand{\ypaltbus}[3]{\ypa ``#1'' läggs till beslutsuppföljningen #2 med #3 som ansvariga.}
+
+%snippets
+\newcommand{\Mdf}{Mötet diskuterade frågan.}
+\newcommand{\ypa}{yrkade på att }
+\newcommand{\Mba}{Mötet beslutade att }
+\newcommand{\Mbaby}{Mötet beslutade att bifalla yrkandet.}
+\newcommand{\Mbabay}{Mötet beslutade att bifalla alla yrkanden.}
+\newcommand{\Mbaay}{Mötet beslutade att avslå yrkandet.}
+\newcommand{\Bs}{Beslutet senarelades.}
+\newcommand{\Ibfu}{Inga beslut följdes upp.}
+\newcommand{\tosg}{Tid och sätt godkändes.}
+\newcommand{\valavmo}{{\mo} valdes till mötesordförande.}
+\newcommand{\valavms}{{\ms} valdes till mötessekreterare.}
+\newcommand{\valavj}{
+	\ifdef{\jii}{
+		{\ji} och {\jii} valdes till justerare.
+	}{
+		{\ji} valdes till justerare.
+	}
+}
+\newcommand{\tidplats}{
+	\vspace{-\baselineskip}
+	\begin{table}[H]
+	\begin{tabular}{rl}
+		\textbf{Datum:} & {\date} \\
+		\textbf{Tid:} & {\mtime} \\
+		\textbf{Plats:} & {\place} (med reservation för ändring)
+	\end{tabular}
+	\end{table}
+	\vspace{-\baselineskip}
+}
+\newcommand{\ingaadj}{Inga adjungeringar.}
+\newcommand{\ingaprot}{Inga nya protokoll lades till handlingarna.}
+\newcommand{\info}{Information}
+\newcommand{\bes}{Beslut}
+\newcommand{\dis}{Diskussion}
+\newcommand{\dtsy}{drog tillbaka sitt yrkande}
+\newcommand{\ist}{\emph{I styrelsens tjänst}}
+\newcommand{\mvh}{\emph{Med vänliga hälsningar}}
+
+\newcommand{\changenote}{{\footnotesize *Ändringar är gulmarkerade för att det ska vara lätt att se vad som ändrats. Själva markeringen ska alltså inte vara med.}}
+
+\newcommand{\rnamnpost}[2]{\raggedleft\emph{#1, #2}\par\raggedright}
+\newcommand{\tupo}[1]{{Punkten tas upp på önskan från #1.}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{vallista}{
+    \begin{description}[leftmargin=65mm,labelsep=0cm,style=nextline,font=\normalfont,itemsep=1mm]
+}{
+    \end{description}
+}
+
+\newenvironment{post}[2]{
+    \item[#1 (#2)]
+    \begin{itemize}[label={},leftmargin=*,labelsep=0cm,itemsep=-2mm]
+}{
+    \end{itemize}
+}
+
+\newcommand{\pers}[2]{ %namn, id
+    \item #1 \hspace*{\fill} #2
+}
+
+\newcommand{\vbfpers}[2]{\pers{\textbf{#1}}{#2}}
+
+\newcommand{\vakant}{\item (vakant)}

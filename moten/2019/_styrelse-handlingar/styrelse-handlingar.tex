@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S01/17} %ex S02/16, E1/15, VT/13
+\def\date{2017-01-18} %YYYY-MM-DD
+\def\docauthor{Erik Månsson}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Information om punkterna}
+
+\begin{paragrafer}
+\p{11}{Lorem ipsum}{}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{12}{Lorem ipsum}{Beslut}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\p{18}{Lorem ipsum}{}
+\begin{paragrafer}
+\subp{A}{Lorem ipsum}{Diskussion}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\subp{B}{Lorem ipsum}{Beslut}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dapibus porta. Vivamus vitae dui eget tortor rhoncus varius et a nunc. Nunc cursus pulvinar auctor. Vestibulum in pulvinar turpis.
+
+\end{paragrafer}
+
+\end{paragrafer}
+
+\begin{signatures}{1}
+\ist
+\signature{\docauthor}{Ordförande}
+\end{signatures}
+
+\end{document}
