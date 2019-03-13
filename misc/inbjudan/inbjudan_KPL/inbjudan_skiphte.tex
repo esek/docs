@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\date{2019}
+    \def\doctitle{Inbjudan till KPL \date}
+    \def\docauthor{Edvard Carlsson}
+    
+    \usepackage{../../../e-sek}
+    
+    \usepackage{geometry}
+    \geometry{
+        a5paper,
+        top=1mm,
+        left=25mm,
+        right=25mm,
+        bottom=10mm
+    }
+    
+    \fancyhead[L]{}
+    \fancyfoot[R]{}
+    
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    
+    \newcommand{\inviteto}[1]{
+    
+        \begin{tikzpicture}[remember picture, overlay]
+          \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+        \end{tikzpicture}
+    
+        \begin{center}
+            \includegraphics[width=5cm]{sigill}
+            \par
+            \vspace*{2mm}
+    
+            \textit{\textbf{\Large Kurs på Landet}}
+    
+            {\it
+               E-sektionen inom Teknologkåren vid \\
+               Lunds Tekniska Högskola\\
+                har den stora äran att inbjuda dig\\
+                
+                \vspace*{5mm}
+                {\Large #1}\\
+                \vspace*{-2mm}
+                \line(1,0){220} \par \vspace*{-1mm}
+               till årets Kurs på Landet. 
+            }
+            \vspace*{\baselineskip}
+            {\it
+            \\
+         Var: Hamnkontoret, E-huset\\
+         När: 2 Mars kl 12 (..)\\
+         Packlista: \\
+         Ouvve och Frack \\
+         Sängkläder med täcke eller sovsäck \\  
+         Kudde \\
+         %Bröllopspresent \\
+         %Något gammalt \\
+         Spex \\
+         Handuk och Badkläder \\
+         %\Ett lämpligt namn till en pingvin \\
+         %\Kläder \\ 
+         Sångbok \\
+         Något lånat \\
+         Hygienartiklar \\ 
+         %\Något nytt \\
+         Teknologmössa \\
+         %\Något blått
+            }
+        \end{center}
+    
+
+        \newpage
+    }
+\begin{document}
+%\inviteto{Axel Voss}
+%\inviteto{Daniel Bakic}
+%\inviteto{Malin Heyden}
+%\inviteto{Andreas Bennström}
+%\inviteto{Adam Belfrage}
+\inviteto{Isabella Hansen}
+%\inviteto{Elin Johansson}
+%\inviteto{Fanny Månefjord}
+%\inviteto{Magnus Lundh}
+%\inviteto{Alexander Wik}
+
+
+\end{document}
