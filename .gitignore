@@ -10,6 +10,7 @@ build/
 .DS_Store
 
 .vscode/
+*.vscodeLog
 
 !_res/*
 !styrdokument/stadga/_res/*
