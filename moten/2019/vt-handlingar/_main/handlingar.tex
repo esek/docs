@@ -2,17 +2,26 @@
 \usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
 
-\def\ordf{Erik Månsson}
-\def\sekr{Johan Karlberg}
+\def\ordf{Edvard Carlsson}
+\def\sekr{Sonja Kenari}
+\def\krog{Davida Åström}
+\def\fvc{Henrik Ramström}
+\def\enuordf{Jacob Peterson}
+\def\sreordf{Lina Samnegård}
+\def\sexm{Theo Nyman}
+\def\ent{Saga Åslund}
+\def\cafem{Jonathan Benitez}
+\def\ophos{Stephanie Bol}
+
 
 \def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
-\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
-\def\mnum{HT/16} %ex S02/16, E01/15, VT/13
-\def\date{2016-11-22} %YYYY-MM-DD
+\def\mname{Vårterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{VT/19} %ex S02/16, E01/15, VT/13
+\def\date{2019-04-09} %YYYY-MM-DD
 \def\docauthor{\sekr}
 
 \def\mtime{17:15}
-\def\place{E:B}
+\def\place{E:A}
 
 \usepackage{../../_sektion-handlingar/e-handlingar-sek}
 \usepackage{../../e-mote}
@@ -55,22 +64,34 @@
     \signature{\sekr}{Kontaktor}
 \end{signatures}
 
-\section{Beslutsuppföljning}
+\begin{supersection}{Beslutsuppföljning}{}
+\subsection{Överblick}
 \begin{busek}
-    \beslutsek{VT/15}{Ett beslut}{Några personer}{...}{}
+    \beslutsek{Taget}{Beslut}{Tilldelat}{Förtydligande}{Redovisas}
+    \beslutsek{HT/18}{Uppgradera utrustning i Edekvatas kök}{Filip Larsson, Fredrik Berg, Y Nhi Pham}{}{Redovisas}
+
+
 \end{busek}
 
-\begin{supersection}{Beslutsuppföljning}{}
-    %\subfile{../besuppf/example}
+\newpage
+
+\subfile{../besuppf/edekvata_kok}
+
 \end{supersection}
 
 \begin{utskottsrapporter}
     \subfile{../utskottsrapporter/example}
 \end{utskottsrapporter}
 
-\begin{valforslags}
-    \subfile{../valforslag/example}
-\end{valforslags}
+    \begin{supersection}{Uppföljningar av verksamhetsplaner}{}
+	\subfile{../verksamplanuppf/2019-vt-avg}
+	\subfile{../verksamplanuppf/2019-vt-nuv}
+\end{supersection}
+
+
+%\begin{valforslags}
+    %\subfile{../valforslag/example}
+%\end{valforslags}
 
 \begin{berattelser}
     \subfile{../berattelser/example}
@@ -86,7 +107,7 @@
 \end{motioner}
 
 \begin{propositioner}
-    \subfile{../propositioner/example}
+    \subfile{../propositioner/Izettle}
 \end{propositioner}
 
 \end{document}
