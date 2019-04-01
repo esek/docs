@@ -1,0 +1,248 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Edvard Carlsson}
+\def\ms{Sonja Kenari}
+\def\ji{Henrik Ramström}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S01/19} %ex S02/16, E1/15, VT/13
+\def\date{2019-01-23} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Edvard Carlsson}{E16}{}
+\nv{Kontaktor}{Sonja Kenari}{E15}{}
+\nv{Förvaltningschef}{Henrik Ramström}{E16}{}
+\nv{Cafémästare}{Jonathan Benitez}{E17}{}
+\nv{Sexmästare}{Theo Nyman}{BME18}{}
+\nv{Krögare}{Davida Åström}{BME17}{}
+\nv{Entertainer}{Saga Åslund}{BME18}{}
+\end{narvarolista}
+
+
+%\subsection*{Ständigt adjungerande}
+%\begin{narvarolista}
+%\nv{Sigillbevarare}{Matilda Horn}{BME18}{\nati{17}}
+%\nv{Kårordförande}{Linus Hammarlund}{}{}
+%\nv{Kårrepresentant}{Jacob Karlsson}{}{\nafr{3}}
+%\nv{Valberedningens ordförande}{Elin Magnusson}{}{}
+%\nv{Skattmästare}{Olle Oswald}{}{}
+%\nv{Kårrepresentant}{Daniel Damberg}{}{}
+%\nv{Kårrepresentant}{John Alvén}{}{}
+%\nv{Talman}{Erik Månsson}{E14}{}
+%\nv{Elektras Ordförande}{Elisabeth Pongratz}{}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+%\end{narvarolista}
+
+%\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+\nv{Fotograf}{Alexander Wik}{BME17}{\nati{17}}
+\nv{Sigillbevarare}{Matilda Horn}{BME18}{\nati{17}}
+\nv{Sångförman}{Adam Belfrage}{BME17}{\nati{17}}
+\end{narvarolista}
+%\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat 12:14.
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}.
+
+\p{6}{Adjungeringar}{\bes}
+Adam Belfrage adjungerades.{}
+Alexander Wik adjungerades.{}
+Matilda Horn adjungerades.{}
+%Förnamn Efternamn adjungerades
+
+
+\p{7}{Godkännande av dagordningen}{\bes}
+Dagordningen godkändes
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+
+%Föredragningslistan godkändes med yrkandet.
+%Föredragningslistan godkändes med samtliga yrkanden.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+%\latillprot{S27/16}
+\ingaprot
+
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+\entl{Adam Belfrage}{Ekiperingsexpert}
+\entl{Saga Juniwik}{HTF-ansvarig}
+\fval{Olivia Wiaczek}{Projektgrupp Teknikfokus}
+\fval{Björn Johnsson}{Projektgrupp Teknikfokus}
+\fval{Måns Lindeberg}{Projektgrupp Teknikfokus}
+\fval{Sanna Nordberg}{Projektgrupp Teknikfokus}
+\fval{Fanny Månefjord}{SRE-ledamot}
+\fval{Elsa Lindhé}{SRE-ledamot}
+\fval{Tom Andersson}{SRE-ledamot}
+\fval{Jessica Kågeman}{Näringslivskontakt}
+\fval{Daniel Bakic}{Näringslivskontakt}
+\fval{Matilda Horn}{Näringslivskontakt}
+\fval{Johan Siwerson}{Näringslivskontakt}
+\fval{Filip Larsson}{Näringslivskontakt}
+\fval{Tom Andersson}{Näringslivskontakt}
+\fval{Mattias Lundström}{Näringslivskontakt}
+\fval{Sepehr Tayari	}{Näringslivskontakt}
+\fval{Adam Belfrage}{Näringslivskontakt}
+\fval{Martin Alumets}{Näringslivskontakt}
+\fval{Johan Halldin}{Näringslivskontakt}
+\fval{Mohammad Al-Sultani}{Näringslivskontakt}
+\fval{Emil Bergström}{Näringslivskontakt}
+\fval{Jennie Karlsson}{Näringslivskontakt}
+\fval{Joel Glantz}{Kodhackare}
+\fval{Vincent Palmer}{Kodhackare}
+\fval{Rasmus Sobel}{Kodhackare}
+\fval{Jonathan Jakobsson}{Kodhackare}
+\fval{Matilda Horn}{Kodhackare}
+\fval{Markus Kvist}{Kodhackare}
+\fval{Malin Heyden}{Kodhackare}
+\fval{Mattias Lundström}{Kodhackare}
+\fval{Georgij Michaliutin}{Kodhackare}
+\fval{Andreas Bennström}{Kodhackare}
+\fval{Adam Belfrage}{Kodhackare}
+\fval{Hannes Björk}{Kodhackare}
+\fval{Paulina Sager}{Kodhackare}
+\fval{Ludvig Lifting}{Kodhackare}
+\fval{Isa Clementsson}{Kodhackare}
+\fval{Agnes Wallén}{Kodhackare}
+\fval{Filip Kronström}{Kodhackare}
+\fval{Lejla Alibegovic}{Kodhackare}
+\fval{Filip Johansson}{Kodhackare}
+\fval{Hannes Byden}{Kodhackare}
+\fval{Axel Falk}{Kodhackare}
+\fval{Antonia Mundt-Pedersen}{Diod}
+\fval{Anton Jigsved}{Diod}
+\fval{Jasmina Trinh}{Diod}
+\fval{Hjalmar Tingberg}{Diod}
+\fval{Andreas Bennström}{Diod}
+\fval{Moa Rönnlund}{Diod}
+\fval{Enrico Corato}{Diod}
+\fval{Malin Rudin}{Diod}
+\fval{Erica Elgcrona}{Diod}
+\fval{Richard Byström}{Diod}
+\fval{Frida Pilcher}{Diod}
+\fval{Evelina Morgan}{Diod}
+\fval{Filip Johansson}{Diod}
+\fval{Isa Clementsson}{Diod}
+\fval{Malin Heyden}{Diod}
+\fval{Johanna Bengtsson}{Diod}
+\fval{Filip Larsson}{Diod}
+\fval{Anton Fristedt}{Diod}
+\fval{Jennifer Ramkull}{Diod}
+\fval{Gabriela Medina}{Halvledare}
+\fval{Hannes Björk}{Halvledare}
+\fval{Y Nhi Pham}{Halvledare}
+\fval{Linnea Söderström}{ØverGudsPhadder}
+\fval{Richard Byström}{ØverGudsPhadder}
+%\fval{Namn}{Post}
+%\entl{Namn}{Post}
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+Punkten protokollfördes ej.
+
+\subp{B}{Utskottsrapporter}{\info}
+
+Henrik informerar att FVU har fått en bra start. Allt från att ta C-cert till att bokföra.
+
+Theo berättar om de närmsta planerna för E6 och planeringen för bland annat Funktionärsskiphtet.
+
+Saga hade spåningsmöte med NöjU innan jul. Hon tror starkt på NöjU19 och informerar att Sporta med E drar igång på söndag samt att spelkvällarna drar igång nästa vecka.
+
+Jonathan har fått igång LED och fått hjälp av inköpare och dioderna.
+
+KM är igång och börjar med Gille för Teknikfokus. 
+
+InfU börjar komma igång genom att välja in e.a poster samt att ha uppstartmöte med smågrupperna inom utskottet.
+
+NollU har bestämt sina ansvarsområden och har planerat att ha phadderutbildning V.5.
+
+\subp{C}{Ekonomisk rapport}{\info}
+Henrik informerar om att det ekonomiska läget är stabilt.
+
+\subp{D}{Kåren informerar}{\info}
+
+Kåren letar fortfarande efter Øverstar till Kårens Nollningsutskott. Att vara Øverste är en riktigt rolig chans till att få vara med och planera nollningevent samtidigt som man lär känna människor från andra sektioner och har möjligheten att påverka på en högre nivå.
+
+\subp{E}{Omvärldsrapporter}{\info}
+Sonja informerade om anmodningar från våra partnersektioner på Aalto Universitet i Helsingfors samt NTNU i Oslo.
+\end{paragrafer}
+
+\p{11}{Val av Vice Ordförande}{\bes}
+Edvard nominerade Henrik Ramström till Vice Ordförande.
+
+Henrik Ramström valdes till Vice Ordförande.
+
+\p{12}{Städvecka}{\info}
+Edvard informerar om att varje utskott är ansvariga för städandet i Edekvata en viss vecka i det rullande städschemat. Det finns tydliga instruktioner på vad som behöver göras vid varje tillfälle, så att vi gemensamt kan hålla Edekvata rent.
+
+\p{13}{Avig och Braig}{\info}
+Vid event i E-huset ska man alltid informera PH om vem som är ansvarig samt en brandansvarig för eventet. Detta ska ske minst en vecka innan eventet äger rum.
+
+\p{14}{Budget för kick-off}{\dis}
+Budget för kick-off diskuteras och hur det kan disponeras över terminerna.
+
+\p{15}{Funktionärsskiphtet}{\dis}
+Detaljer kring funktonärsskiphtet som äger rum den 1/2-19 diskuteras. 
+
+\p{16}{Medaljer till Skiphtet}{\dis}
+Mötet diskuterade medaljer för Skiphtet.
+
+\p{17}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2019-01-30 12:10 i E:1124.
+
+\p{18}{Beslutsuppföljning}{\bes}
+Henrik \ypa skuta upp ``Inköp av kylskåp'' till nästa styrelsemöte.
+%{\Ibfu}
+
+\Mbaby
+
+\p{19}{Övrigt}{\dis}
+Glöm inte att alla måste anmäla sig till skiphtet senast 26/1.
+
+
+\p{21}{OFMA}{\bes}
+{\mo} förklarade mötet avslutat kl. 13.11.
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
