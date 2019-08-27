@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    \usepackage{multicol}
+    
+    \def\date{2019}
+    \def\doctitle{Betalning NollEgasquen \date}
+    \def\docauthor{Erik Månsson}
+    
+    \usepackage{../../../../e-sek}
+    
+    \usepackage{geometry}
+    \geometry{
+        a5paper,
+        top=8mm,
+        left=25mm,
+        right=25mm,
+        bottom=0mm
+    }
+    
+    \fancyhead[L]{}
+    \fancyfoot[R]{}
+    
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    
+    \begin{document}
+    
+        \begin{tikzpicture}[remember picture, overlay]
+          \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+    
+          \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+        \end{tikzpicture}
+    
+        \begin{center}
+            \includegraphics[width=6cm]{sigill}
+            \par
+            \vspace*{5mm}
+    
+            \textit{\textbf{\Large \doctitle}}
+    
+        \end{center}
+        \vspace{4mm}
+        
+        {\it
+        Betalning görs enklast via Swish till \textbf{0702-140436}
+        
+
+        Märk betalningen med \textbf{``Gasque''} + \textbf{``Namn''}. 
+        \vspace*{4mm}
+        \\
+        För er utanför Sverige finns möjlighet att betala med kort på plats. 
+        \vspace*{5mm}
+
+        Priser är följande:
+        \begin{multicols}{2}
+            \begin{description}
+                \item [Med alkohol] 450kr
+                \item [Utan alkohol] 400kr
+            \end{description}
+        \end{multicols}
+        }
+        \begin{signatures}{1}
+        \signature{Theo Nyman}{Sexmästare}
+        \end{signatures}         
+    \end{document}
+    

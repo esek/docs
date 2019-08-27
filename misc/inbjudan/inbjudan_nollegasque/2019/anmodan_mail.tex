@@ -1,29 +1,30 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[swedish]{babel}
-
-\def\date{2018}
-\def\doctitle{Anmodan till NollEgasquen \date}
-\def\docauthor{Erik Månsson}
-
-\usepackage{../../../../e-sek}
-
-\usepackage{geometry}
-\geometry{
-    a5paper,
-    top=1mm,
-    left=25mm,
-    right=25mm,
-    bottom=0mm
-}
-
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\date{2018}
+    \def\doctitle{Anmodan till NollEgasquen \date}
+    \def\docauthor{Erik Månsson}
+    
+    \usepackage{../../../../e-sek}
+    
+    \usepackage{geometry}
+    \geometry{
+        a5paper,
+        top=1mm,
+        left=25mm,
+        right=25mm,
+        bottom=10mm
+    }
+    
 \fancyhead[L]{}
 \fancyfoot[R]{}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
 
-\begin{document}
+
+\newcommand{\inviteto}[1]{
 
     \begin{tikzpicture}[remember picture, overlay]
       \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
@@ -41,12 +42,13 @@
         \textit{\textbf{\Large \doctitle}}
 
         {\it
-            E-sektionen vid Lunds Tekniska Högskola\\
-            har den stora äran att anmoda dig
-            \par \vspace*{8mm}
-            \line(1,0){220} 
-            \par \vspace*{-1mm}
-            med respektive till årets NollEgasque.
+        E-sektionen vid Lunds Tekniska Högskola\\
+        har den stora äran att anmoda dig\\
+        \vspace*{5mm}
+        {\Large #1}\\
+        \vspace*{-2mm}
+        \line(1,0){220} \par \vspace*{-1mm}
+        med respektive till årets NollEgasque.
         }
     \end{center}
 
@@ -57,4 +59,23 @@
 
     Anmälan sker senast den 21:e september till en kostnad av 350kr per kuvert, eller 300kr om ingen alkohol önskas.
     }
+}
+\begin{document}
+
+%\inviteto{Niklas Gustafson}
+%\inviteto{Molly Liljebjörn Rusk}
+%\inviteto{Angelica Persson }
+%\inviteto{Niklas Hjern}
+%\inviteto{Olof Jansson}
+%\inviteto{Iulius Borcea}
+\inviteto{Albin Nyström Eklund}
+%\inviteto{Dalia Khairallah}
+%\inviteto{Emil Nilén}
+%\inviteto{Frida Hammarberg}
+%\inviteto{Per Allert}
+%\inviteto{Erik Månsson}
+%\inviteto{Hannes Björk}
+%\inviteto{Fredrik Peterson}
+%\inviteto{Pontus Landgren}
+
 \end{document}
