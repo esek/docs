@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
 
-\def\date{2018}
+\def\date{2019}
 \def\doctitle{Anmodan till NollEgasquen \date}
 \def\docauthor{Erik Månsson}
 
@@ -14,7 +14,7 @@
     top=1mm,
     left=25mm,
     right=25mm,
-    bottom=0mm
+    bottom=10mm
 }
 
 \fancyhead[L]{}
@@ -22,39 +22,260 @@
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
-
-\begin{document}
-
+\newcommand{\inviteto}[1] {
     \begin{tikzpicture}[remember picture, overlay]
-      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+        \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
 
-      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+        \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
 
-      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+        \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
     \end{tikzpicture}
 
     \begin{center}
-        \includegraphics[width=6cm]{sigill}
-        \par
-        \vspace*{5mm}
+      \includegraphics[width=6cm]{sigill}
+      \par
+      \vspace*{4mm}
 
-        \textit{\textbf{\Large \doctitle}}
+      \textit{\textbf{\Large \doctitle}}
 
-        {\it
-            E-sektionen vid Lunds Tekniska Högskola\\
-            har den stora äran att anmoda dig
-            \par \vspace*{8mm}
-            \line(1,0){220} 
-            \par \vspace*{-1mm}
-            med respektive till årets NollEgasque.
-        }
-    \end{center}
+      {\it
+          E-sektionen vid Lunds Tekniska Högskola\\
+          har den stora äran att anmoda dig\\
+            \vspace*{5mm}
+            {\Large #1}\\
+            \vspace*{-2mm}
+            \line(1,0){220} \vspace*{1mm}
+        \\ med respektive till årets NollEgasque.
+      }
+  \end{center}
 
-    \vspace*{\baselineskip}
+  \vspace*{\baselineskip}
+  {\it
+  NollEgasquen äger rum i Kårhusets Gasquesal lördagen den 28:e september och dörrarna öppnas klockan 18:00. Efter sittningen bjuds det på en fyrverkerishow och ett eftersläpp som varar fram till 04:00. Klädsel är högtidsdräkt med akademiska ordnar, alternativt mörk kostym.
 
-    {\it
-    NollEgasquen äger rum i Kårhusets Gasquesal lördagen den 29:e september och dörrarna öppnas klockan 18:00. Efter sittningen bjuds det på en fyrverkerishow och ett eftersläpp som varar fram till 03:00. Klädsel är högtidsdräkt med akademiska ordnar, alternativt mörk kostym.
+  Anmälan sker senast den 20:e september till en kostnad av 400kr per kuvert, eller 350kr om ingen alkohol önskas.
+  }
 
-    Anmälan sker senast den 21:e september till en kostnad av 300kr per kuvert, eller 250kr om ingen alkohol önskas.
-    }
+  \newpage
+}
+\begin{document}
+\inviteto{Abhijit Shivakumar Inamdar}
+\inviteto{Ajai Panneer Selvam}
+\inviteto{Andre Potes}
+\inviteto{Anudeep Gudimella}
+\inviteto{Claudia Sabato}
+\inviteto{Clémentine Lévy-Fidel}
+\inviteto{David Freidenson}
+\inviteto{Divya Khanna}
+\inviteto{Elodie Adam}
+\inviteto{Gopal Gomatam}
+\inviteto{Hussein Shreif}
+\inviteto{Kai Zbirka}
+\inviteto{McKenna Roonan}
+\inviteto{Nick Schnabel}
+\inviteto{Prasanth Kasula}
+\inviteto{Raavi Uttarwar}
+\inviteto{Rahul Raveendran}
+\inviteto{Sean Even}
+\inviteto{Someshwara Shushruth Holla}
+\inviteto{Ulrik Van Hecke}
+\inviteto{Venkat Kiran kundla}
+\inviteto{Vignajeth Kuttuva Kishorelal}
+\inviteto{Cai Yeo}
+\inviteto{Guillaume Percy}
+\inviteto{Guillermo Palomino}
+\inviteto{Joo Min Yeo}
+\inviteto{Juan Guirado}
+\inviteto{Leonhard Donle}
+\inviteto{Lucas Dislaire}
+\inviteto{Manasa Sreeharideva}
+\inviteto{Meghan Young}
+\inviteto{Pablo Fernandez}
+\inviteto{Shao DU}
+\inviteto{Adam Bladh}
+\inviteto{Arvid Hansson}
+\inviteto{Axel Sweger}
+\inviteto{Emil Bergman}
+\inviteto{Filip Nyberg}
+\inviteto{Jakob Botvidsson}
+\inviteto{Julia Bäcklund}
+\inviteto{Leith Akil Moosa}
+\inviteto{Lycke Fureby}
+\inviteto{Max Modig}
+\inviteto{Mia Britta Johnson}
+\inviteto{Samuel Eklund}
+\inviteto{Tove Nimvik}
+\inviteto{William Nylin Eriksson}
+\inviteto{Zahran Saeed Ghazy}
+\inviteto{Adam Lüning}
+\inviteto{Amirhossein Ghanaatifard}
+\inviteto{Emil Rickardsson}
+\inviteto{Emma Hansson}
+\inviteto{Fredrick Nilsson}
+\inviteto{Hilda Eliasson}
+\inviteto{Jacob Forsell}
+\inviteto{Jens Elfström}
+\inviteto{Joakim Magnusson Fredlund}
+\inviteto{Jonathan Dahlberg}
+\inviteto{Josefin Karlsson}
+\inviteto{Mattias Elmroth Nordlander}
+\inviteto{Viktor Strömberg}
+\inviteto{Willy Holmberg}
+\inviteto{Adam Christoffer Persson}
+\inviteto{Alexander Svarvare}
+\inviteto{Aws Jaafar Ahmed Al-Baldawi}
+\inviteto{Erik Bäärnhielm}
+\inviteto{Erik Thiringer}
+\inviteto{Filip Lennhager}
+\inviteto{Filippa Hansen}
+\inviteto{Frida Holmvik}
+\inviteto{Henrietta Edlund}
+\inviteto{Marcus Sundell}
+\inviteto{Maria Manuel De Bastos Pacheco}
+\inviteto{Morris Thånell}
+\inviteto{Sigvard Ström}
+\inviteto{Tove Hector}
+\inviteto{Uros Tripunovic}
+\inviteto{Annie Mentzer}
+\inviteto{Aron Rose}
+\inviteto{Carl Josell}
+\inviteto{Ebba Fritzell}
+\inviteto{Ehab Kallab}
+\inviteto{Erik Wickström}
+\inviteto{Hugo Wikholm}
+\inviteto{Ida Nilsson Wellgren}
+\inviteto{Johan Hultqvist}
+\inviteto{Jonathan Do}
+\inviteto{Jonathan Myrén}
+\inviteto{Klara Almgren}
+\inviteto{Lukas Tobias Magnus Ekberg}
+\inviteto{Mathias Wilsson}
+\inviteto{Minna Eriksson Molin}
+\inviteto{Oskar Siwerson}
+\inviteto{Ahmad Kadhem}
+\inviteto{Anton Arvidsson}
+\inviteto{Daniel Björklund}
+\inviteto{Erik Dahlberg}
+\inviteto{Fabian Eklund Sigleifs}
+\inviteto{Felix Malmsjö}
+\inviteto{Hugo Möllerstedt}
+\inviteto{Lias Norrman}
+\inviteto{Malin Larsson}
+\inviteto{Manne Qvillberg}
+\inviteto{Mattias Larsson}
+\inviteto{Moa Eberhardt}
+\inviteto{Oscar Grape}
+\inviteto{Sara Hellgren}
+\inviteto{Tove Hager}
+\inviteto{Amanda Darell}
+\inviteto{Ejnar Andersson}
+\inviteto{Elias Gustafsson}
+\inviteto{Emma Amnemyr}
+\inviteto{Evelina Persson}
+\inviteto{James Alhamidi}
+\inviteto{Jimmy Szentes}
+\inviteto{Jonathan Nilsson}
+\inviteto{Klara Wahlden}
+\inviteto{Linus Hedström}
+\inviteto{Mustafa Kadum}
+\inviteto{Oliver Lindblom}
+\inviteto{Petter Melander}
+\inviteto{Robin Bengtsson}
+\inviteto{Tom Jendbro}
+\inviteto{Agnes Köhler}
+\inviteto{Åke Thomée Edqvist}
+\inviteto{Albin Andersson}
+\inviteto{Andrea Cicovic}
+\inviteto{Eric Peters}
+\inviteto{Erik Chen}
+\inviteto{Jack Johansson}
+\inviteto{Jacob Rinderud}
+\inviteto{Jakob Wisth}
+\inviteto{Kakha Philauri}
+\inviteto{Klara Halling}
+\inviteto{Maja Eklund}
+\inviteto{Marcus Morland}
+\inviteto{Oscar Kastarinen}
+\inviteto{Anna Nilsson}
+\inviteto{Artina Sijarina}
+\inviteto{Astrid Rydstedt}
+\inviteto{Björn Dahlström}
+\inviteto{Casper Vikström}
+\inviteto{Emil Blennow}
+\inviteto{Haris Husic}
+\inviteto{Karl-Axel Jönsson}
+\inviteto{Linus Carlsson}
+\inviteto{Love Olsson}
+\inviteto{Malcolm herlenius}
+\inviteto{Miranda Köhn}
+\inviteto{Nora Öhlin}
+\inviteto{Robin Öhrnberg}
+\inviteto{Vincent Jönsson}
+\inviteto{Adam Björk}
+\inviteto{Alexander Simko}
+\inviteto{Anna Hollsten}
+\inviteto{August Egnér}
+\inviteto{Daniel Mirdamadian}
+\inviteto{Edwin Gustafsson}
+\inviteto{Elin Dahlberg}
+\inviteto{Elliot Berthold}
+\inviteto{Karl Vilhelmsson}
+\inviteto{León Martinez Salueña}
+\inviteto{Louise Rehme}
+\inviteto{Oliver Nederlund Persson}
+\inviteto{Oscar Unosson}
+\inviteto{Sara Florentsson}
+\inviteto{Tilda Berglind}
+\inviteto{Yotam Funaro}
+\inviteto{Albin Davidsson}
+\inviteto{Alice Ekros}
+\inviteto{Brendan Karlsson}
+\inviteto{Cecilia Henningsson}
+\inviteto{Daniel Mena}
+\inviteto{Erik Häggström}
+\inviteto{Erik Tydinger}
+\inviteto{Filip Fondelius}
+\inviteto{Frida Lindén}
+\inviteto{Jesper Lundin}
+\inviteto{Joachim Elleström}
+\inviteto{Karl-Oscar Heule}
+\inviteto{Line Marie Engdal Höie}
+\inviteto{Malva Persmark}
+\inviteto{Nils Åström}
+\inviteto{Simon Lindvall}
+\inviteto{Nour Handouki}
+\inviteto{Torsten Elmståhl}
+\inviteto{Filip Dujmic}
+\inviteto{Mohamed Al-Galby}
+\inviteto{Soha Emara}
+\inviteto{Sohail Din}
+\inviteto{Yasmeen Ali}
+\inviteto{Akhil Shekar}
+\inviteto{Andres Levener}
+\inviteto{Dario Ligas}
+\inviteto{Eray Duran}
+\inviteto{Ghazal Farrokhiderazkola}
+\inviteto{Gopal Gomatam}
+\inviteto{Haien Li}
+\inviteto{Hui Xu}
+\inviteto{Jones Emmanuel}
+\inviteto{Julian Valentin}
+\inviteto{Maruf Ahmad}
+\inviteto{Md Rashedul Islam}
+\inviteto{Mpova Mulahuko}
+\inviteto{Pengxiang Cheng}
+\inviteto{Qiuyue Yu}
+\inviteto{Rahamatullah Syed}
+\inviteto{Saranya Balathandapani}
+\inviteto{Shahroz Arshad}
+\inviteto{Shen Zhang}
+\inviteto{Smitha Jinnahalli Venugopal}
+\inviteto{Subhajit Bhuinya}
+\inviteto{Sunil Nanjiani}
+\inviteto{Teklehaimanot Mulugeta Kassie}
+\inviteto{Wenqian Ding}
+\inviteto{Xinyuan Zhang}
+\inviteto{Yu Zhu}
+\inviteto{Yuyuan Gu}
+\inviteto{Zilin Zhang}
 \end{document}
