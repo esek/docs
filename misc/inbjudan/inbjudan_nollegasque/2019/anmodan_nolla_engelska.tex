@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2019}
+\def\doctitle{Invitation to NollEgasque \date}
+\def\docauthor{Erik Månsson, Mattias Lundström}
+
+\usepackage{../../../../e-sek}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=1mm,
+    left=25mm,
+    right=25mm,
+    bottom=10mm
+}
+
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\inviteto}[1] {
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+        \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+        \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+    \begin{center}
+      \includegraphics[width=6cm]{sigill}
+      \par
+      \vspace*{4mm}
+
+      \textit{\textbf{\Large \doctitle}}
+
+      {\it
+          E-sektionen at Lunds Tekniska Högskola\\
+          have the honor to invite you  \\
+            \vspace*{5mm}
+            {\Large #1}\\
+            \vspace*{-2mm}
+            \line(1,0){220} \vspace*{1mm}
+        \\ and guest to this years NollEgasque.
+      }
+  \end{center}
+
+  \vspace*{\baselineskip}
+  {\it
+  NollEgasquen takes place in Kårhusets Gasquesal on September 28th and the doors open at 6 PM. 
+  Afterwards there will be a fireworks show and an afterparty that lasts until 4 AM. 
+  Dress code for the evening is white tie, alternatively formal or semi-formal, with academic arrangements.
+  
+  We need your notice before September 20th and the cost per envelope will be 400 SEK, or 350 SEK if no alcohol is desired.
+  }
+
+  \newpage
+}
+\begin{document}
+\inviteto{Thomas Rift Perrot}
+\inviteto{Bryan Tan}
+\inviteto{Raphael Castanier}
+\inviteto{José Borquez}
+
+
+\end{document}
