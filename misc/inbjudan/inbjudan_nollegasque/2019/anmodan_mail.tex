@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[swedish]{babel}
+    
+    \def\date{2019}
+    \def\doctitle{Anmodan till NollEgasquen \date}
+    \def\docauthor{Erik Månsson}
+    
+    \usepackage{../../../../e-sek}
+    
+    \usepackage{geometry}
+    \geometry{
+        a5paper,
+        top=1mm,
+        left=25mm,
+        right=25mm,
+        bottom=10mm
+    }
+    
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+
+
+\newcommand{\inviteto}[1]{
+
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+      \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+    \begin{center}
+        \includegraphics[width=6cm]{sigill}
+        \par
+        \vspace*{5mm}
+
+        \textit{\textbf{\Large \doctitle}}
+
+        {\it
+        E-sektionen vid Lunds Tekniska Högskola\\
+        har den stora äran att anmoda dig\\
+        \vspace*{5mm}
+        {\Large #1}\\
+        \vspace*{-2mm}
+        \line(1,0){220} \par \vspace*{0mm}
+        %med respektive 
+        till årets NollEgasque.
+        }
+    \end{center}
+
+    \vspace*{\baselineskip}
+
+    {\it
+    NollEgasquen äger rum i Kårhusets Gasquesal lördagen den 28:e september och dörrarna öppnas klockan 18:00. Efter sittningen bjuds det på en fyrverkerishow och ett eftersläpp som varar fram till 04:00. Klädsel är högtidsdräkt med akademiska ordnar, alternativt mörk kostym.
+
+    Anmälan sker senast den 20:e september till en kostnad av 400kr per kuvert, eller 350kr om ingen alkohol önskas. Vid anmälan, glöm inte att nämna om ni har några matpreferenser eller om ni önskar att köpa till alkoholpaketet.
+    }
+
+    \newpage
+}
+\begin{document}
+%\inviteto{Albin Nyström Eklund}
+%\inviteto{Dalia Khairallah}
+%\inviteto{Emil Nilén}
+
+%\inviteto{Linnea Sjödahl}
+%\inviteto{Martin Gemborn Nilsson}
+%\inviteto{Adam Waks}
+%\inviteto{Jennifer Hagman}
+
+%\inviteto{Fredric Ahrling}
+%\inviteto{Representant från TLTH:s styrelse}
+%\inviteto{Linnea Söderström}
+%\inviteto{Richard Byström}
+%\inviteto{Emil Eriksson}
+%\inviteto{Axel Voss}
+%\inviteto{Daniel Bakic}
+%\inviteto{Erik Månsson}
+%\inviteto{Axel Sondh}
+
+\end{document}

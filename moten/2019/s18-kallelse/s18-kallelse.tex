@@ -1,0 +1,81 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S18/19} %ex S02/16, E1/15, VT/13
+\def\date{2019-09-09} %YYYY-MM-DD
+\def\docauthor{Edvard Carlsson}
+
+\def\mtime{12:10}
+\def\place{E:3316}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paralist}
+    \pli{OFMÖ}{\bes}
+    \pli{Val av mötesordförande}{\bes}
+    \pli{Val av mötessekreterare}{\bes}
+    \pli{Val av justeringsperson}{\bes}
+    \pli{Godkännande av tid och sätt}{\bes}
+    \pli{Adjungeringar}{\bes}
+    \pli{Godkännande av dagordningen}{\bes}
+    \pli{Föregående mötesprotokoll}{\bes}
+    \pli{Fyllnadsval och entledigande av funktionärer}{\bes}
+    \pli{Rapporter}{}
+    \begin{paralist}
+        \pli{Hur mår alla?}{\info}
+        \pli{Utskottsrapporter}{\info}
+        \pli{Ekonomisk rapport}{\info}
+        \pli{Kåren informerar}{\info}
+        \pli{Omvärldsrapport}{\info}
+    \end{paralist}
+   
+
+    \pli{Øverphøs informerar}{\info}
+    \pli{Biljard}{\dis}
+    \pli{Äskning av pengar för inköp av nya izettle läsare}{\bes}
+    
+    
+    
+
+    
+    
+    \pli{Nästa styrelsemöte}{\bes}
+    \pli{Beslutsuppföljning}{\bes}
+    \pli{Övrigt}{\dis}
+    \pli{Sammanfattning av mötet}{\dis}
+    \pli{OFMA}{\bes}
+  \end{paralist}
+
+\newpage
+
+
+\section*{Beslutsuppföljning}
+\begin{beslutsuppf}
+
+
+\beslut{S14/19}{Inköp av draghandtag till cykelvagn}{}{Davida Åström}{S19/19} 
+\beslut{S15/19}{Inköp av cheerdräkter}{}{Stephanie Bol}{S18/19}
+\beslut{S17/19}{Inköp av ny skrivare}{}{Henrik Ramström}{S19/19}
+
+
+
+\end{beslutsuppf}
+
+\begin{signatures}{1}
+    \emph{I styrelsens tjänst}
+    \signature{Edvard Carlsson}{Ordförande}
+\end{signatures}
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\date{2019}
+\def\doctitle{Inbjudan till NollEgasquen \date}
+\def\docauthor{Erik Månsson}
+
+%\def\rec{styrelserna för Konglig Elektrosektionen och Sektionen för Medicinsk Teknik vid Kungliga Tekniska Högskolan}
+%\def\rec{styrelsen för Elektroteknologsektionen vid Chalmers Tekniska Högskola}
+
+\usepackage{../../../../e-sek}
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=25mm,
+    left=35mm,
+    right=35mm,
+    bottom=35mm
+}
+
+\fancyhead[L]{}
+\fancyfoot[R]{}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand{\inviteto}[1]{
+
+    \begin{center}
+        \includegraphics[width=7cm]{sigill}
+        \par
+        \vspace*{5mm}
+
+        \textit{\textbf{\huge \doctitle}}
+    \end{center}
+
+    {\it
+    \vspace*{3mm}
+    E-sektionen vid Lunds Tekniska Högskola har den stora äran att bjuda in {#1} till årets NollEgasque.
+
+    På kvällen den 27:e september tar vi emot er för en rundvandring runt Lund och LTH. Efter det anordnas en mindre formell sittning för er i E-huset.
+
+    Den 28:e september klockan 18:00 öppnas dörrarna till NollEgasquen i Gasquesalen. Efter sittningen bjuds det på en fyrverkerishow och sedan ett eftersläpp som varar fram till 03:00. Klädkod är högtidsdräkt med akademiska ordnar, alternativt mörk kostym.
+
+    Anmälan görs via mail till kontaktor@esek.se senast den 20:e september. Kostnad per kuvert är 450kr, eller 400kr om ingen alkohol önskas. Vid anmälan, ange för- och efternamn samt personnummer. Glöm inte att nämna om ni har några matpreferenser samt om ni behöver sovplats.
+
+    Vi ser fram emot att höra från er och hoppas att ni kan närvara!
+    }
+
+    \begin{signatures}{1}
+    \signature{Mattias Lundström}{Kontaktor\\E-sektionen inom TLTH}
+  \end{signatures}}
+  \begin{document}
+    \begin{tikzpicture}[remember picture, overlay]
+    \draw[line width = 2.5pt] ($(current page.north west) + (6mm,-6mm)$) rectangle ($(current page.south east) + (-6mm,6mm)$);
+
+    \draw[line width = 1pt] ($(current page.north west) + (7mm,-7mm)$) rectangle ($(current page.south east) + (-7mm,7mm)$);
+
+    \draw[line width = 1pt] ($(current page.north west) + (5mm,-5mm)$) rectangle ($(current page.south east) + (-5mm,5mm)$);
+    \end{tikzpicture}
+
+  %\inviteto{styrelserna för Konglig Elektrosektionen och Sektionen för Medicinsk Teknik vid Kungliga Tekniska Högskolan}
+  %\inviteto{fyra (4) från Er Styrelse}
+  %\inviteto{två (2) från er styrelse för Teknologföreningen vid Aalto-universitetet}
+
+  \inviteto{fyra (4) från styrelsen för Elektroteknologsektionen vid Chalmers Tekniska Högskola}
+  %\inviteto{styrelsen för Y-sektionen på Tekniska högskolan vid Linköpings universitet}
+  %\inviteto{två (2) från styrelsen för Sct. Omega Broderskab vid Norges teknisk-naturvitenskapelige universitet}
+  %\inviteto{två (2) från styrelsen för Sct. Omega Broderskab vid Norges teknisk-naturvitenskapelige universitet}
+
+\end{document}
