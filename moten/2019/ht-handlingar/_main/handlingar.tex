@@ -1,0 +1,115 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Edvard Carlsson}
+\def\sekr{Mattias Lundström}
+\def\krog{Davida Åström}
+\def\fvc{Henrik Ramström}
+\def\enuordf{Jakob Pettersson}
+\def\sreordf{Lina Samnegård}
+\def\sexm{Theo Nyman}
+\def\ent{Saga Åslund}
+\def\cafem{Jonathan Benitez}
+\def\oph{Stephanie Bol}
+
+
+\def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HT/19} %ex S02/16, E01/15, VT/13
+\def\date{2019-11-12} %YYYY-MM-DD
+\def\docauthor{\sekr}
+
+\def\mtime{17:15}
+\def\place{E:A}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+\subfile{../../_sektion-handlingar/_other/guide}
+\newpage
+
+\section{Dagordning}
+\subsection{Tid och plats}
+\tidplats
+
+\subsection{Föredragningslista}
+\begin{paralist}
+    \pli{TaFMÖ}{}
+    \pli{Val av mötesordförande}{}
+    \pli{Val av mötessekreterare}{}
+    \pli{Godkännande av tid och sätt}{}
+    \pli{Val av två justeringspersoner}{}
+    \pli{Adjungeringar}{}
+    \pli{Godkännande av dagordningen}{}
+    \pli{Föregående sektionsmötesprotokoll}{}
+    \pli{Meddelanden}{}
+    \pli{Beslutsuppföljning}{}
+
+    \pli{Övrigt}{}
+    \pli{TaFMA}{}
+\end{paralist}
+
+\begin{signatures}{2}
+    \emph{I Sektionens tjänst}
+    \signature{\ordf}{Ordförande}
+    \signature{\sekr}{Kontaktor}
+\end{signatures}
+
+\section{Beslutsuppföljning}
+\begin{busek}
+    \beslutsek{VT/15}{Ett beslut}{Några personer}{...}{}
+\end{busek}
+
+\begin{supersection}{Beslutsuppföljning}{}
+    %\subfile{../besuppf/example}
+\end{supersection}
+
+\begin{utskottsrapporter}
+    %\subfile{../utskottsrapporter/cm.tex}
+    \subfile{../utskottsrapporter/fvu.tex}
+    \subfile{../utskottsrapporter/infu.tex}
+    \subfile{../utskottsrapporter/km.tex}
+    \subfile{../utskottsrapporter/nollu.tex}
+    \subfile{../utskottsrapporter/enu.tex}  
+    \subfile{../utskottsrapporter/noju.tex}    
+    \subfile{../utskottsrapporter/sexet.tex}    
+    \subfile{../utskottsrapporter/sre.tex}    
+  
+\end{utskottsrapporter}
+
+\begin{verksplaner}
+    %
+\end{verksplaner}
+
+
+\begin{valforslags}
+    %\subfile{../valforslag/example}
+\end{valforslags}
+
+\begin{berattelser}
+    %\subfile{../berattelser/example}
+\end{berattelser}
+
+\begin{stadgeandringar}
+    %\subfile{../stadgeandringar/example}
+\end{stadgeandringar}
+
+\begin{motioner}
+    \subfile{../motioner/kroke.tex}
+    \subfile{../motionssvar/kroke.tex}
+\end{motioner}
+
+\begin{propositioner}
+    %\subfile{../propositioner/example}
+\end{propositioner}
+
+\end{document}
