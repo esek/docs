@@ -1,0 +1,253 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\mo{Edvard Carlsson}
+\def\ms{Mattias Lundström}
+\def\ji{Davida Åström}
+%\def\jii{}
+
+\def\doctype{Protokoll} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S23/19} %ex S02/16, E1/15, VT/13
+\def\date{2019-10-16} %YYYY-MM-DD
+\def\docauthor{\ms}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+\showsignfoot
+
+\heading{{\doctype} för {\mname} {\mnum}}
+
+%\naun{}{} %närvarane under
+%\nati{} %närvarande till och med
+%\nafr{} %närvarande från och med
+\section*{Närvarande}
+\subsection*{Styrelsen}
+\begin{narvarolista}
+\nv{Ordförande}{Edvard Carlsson}{E16}{}
+\nv{Kontaktor}{Mattias Lundström}{E17}{}
+\nv{Förvaltningschef}{Henrik Ramström}{E16}{}
+%\nv{Cafémästare}{Jonathan Benitez}{E17}{}
+\nv{Sexmästare}{Theo Nyman}{BME18}{}
+\nv{Krögare}{Davida Åström}{BME17}{}
+\nv{Entertainer}{Saga Åslund}{BME18}{}
+\nv{SRE-ordförande}{Lina Samnegård}{BME16}{\nafr{12}}
+\nv{ENU-ordförande}{Jakob Pettersson}{E17}{}
+\nv{Øverphøs}{Stephanie Bol}{BME17}{}
+\end{narvarolista}
+
+
+\subsection*{Ständigt adjungerande}
+\begin{narvarolista}
+%\nv{}{}{}{}
+%\nv{Skattmästare}{Daniel Bakic}{E15}{\nafr{10}}
+%\nv{Vice Krögare}{Klara Indebetou}{BME17}{}
+%\nv{Vice Krögare}{Hjalmar Tingberg}{BME16}{}
+\nv{Vice Cafémästare}{Alicia Lindmark}{BME17}{}
+\nv{Vice Cafémästare}{Sofie Johannesson}{BME17}{}
+%\nv{Kårrepresentant}{Ivar Vänglund}{}{}
+%\nv{Kårrepresentant}{Martin Bergman}{}{}
+%\nv{Valberedningens ordförande}{Axel Voss}{E15}{\nafr{10b}}
+%\nv{Fullmäktigeledamot}{Magnus Lundh}{E15}{\nafr{12}}
+%\nv{Chefredaktör}{Erik Eriksson}{--}{}
+%\nv{Inspektor}{Monica Almqvist}{}{}
+
+
+\end{narvarolista}
+
+%\begin{comment}
+\subsection*{Adjungerande}
+\begin{narvarolista}
+%\nv{post}{namn}{klass}{nati/nafr/tom}
+%\nv{Likabehandlingsombud}{Jonna Fahrman}{BME17}{}
+%\nv{Likabehandlingsombud}{Hanna Bengtsson}{BME18}{}
+%\nv{Projekfunktionär}{Emma Hjörneby}{BME17}{}
+%\nv{Macapär}{Filip Larsson}{E17}{}
+\nv{Sångförman}{Adam Belfrage}{BME17}{}
+\nv{Sångförman}{Emil Bergstöm}{E17}{}
+
+
+\end{narvarolista}
+%\end{comment}
+
+\section*{Protokoll}
+\begin{paragrafer}
+\p{1}{OFMÖ}{\bes}
+Ordförande {\mo} förklarade mötet öppnat kl 12.15
+
+\p{2}{Val av mötesordförande}{\bes}
+{\valavmo}
+
+\p{3}{Val av mötessekreterare}{\bes}
+{\valavms}
+
+\p{4}{Val av justeringsperson}{\bes}
+{\valavj}
+
+\p{5}{Godkännande av tid och sätt}{\bes}
+{\tosg}
+
+\p{6}{Adjungeringar}{\bes}
+Adam Belfrage adjungerades.\\
+Emil Bergström adjungerades.
+%Hanna Bengtsson adjungerades. \\
+%Jonna Fahrman adjungerades.
+
+
+%\textit{Inga adjungeringar.}
+
+
+\p{7}{Godkännande av dagordningen}{\bes}
+
+%Davida \ypa lägga till punkten ``Lophtet'' till dagordningen.\\
+%Edvard \ypa lägga till punkten ``Ordensband'' til dagordningen.
+%Fredrik \ypa att lägga till \S18b ``Teknikfokus utnyttjande av LED-café''.
+%Jonathan \ypa ändra punkten §12 från att vara en beslutspunkt till diskussion. \\
+%Föredragningslistan godkändes med yrkandet.
+%Henrik \ypa lägga till punkten ``Faktura till F'' som §13.
+%Jakob Pettersson \ypa tägga till punkten ''Øverphøs informerar'' som \S16.
+
+%Mattias yrkar på att ändra punkt \S13 ''Balkommité'' från att vara diskussion till ett beslut. 
+
+Föredragningslistan godkändes. % med yrkandet.
+
+\p{8}{Föregående mötesprotokoll}{\bes}
+\latillprotgodkand{S20/19 \& S21/19}
+%\textit{\ingaprot}
+
+\p{9}{Fyllnadsval och entledigande av funktionärer}{\bes}
+\begin{fyllnadsval} %"Inga fyllnadsval." fylls i automatiskt
+%\fval{Moa Rönnlund}{Halvledare}
+%\entl{Fanny Månefjord}{Husstyrelserepresentant från och med 30 juni}
+\fval{Mattias Lundström}{Projekfunktionär}
+\fval{Adam Belfrage}{Projekfunktionär}
+\fval{Emil Bergström}{Projekfunktionär}
+\fval{Jakob Pettersson}{Projekfunktionär}
+
+\end{fyllnadsval}
+
+\p{10}{Rapporter}{}
+\begin{paragrafer}
+\subp{A}{Hur mår alla?}{\info}
+%Punkten protokollfördes ej.
+
+Alla på mötet mår bra. 
+
+Edvard berättade att han går upp kl 05 för att gymma för att vara där samtidigt som en tjej han irriterar sig på.
+
+\subp{B}{Utskottsrapporter}{\info}
+Edvard meddelade att styrelsens verksamhet den här veckan har bestått av flera kvällsmöten för att förbereda handlingarna till HTM. Det har varåt redogörelser av det gågna halvåret, propositioner och motionssvar. 
+Fakturan till F-sektionen har överlämnats enligt tradition, och den här gången i ett isblock. 
+
+Edvard också har köpt tårtor för att fira 1000 medlemmar på Esek-events och han har letat efter möjliga lokaler samt aktiviteter för funktionärstacket. Inför sektionsmötena har han sammanställt handlingar, marknadsfört möten och gjort färdigt valguiden. 
+
+Alicia och Sofie meddelade att Cafémästeriet har haft stängt på grund av arbetsbelastning. Det är skönt att kunna ha stängt sista veckan inför tentorna efter att LED har haft öppet hela nollningen. CM har varit snälla och försökt ordna fram funktionärskaffe till folk på dagarna. I veckan väntar en stor läskleverans och planen är också att rensa ut skafferiet och kylen. 
+Miljöförvaltningen var på besök förra veckan och CM kan stolt meddela att LED Café blev godkänt! Utöver det är CM taggade för Expo. 
+
+Henrik meddelade att FVU den senaste veckan har fortsatt med sektionens ekonomiska arbete och fortsatt med budgetering. De har även haft utskottsmöte.
+
+Mattias meddelade att InfU har haft det ganska lugnt. Picasso fortsätter med design och fotograferna har redigerat färdigt de sista bilderna som inte kom ut under nollningen. I fredags hade DDG möte, och samtidigt satt Mattias och Johannes med konfiguration av G Suite. 
+Utöver det har Mattias förberett och jobbat mycket med handlingarna till HTM, som kommer ta den mesta tiden framöver. 
+
+Davida meddelade att KM i veckan varit igång ordentligt igen efter ett litet uppehåll. De har planerat två gillen, en företagspub samt en ölprovning efter tentorna. KM har också varit på äventyr på IKEA och köpt in ljusslingor och förvaringslådor. Sektionens iPads och iZettles som tillhör Edekvata fungerade inte i fredags och som lösning fick Davida använda sin egen telefon. Trots det blev invigningen av Nya Biljard lyckad med hjälp av NöjU och alla hade kul! Davida har även bokfört fredagen samt gått igenom kravprofiler i utskottet. 
+
+Stephanie meddelade att hon har haft ØPK-möte och NollU har börjat jobba på sina testamenten. Nu återstår utvärderingar. Statusen på Phaddertack är oförändrad. 
+
+Jakob och ENU har sedan förra mötet anordnat en workshop med Venturelab och hållt i en lunchföreläsningen med ASSA tillsammans med F och D. På torsdag hålls företagspub med BorgWarner enligt avtal. I övrigt har Jakob mailat och sålt lite marknadsföring. 
+Sektionen har skrivit avtal med Knightec för en workshop på deras kontor samt preliminärbokat en programmeringskväll på Alten. Utöver det har Jakob planerat in ett möte med hela utskottet på fredag.
+
+Saga meddelade att NöjU har hjälp till med invigning av Biljard i fredags och bandet var på plats! Hon meddelade också att det var mycket folk igen på Sporta med E, och även massvis med folk på spelkvällen vilket är kul. Förra veckan hade NöjU möte där de fördelade events och ansvar för resten av året. Det är en del kvar att göra men Saga är taggad.
+
+Theo meddelade att han inte gjort något specifikt med utskottet denna veckan. Han har mest jobbat vidare med styrelsearbete.
+
+Lina har fortsatt sin verksamhet som vanligt med Studierådet. De har haft möten för att försöka planera in ett gemensamt kursombudstack för alla sektioner, med det känns lite svårt att få ihop just nu tyvärr. 
+
+\subp{C}{Ekonomisk rapport}{\info}
+ Henrik meddelade att den ekomomiska verksamheten fortsätter att gå bra och att vi har väldigt god likviditet just nu. Arbetet med budgetering fortsätter. 
+
+\subp{D}{Kåren informerar}{\info}
+\textit{Kårens representanter var ej närvarande.}
+
+\subp{E}{Omvärldsrapport}{\info}
+
+Mattias meddelade att två från styrelsen fortfarande kan anmäla sig till Uppsala Studentförening Elektroteknik's 5-årsjubileum den 15 november.
+
+\end{paragrafer}
+
+\p{11}{Äskning av pengar för inköp av ny lamineringsmaskin}{\bes}
+Theo presenterade äskningen. 
+
+Mötet ansåg att det är ytterst viktigt att sektionen har en lamineringsmaskin. Mötet diskuterade för- och nackdelar mellan alternativen och kom fram till att den mindre modellen är mer passande, trots lägre lamineringshastiget. 
+
+Mötet \textbf{beslutade att} bifalla alla yrkande från det första alternativet. 
+
+\p{12}{Funktionärstacket}{\dis}
+
+Edvard meddelade att ingen nation vill ta emot oss på grund av fulla bokningar. 
+
+Henrik sa att ett alternativ är att göra en budgetrevidering för att få ytterligare medel till funktionärstacket, för att exempelvis kunnna åka iväg till en stuga. Mötet diskuterade stuglogistik. 
+
+Mötet diskuterade även andra alternativ.
+
+\p{13}{Balkommité}{\bes}
+Mattias meddelade att medlemmar vill skapa en Balkommité med anledning att anordna en vårbal åt sektionen likt föregående år. De har flera idéer och är redo att börja med planeringsarbetet. 
+
+Mattias \ypa Emil, Jakob, Adam och Mattias ska väljas in som projektfunktionärer med syfte att ordna en bal åt sektionen, med uppföljning till S16/20. 
+
+\Mbaby
+
+\p{14}{Nästa styrelsemöte}{\bes}
+\Mba nästa styrelsemöte ska äga rum 2019-11-04 12.10 i E:1124.
+
+\p{15}{Beslutsuppföljning}{\bes}
+
+%Edvard \ypa stryka ''Projektfunktionär: Vårbal'' från Beslutsuppföljning. Liknande projekt uppmuntras.
+%\Mbaby
+%Davida \ypa skjuta upp ''Inköp av draghandtag till cykelvagn'' till nästa styrelsemöte.
+%\Mbaby
+
+Henrik påpekade att man bör vänta med att stryka en punkt från Beslutsuppföljning innan man bokfört alla kostnader. 
+
+Edvard \ypa skjuta upp ''Inköp av tårta till sektionen'' till nästa styrelsemöte. %Sektionen uppskattade tårta och det blev bra content på Instagram. 
+
+\Mbaby
+
+Edvard \ypa skjuta upp ''Funktionärstacket'' till S27/19.   
+
+\Mbaby
+
+\p{16}{Övrigt}{\dis}
+Saga påminde styrelsen om att ta fram bilder till Fotovägg i Diplomat. Mötet diskuterade hur man bäst går till väga.  
+
+Henrik vill bli informerad om det kommande Phaddertacket.
+
+Davida la fram idéen om att att varje utskott skall ha en Instagram Takeover under några dagar för att förbättra representationen av det dagliga arbetet. 
+Mattias ska lägga upp ett schema i styrelsens drive där man kan boka dagar.
+
+\p{17}{Sammanfattning av mötet}{\info}
+% \Fbs - Följande beslut \textbf{ströks} från Beslutsuppföljningen,
+% \Fbsup Följande beslut från Beslutsuppföljningen \textbf{sköts upp}
+
+\Mba köpa in en lamineringsmaskin av storlek A4. 
+
+Mattias, Jakob, Adam och Emil \textbf{valdes} som projektfunktionärer i syfte att ordna en bal åt sektionen till våren. 
+
+''Inköp av tårta till sektionen'' från Beslutsuppföljningen \textbf{sköts upp} till nästa styrelsemöte. 
+
+''Funktionärstacket'' från Beslutsuppföljningen \textbf{sköts upp} till S27/19.
+
+\p{18}{OFMA}{\bes}
+{\mo} förklarade mötet avslutat kl. 13.01
+\end{paragrafer}
+
+%\newpage
+\hidesignfoot
+\begin{signatures}{3}
+\signature{\mo}{Mötesordförande}
+\signature{\ms}{Mötessekreterare}
+\signature{\ji}{Justerare}
+\end{signatures}
+\end{document}
