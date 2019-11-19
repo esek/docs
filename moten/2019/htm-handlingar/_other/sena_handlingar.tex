@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\ordf{Edvard Carlsson}
+\def\sekr{Mattias Lundström}
+
+\def\doctype{Sena handlingar} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
+\def\mnum{HTM/19} %ex S02/16, E01/15, VT/13
+\def\date{2019-11-12} %YYYY-MM-DD
+\def\docauthor{\ordf}
+
+\def\mtime{17:15}
+\def\place{E:A}
+
+\usepackage{../../_sektion-handlingar/e-handlingar-sek}
+\usepackage{../../e-mote}
+\usepackage{../../../../e-sek}
+
+\begin{document}
+
+\firstpage{{\doctype} till {\mname} {\mnum}}{{\date} {\mtime} i {\place}}
+
+\tableofcontents
+\newpage
+
+    \subfile{../_other/revision.tex}
+    \subfile{../_other/repres.tex}
+    \begin{propositioner}
+    \subfile{../_other/kontaktor.tex}
+    \end{propositioner}
+
+\end{document}

@@ -16,7 +16,7 @@
 
 \def\doctype{Handlingar} %ex. Kallelse, Handlingar, Protkoll
 \def\mname{Höstterminsmötet} %ex. styrelsemöte, vårterminsmöte
-\def\mnum{HT/19} %ex S02/16, E01/15, VT/13
+\def\mnum{HTM/19} %ex S02/16, E01/15, VT/13
 \def\date{2019-11-12} %YYYY-MM-DD
 \def\docauthor{\sekr}
 
@@ -53,12 +53,55 @@
     \pli{Föregående sektionsmötesprotokoll}{}
     \pli{Meddelanden}{}
     \pli{Beslutsuppföljning}{}
-
-%%%% DETTA MÅSTE GÖRAS
-
+    \pli{Bokslut från 2018}{}
+    \pli{Revisionsberättelse för 2018}{}
+    \pli{Resultatdisposition från 2018}{}
+    \pli{Frågan om ansvarsfrihet för 2018}{}
+        \begin{paralist}
+            \pli{Funktionärer}{}
+            \pli{Utskott}{}
+            \pli{Styrelse}{}
+            \pli{Revisorer}{}
+            \pli{Valberedning}{}
+        \end{paralist}
+    \pli{Ekonomsik rapport}{}
+    \pli{Uttag ur Sektionens fonder sedan förra terminsmötet}{}
+    \pli{Resultatrapport}{}
+    \pli{Utskottsrapporter}{}
+    \pli{Uppföljning av verksamhetsplan}{}
+    \pli{Behandling av motioner}{}
+    \begin{paralist}
+            \pli{Avskaffandet av posten Karnevalsmalaj}{}
+            \pli{Införandet av Kröke}{}
+            \pli{Reglementesändring, Införandet av posten Booster}{} 
+            \pli{Inköp av elbjörn till sektionen}{}  
+            \pli{Inköp av utrustning för Elektro Banana Band}{}
+            \pli{Ändring av antal Preferensmästare}{}
+            \pli{Budgetjustering för E-sektionens bidrag till Sångarstriden 2019}{}
+            \pli{Införandet av funktionärsposten Banan}{}
+            \pli{Inköp av ljudutrustning, subwoofers}{}
+            \pli{Äskning av pengar för inköp av ny tandemcykel}{}
+            \pli{Utredning om renovering av toaletterna}{}
+        \end{paralist}
+    \pli{Behandling av propositioner}{}
+        \begin{paralist}
+            \pli{Budgetförslag för 2020}{}
+            \pli{Verksamhetsplansförslag för 2020}{} 
+            \pli{Ge styrelsen rättigheter att genomföra redaktionella ändringar i styrdokumenten}{}
+            \pli{Uppdatering av policy: Inbjudningar och anmodningar}{}
+            \pli{Införandet av policy: Hantering av ärenden som faller inom diskrimineringslagen}{}
+            \pli{Införande av riktlinje: Användning av G Suite}{}  
+            \pli{Inköp av sektionstält}{}  
+            \pli{Reglementesändring, uppdatering av postbeskrivningen för Halvledare}{}
+            \pli{Reglementesändring, beskrivning av Nolleutskottet}{}
+            \pli{Reglementesändring, namn på NollU-funktionärer}{}
+            \pli{Reglementesändring, mindre uppdateringar}{}
+        \end{paralist}
     \pli{Övrigt}{}
     \pli{TaFMA}{}
 \end{paralist}
+
+
 
 \begin{signatures}{2}
     \emph{I Sektionens tjänst}
@@ -66,13 +109,7 @@
     \signature{\sekr}{Kontaktor}
 \end{signatures}
 
-\subfile{../ekonomi/ekonomisk_rapport.tex}
-\newpage
-\addcontentsline{toc}{subsection}{Balansrapport}
-\includepdf[pages=1]{../ekonomi/balansrapport.pdf}
 
-\subfile{../ekonomi/uttag.tex}
-\newpage
 
 \begin{supersection}{Beslutsuppföljning}{}
     \subsection{Överblick}
@@ -112,6 +149,21 @@
     \subfile{../beslutsuppf/router.tex}
 \end{supersection}
 
+
+
+\subfile{../ekonomi/disp}
+\newpage
+
+\subfile{../ekonomi/ekonomisk_rapport.tex}
+\newpage
+\addcontentsline{toc}{subsection}{Balansrapport}
+\includepdf[pages=1]{../ekonomi/balansrapport.pdf}
+
+\subfile{../ekonomi/uttag}
+\newpage
+
+
+
 \begin{utskottsrapporter}
     \subfile{../utskottsrapporter/styrelsen.tex}    
     \subfile{../utskottsrapporter/cm.tex}
@@ -127,49 +179,38 @@
 \end{utskottsrapporter}
 
 \begin{supersection}{Verksamhetsplaner}{}
-	\subfile{../verksplaner/2019} % Sometimes(??) gives error. Ignore?
+	\subfile{../verksplaner/2019} 
 \end{supersection}
 
 \begin{supersection}{Uppföljningar av verksamhetsplaner}{}
 	\subfile{../verksplanuppfar/2019-ht}
 \end{supersection}
 
-% begin{valforslags}
-%    %\subfile{../valforslag/example}
-% \end{valforslags}
-
-% \begin{berattelser}
-%    %\subfile{../berattelser/example}
-% \end{berattelser}
-
-% \begin{stadgeandringar}
-%    %\subfile{../stadgeandringar/example}
-% \end{stadgeandringar}
 
 \begin{motioner}
-    \subfile{../motioner/booster.tex}
-    \subfile{../motionssvar/booster.tex}
-
-    \subfile{../motioner/sasbudget.tex}
-    \subfile{../motionssvar/sasbudget.tex}
+    \subfile{../motioner/karnevalsmalaj.tex}
+    \subfile{../motionssvar/karnevalsmalaj.tex}
 
     \subfile{../motioner/kroke.tex}
     \subfile{../motionssvar/kroke.tex}
+   
+    \subfile{../motioner/booster.tex}
+    \subfile{../motionssvar/booster.tex}
 
-    \subfile{../motioner/prefmastare.tex}
-    \subfile{../motionssvar/prefmastare.tex}
-
-    \subfile{../motioner/toa.tex}
-    \subfile{../motionssvar/toa.tex}
-
-    \subfile{../motioner/banan.tex}
-    \subfile{../motionssvar/banan.tex}
+    \subfile{../motioner/elbjorn.tex}
+    \subfile{../motionssvar/elbjorn.tex}
 
     \subfile{../motioner/EBB.tex}
     \subfile{../motionssvar/EBB.tex}
 
-    \subfile{../motioner/karnevalsmalaj.tex}
-    \subfile{../motionssvar/karnevalsmalaj.tex}
+    \subfile{../motioner/prefmastare.tex}
+    \subfile{../motionssvar/prefmastare.tex}
+
+    \subfile{../motioner/sasbudget.tex}
+    \subfile{../motionssvar/sasbudget.tex}
+
+    \subfile{../motioner/banan.tex}
+    \subfile{../motionssvar/banan.tex}
 
     \subfile{../motioner/subwoof.tex}
     \subfile{../motionssvar/subwoof.tex}
@@ -177,8 +218,8 @@
     \subfile{../motioner/tandemcykel.tex}
     \subfile{../motionssvar/tandem.tex}
 
-    \subfile{../motioner/elbjorn.tex}
-    \subfile{../motionssvar/elbjorn.tex}
+    \subfile{../motioner/toa.tex}
+    \subfile{../motionssvar/toa.tex}
 
 \end{motioner}
 
@@ -186,16 +227,14 @@
     \subfile{../propositioner/_budget.tex}
     \subfile{../propositioner/_verksplan.tex}
     \subfile{../propositioner/redak.tex}
-    \subfile{../propositioner/mindre.tex}
-    \subfile{../propositioner/nollu-funk.tex}
-    \subfile{../propositioner/nollu-regelmente.tex}
-    \subfile{../propositioner/g-suite.tex}
-    \subfile{../propositioner/nollu-regelmente.tex}
     \subfile{../propositioner/inbjudningar.tex}
-    \subfile{../propositioner/halvledare.tex}
     \subfile{../propositioner/sextrac.tex}
-    %\subfile{../propositioner/kontaktor.tex}
+    \subfile{../propositioner/g-suite.tex}
     \subfile{../propositioner/talt.tex}
+    \subfile{../propositioner/halvledare.tex}
+    \subfile{../propositioner/nollu-regelmente.tex}
+    \subfile{../propositioner/nollu-funk.tex}
+    \subfile{../propositioner/mindre.tex}
 \end{propositioner}
 
 
@@ -203,6 +242,10 @@
     \includepdf[pages=-]{../ekonomi/resrapport-utskott.pdf}
     \includepdf[pages=-]{../ekonomi/resrapport-projekt.pdf}
 
+\end{supersection}
+
+\begin{supersection}{Bokslut 2018}{}
+    \includepdf[pages=-]{../ekonomi/bokslut2018.pdf}
 \end{supersection}
 
 \end{document}
