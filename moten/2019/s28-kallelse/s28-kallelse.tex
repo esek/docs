@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S28/19} %ex S02/16, E1/15, VT/13
+\def\date{2019-12-02} %YYYY-MM-DD
+\def\docauthor{Edvard Carlsson}
+
+\def\mtime{12:10}
+\def\place{E:1123}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paralist}
+    \pli{OFMÖ}{\bes}
+    \pli{Val av mötesordförande}{\bes}
+    \pli{Val av mötessekreterare}{\bes}
+    \pli{Val av justeringsperson}{\bes}
+    \pli{Godkännande av tid och sätt}{\bes}
+    \pli{Adjungeringar}{\bes}
+    \pli{Godkännande av dagordningen}{\bes}
+    \pli{Föregående mötesprotokoll}{\bes}
+    \pli{Fyllnadsval och entledigande av funktionärer}{\bes}
+    \pli{Rapporter}{}
+    \begin{paralist}
+        \pli{Hur mår alla?}{\info}
+        \pli{Utskottsrapporter}{\info}
+        \pli{Ekonomisk rapport}{\info}
+        \pli{Kåren informerar}{\info}
+    \end{paralist}
+   
+    \pli{Ansökan om att bli projektfunktionär i projektet \\ Utredning om renovering av toaletterna}{\bes}
+    \pli{Medaljutdelning}{\dis}
+    \pli{Val av funktionärer}{\dis}
+    \pli{Serveringstillstånd alla dagar i veckan}{\dis}
+
+    \pli{Nästa styrelsemöte}{\bes}
+    \pli{Beslutsuppföljning}{\bes}
+    \pli{Övrigt}{\dis}
+    \pli{Sammanfattning av mötet}{\info}
+    \pli{OFMA}{\bes}
+  \end{paralist}
+
+\newpage
+
+
+\section*{Beslutsuppföljning}
+
+\begin{beslutsuppf}
+
+\beslut{S22/19}{Funktionärstacket}{}{Edvard Carlsson}{S29/19}
+\beslut{S23/19}{Projektfunktionär: Balkommité}{}{Mattias Lundström, Jakob Pettersson, Adam Belfrage \& Emil Bergstöm}{S16/20}
+\beslut{S27/19}{Testamentesskrivarkväll}{}{Edvard Carlsson}{S29/19}
+
+\end{beslutsuppf}
+
+\begin{signatures}{1}
+    \emph{I styrelsens tjänst}
+    \signature{Edvard Carlsson}{Ordförande}
+\end{signatures}
+
+\end{document}
