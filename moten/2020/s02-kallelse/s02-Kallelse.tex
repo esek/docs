@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\pagestyle{plain}
+
+\def\doctype{Kallelse} %ex. Kallelse, Handlingar, Protkoll
+\def\mname{styrelsemöte} %ex. styrelsemöte, Vårterminsmöte
+\def\mnum{S02/20} %ex S02/16, E1/15, VT/13
+\def\date{2020-01-28} %YYYY-MM-DD
+\def\docauthor{Theo Nyman}
+
+\def\mtime{12:10}
+\def\place{E:1123}
+
+\usepackage{../e-mote}
+\usepackage{../../../e-sek}
+
+\begin{document}
+
+\heading{{\doctype} till {\mname} {\mnum}}
+
+\section*{Tid och plats}
+\tidplats
+
+\section*{Föredragningslista}
+\begin{paralist}
+    \pli{OFMÖ}{\bes}
+    \pli{Val av mötesordförande}{\bes}
+    \pli{Val av mötessekreterare}{\bes}
+    \pli{Val av justeringsperson}{\bes}
+    \pli{Godkännande av tid och sätt}{\bes}
+    \pli{Adjungeringar}{\bes}
+    \pli{Godkännande av dagordningen}{\bes}
+    \pli{Föregående mötesprotokoll}{\bes}
+    \pli{Fyllnadsval och entledigande av funktionärer}{\bes}
+
+    \pli{Rapporter}{}
+    \begin{paralist}
+        \pli{Hur mår alla?}{\info}
+        \pli{Utskottsrapporter}{\info}
+        \pli{Ekonomisk rapport}{\info}
+        \pli{Kåren informerar}{\info}
+        %\pli{Omvärldsrapport}{\info}
+    \end{paralist}
+
+    \pli{Alkoholkultur på sektionen och inom styrelsen}{\dis}
+    \pli{PH och Cedervall}{\info}
+    \pli{Funktionärsskiphtet}{\dis} %Diskutera upplägg
+    \pli{Nästa styrelsemöte}{\bes} %Weee kul att vi är igång!
+    \pli{Beslutsuppföljning}{\bes} 
+    \pli{Övrigt}{\dis}
+    \pli{Sammanfattning av mötet}{\info}
+    \pli{OFMA}{\bes}
+\end{paralist}
+
+\newpage
+
+\section*{Beslutsuppföljning}
+%\emph{Beslutsuppföljningen är tom!}
+\begin{beslutsuppf}
+\beslut{S22/19}{Inköp av Raspberry Pi}{}{Jonathan Benitez}{S02/20}
+\beslut{S23/19}{Projektfunktionär: Balkommité}{}{\begin{tabular}[c]{@{}l@{}}Mattias Lundström, \\ Jakob Pettersson, \\ Adam Belfrage \& \\ Emil Bergstöm\end{tabular}}{S16/20}
+\beslut{S29/19}{Inköp av squarespace}{}{Hannes Björk}{S02/20}
+\end{beslutsuppf}
+
+\begin{signatures}{1}
+    \emph{I styrelsens tjänst}
+    \signature{Theo Nyman}{Ordförande}
+\end{signatures}
+
+\end{document}
